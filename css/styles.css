@@ -10970,3 +10970,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+/* F2D Medical logo sizing in social icons */
+.social-icons .social-logo-f2d {
+    height: 28px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+    border-radius: 0; /* pas d'arrondi */
+}
+
+@media (min-width: 992px) {
+    .social-icons .social-logo-f2d {
+        height: 30px;
+    }
+}
