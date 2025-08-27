@@ -10,10 +10,13 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom.css?v=20250827" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,6 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projets</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expérience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formation</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
@@ -61,6 +65,101 @@
                             <i class="fas fa-building"></i>
                         </a>
                         <a class="social-icon" href="mailto:contact@b-menard.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projets</h2>
+                    
+                    <div class="project-card current">
+                        <h3 class="mb-0">F2D Medical - Dispositif Médical de Classe IIb</h3>
+                        <div class="subheading mb-3">Solution innovante pour le suivi des patients</div>
+                        <p>Développement complet d'un dispositif médical connecté de classe IIb, de la conception à la mise sur le marché.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">MDR 2017/745</span>
+                            <span class="tech-badge">ISO 13485</span>
+                            <span class="tech-badge">ISO 14971</span>
+                            <span class="tech-badge">IoT</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="mb-0">Systèmes d'analyse de données cliniques</h3>
+                        <div class="subheading mb-3">Plateforme avancée d'analyse et modélisation statistique</div>
+                        <p>Développement d'une suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale. Mise en place de modèles statistiques avancés pour l'interprétation des résultats cliniques.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Statistiques</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Data Analysis</span>
+                            <span class="tech-badge">Modélisation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="mb-0">Détection Thermique des Hémangiomes</h3>
+                        <div class="subheading mb-3">Dispositif expérimental de diagnostic précoce</div>
+                        <p>Développement d'un prototype innovant basé sur le refroidissement contrôlé et l'analyse de la remontée thermique, avec exploitation de datasets et algorithmes de machine learning pour l'aide au pronostic.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Innovation</span>
+                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Électronique</span>
+                            <span class="tech-badge">Brevet</span>
+                            <span class="tech-badge">Clinique</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="mb-0">Capteur de Bien-être Animal</h3>
+                        <div class="subheading mb-3">Analyse sonore innovante pour l'élevage porcin</div>
+                        <p>Développement d'un capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning. Innovation majeure : mise en place d'une échelle de notation A–F traduite en label consommateur.</p>
+                        <p><strong>Impact Business & Sociétal :</strong> Valorisation de la filière porcine, réduction des risques de maltraitance, différenciation produit et amélioration de la transparence pour le consommateur.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Innovation</span>
+                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge">Analyse du signal</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">AgriTech</span>
+                            <span class="tech-badge">Bien-être animal</span>
+                            <span class="tech-badge">Business Impact</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="mb-0">Capteur de Qualité du Lait</h3>
+                        <div class="subheading mb-3">Analyse en temps réel pour la détection précoce des mammites</div>
+                        <p>Développement d'un capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation de la solution permettant une détection immédiate des anomalies.</p>
+                        <p><strong>Impact Business :</strong> Réduction des traitements antibiotiques, diminution du risque de contamination du tank à lait et amélioration de la rentabilité des exploitations laitières.</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Innovation</span>
+                            <span class="tech-badge">Capteurs</span>
+                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge">IoT</span>
+                            <span class="tech-badge">Data Acquisition</span>
+                            <span class="tech-badge">AgriTech</span>
+                            <span class="tech-badge">Business Impact</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="mb-0">ED-WIRE – Easy Wire Detection</h3>
+                        <div class="subheading mb-3">Solution innovante pour l'identification des câblages électriques</div>
+                        <p>Conception d'un dispositif permettant d'identifier rapidement et de manière fiable les fils électriques lors de rénovations et mises aux normes. Alternative aux méthodes classiques basée sur l'injection CPL avec codes uniques pour chaque module.</p>
+                        <p><strong>Impact Business :</strong> Marché adressable de plusieurs millions de foyers en France. Réduction significative des coûts et du temps de main-d'œuvre (8–10h économisées par chantier).</p>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Innovation</span>
+                            <span class="tech-badge">Électronique</span>
+                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge">IoT</span>
+                            <span class="tech-badge">Diagnostic</span>
+                            <span class="tech-badge">Industrialisation</span>
+                            <span class="tech-badge">Business Development</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -245,6 +344,10 @@
                         <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Synthesis of fluorescein by ship in a bottle method in different zeolites</strong> — New Journal of Chemistry, 2017.</li>
                         <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Two-kidney one-clip ... cerebral ischemia</strong> — Journal of Cerebral Blood Flow &amp; Metabolism, 2017.</li>
                         <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Synthesis and encapsulation of fluorescein in zeolite Y</strong> — Microporous and Mesoporous Materials, 2016.</li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-book"></i></span>
+                            <strong>Thermodiag: Artificial intelligence for non-invasive internal temperature monitoring</strong> — PFIA Health & AI, 10th edition, June 30, 2025, Dijon, France
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -256,11 +359,47 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>FR 3097115B1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Délivré le 16 juil. 2021)
+                            <strong>FR 3097115 B1</strong> — Dispositif de mesure de températures et système pour déterminer une température interne profonde d’un être humain (Délivré le 16 juil. 2021) — Statut : Actif
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>WO2024061524A1</strong> — Multilayer cover for holding a device on a human body
+                            <strong>WO 2020/249665 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 déc. 2020)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>EP 3780912 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 fév. 2021) — Statut : Pending
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>US 2022/0160240 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 26 mai 2022) — Statut : Pending
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>FR 3139712 A1</strong> — Multi-layer cover for holding a device on a human body (Publié le 22 mars 2024)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>WO 2024/061524 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 28 mars 2024)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>AU 2023345784 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 20 mars 2025) — Statut : Pending
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>CN 119997868 A</strong> — Multi-layered covering to hold the device on the body (Publié le 13 mai 2025) — Statut : Pending
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>IL 319426 A</strong> — Multilayer cover for holding a device on a human body (Publié le 1 mai 2025)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>MX 2025003114 A</strong> — Multilayer cover for holding a device on a human body (Publié le 2 avr. 2025)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            <strong>EP 4590176 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 30 juil. 2025) — Statut : Pending
                         </li>
                     </ul>
                 </div>

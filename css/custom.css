@@ -1,0 +1,134 @@
+/* Styles pour le CV */
+
+/* Structure de base */
+.resume-section {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Styles des projets */
+#projects .resume-section-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cartes de projet */
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Projet actuel */
+.project-card.current {
+    border: none;
+    background: #fff;
+    border: 2px solid var(--bs-primary);
+    border-left: 6px solid var(--bs-primary);
+}
+
+.project-card.current::before {
+    content: "Projet Actuel";
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: var(--bs-primary);
+    color: white;
+    padding: 5px 35px;
+    transform: rotate(45deg);
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Titres des projets */
+.project-card h3 {
+    font-size: 1.5rem;
+    color: var(--bs-primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-card .subheading {
+    color: #495057;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Conteneur des badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+/* Badges technologiques */
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Paragraphes des projets */
+.project-card p {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Styles généraux */
+.social-icons .social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-color: var(--bs-primary);
+    transform: translateY(-3px);
+}
+
+/* Section headers */
+.resume-section h2 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: #343a40;
+}
+
+/* Ajustement mobile pour le ruban "Projet Actuel" */
+@media (max-width: 575.98px) {
+    .project-card.current::before {
+        right: -20px;
+        top: 12px;
+        padding: 4px 24px;
+        font-size: 10px;
+    }
+}
