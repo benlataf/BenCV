@@ -77,6 +77,47 @@
     font-weight: 500;
 }
 
+/* Bandeau cliquable (dépliage des détails du projet) */
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.project-card-header:hover h3 {
+    text-decoration: underline;
+}
+
+.project-toggle-icon {
+    color: var(--bs-primary);
+    font-size: 0.95rem;
+    margin-top: 6px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.project-card-header[aria-expanded="true"] .project-toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Liste de détails dépliable */
+.project-details-list {
+    margin: 0 0 15px 0;
+    padding-left: 20px;
+}
+
+.project-details-list li {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.project-details-list li:last-child {
+    margin-bottom: 0;
+}
+
 /* Conteneur des badges */
 .tech-badges {
     display: flex;
