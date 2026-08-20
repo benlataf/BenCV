@@ -84,6 +84,8 @@
     align-items: flex-start;
     gap: 15px;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .project-card-header:hover h3 {
@@ -100,6 +102,11 @@
 
 .project-card-header[aria-expanded="true"] .project-toggle-icon {
     transform: rotate(180deg);
+}
+
+/* Sur la carte "Projet Actuel", décaler le chevron pour qu'il ne soit pas recouvert par le ruban diagonal */
+.project-card.current .project-toggle-icon {
+    margin-right: 60px;
 }
 
 /* Liste de détails dépliable */
@@ -194,10 +201,7 @@
     align-items: center;
     color: var(--bs-primary);
 }
-#skills .subheading::before {
-    content: "\f058";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+#skills .subheading .subheading-icon {
     margin-right: 10px;
     color: var(--bs-primary);
 }
