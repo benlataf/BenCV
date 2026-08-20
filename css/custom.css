@@ -1,4 +1,12 @@
 
+/* Charte graphique : Crimson Violet / Blackberry Cream / Rosy Granite / Pearl Aqua / Celadon */
+:root {
+    --bs-primary: #5C0029;
+    --bs-primary-rgb: 92, 0, 41;
+    --bs-body-bg: #F8F3F5;
+    --bs-body-bg-rgb: 248, 243, 245;
+}
+
 /* Bloc téléchargement CV */
 .cv-download .btn {
     font-weight: 600;
@@ -26,7 +34,7 @@
 /* Cartes de projet */
 .project-card {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #E8DEE2;
     border-radius: 8px;
     padding: 25px 30px;
     margin-bottom: 30px;
@@ -37,15 +45,16 @@
 
 .project-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: #94BFBE;
+    box-shadow: 0 5px 15px rgba(148, 191, 190, 0.35);
 }
 
 /* Projet actuel */
 .project-card.current {
     border: none;
     background: #fff;
-    border: 2px solid var(--bs-primary);
-    border-left: 6px solid var(--bs-primary);
+    border: 2px solid #61304B;
+    border-left: 6px solid #61304B;
 }
 
 .project-card.current::before {
@@ -54,7 +63,7 @@
     top: 15px;
     right: -35px;
     background: var(--bs-primary);
-    color: white;
+    color: #ACF7C1;
     padding: 5px 35px;
     transform: rotate(45deg);
     font-size: 12px;
@@ -71,7 +80,7 @@
 }
 
 .project-card .subheading {
-    color: #495057;
+    color: #857C8D;
     font-size: 1.1rem;
     margin-bottom: 15px;
     font-weight: 500;
@@ -116,7 +125,7 @@
 }
 
 .project-details-list li {
-    color: #495057;
+    color: #857C8D;
     line-height: 1.6;
     margin-bottom: 8px;
 }
@@ -150,12 +159,12 @@
 
 .tech-badge:hover {
     transform: translateY(-2px);
-    opacity: 0.9;
+    background-color: #94BFBE;
 }
 
 /* Paragraphes des projets */
 .project-card p {
-    color: #495057;
+    color: #857C8D;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -170,8 +179,13 @@
 }
 
 .social-icons .social-icon:hover {
-    background-color: var(--bs-primary);
+    background-color: #94BFBE;
     transform: translateY(-3px);
+}
+
+/* Sidebar en dégradé Crimson Violet vers Blackberry Cream */
+#sideNav.bg-primary {
+    background: linear-gradient(180deg, #5C0029 0%, #61304B 100%) !important;
 }
 
 /* Section headers */
@@ -208,6 +222,7 @@
 #skills ul.fa-ul li {
     margin-bottom: 0.4rem;
     line-height: 1.5;
+    color: #857C8D;
 }
 
 /* Bouton de bascule de langue FR/EN */
@@ -234,8 +249,9 @@
 
 .lang-toggle-btn:hover,
 .lang-toggle-btn:focus {
-    background: #fff;
-    color: var(--bs-primary);
+    background: #94BFBE;
+    color: #5C0029;
+    border-color: #94BFBE;
     outline: none;
 }
 
