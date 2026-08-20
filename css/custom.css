@@ -49,7 +49,7 @@
 }
 
 .project-card.current::before {
-    content: "Projet Actuel";
+    content: attr(data-ribbon-text);
     position: absolute;
     top: 15px;
     right: -35px;
@@ -208,4 +208,41 @@
 #skills ul.fa-ul li {
     margin-bottom: 0.4rem;
     line-height: 1.5;
+}
+
+/* Bouton de bascule de langue FR/EN */
+.nav-controls {
+    gap: 0.5rem;
+}
+
+.lang-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 14px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-toggle-btn:hover,
+.lang-toggle-btn:focus {
+    background: #fff;
+    color: var(--bs-primary);
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .nav-controls {
+        width: 100%;
+        justify-content: center;
+        margin: 0.75rem 0;
+    }
 }

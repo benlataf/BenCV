@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Benjamin Menard, PhD — CTO & Cofondateur F2D Medical. Dispositifs médicaux, conformité réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, stratégie & due diligence." />
+        <meta name="description" content="Benjamin Menard, PhD — CTO & Cofondateur F2D Medical. Dispositifs médicaux, conformité réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, stratégie & due diligence." data-i18n-attr="meta_description" />
         <meta name="author" content="Benjamin Menard" />
-        <title>Benjamin Menard, PhD — CTO | F2D Medical</title>
+        <title data-i18n="page_title">Benjamin Menard, PhD — CTO | F2D Medical</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -26,17 +26,20 @@
                 <span class="d-block d-lg-none">Benjamin Menard, PhD</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="d-flex align-items-center gap-2 nav-controls">
+                <button type="button" id="lang-toggle" class="lang-toggle-btn" aria-label="Switch to English / Passer en anglais">EN</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expérience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_about" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_projects" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_experience" href="#experience">Expérience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_education" href="#education">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_skills" href="#skills">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#patents">Brevets</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Formations &amp; Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_patents" href="#patents">Brevets</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_courses" href="#courses">Formations &amp; Certifications</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,13 +52,13 @@
                         Benjamin
                         <span class="text-primary">Menard, PhD</span>
                     </h1>
-                    <div class="subheading mb-3">
+                    <div class="subheading mb-3" data-i18n-html="about_role">
                         CTO &amp; Cofondateur — <strong>F2D Medical</strong>
                     </div>
-                    <div class="subheading mb-4">
+                    <div class="subheading mb-4" data-i18n-html="about_contact">
                         Caen / Colombelles, Normandie · <a href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
                     </div>
-                    <p class="lead mb-4">
+                    <p class="lead mb-4" data-i18n-html="about_lead">
                         Entrepreneur, chercheur et CTO/ingénieur en innovation médicale, je combine plus de 10 ans d’expérience en neurosciences, ingénierie biomédicale et développement de dispositifs médicaux. En tant que CTO et cofondateur de F2D Medical, je pilote la conception, la validation et l’industrialisation de solutions innovantes de classe IIb, de l’idée à la mise sur le marché.  <br>
                         Expertise reconnue en conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 60601-1, évaluation clinique ; j’ai participé aux multiples levées de fonds de F2D Medical et aux due diligences d’investisseurs, tout en définissant les stratégies produit et les roadmaps de développement.  <br>
                         Passionné par la technologie et la santé, je maîtrise les environnements data et IoT, le traitement du signal, ainsi que la visualisation et l’analyse des données pour améliorer la performance des dispositifs.
@@ -81,23 +84,23 @@
             <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Projets</h2>
+                    <h2 class="mb-5" data-i18n="projects_title">Projets</h2>
 
-                    <div class="project-card current">
+                    <div class="project-card current" data-ribbon-text="Projet Actuel" data-i18n-ribbon="project_ribbon">
                         <div class="project-card-header" data-bs-toggle="collapse" data-bs-target="#project-f2d-details" role="button" aria-expanded="false" aria-controls="project-f2d-details">
                             <div>
-                                <h3 class="mb-0">F2D Medical - Dispositif Médical de Classe IIb</h3>
-                                <div class="subheading mb-3">Solution innovante pour le suivi des patients</div>
+                                <h3 class="mb-0" data-i18n="f2d_title">F2D Medical - Dispositif Médical de Classe IIb</h3>
+                                <div class="subheading mb-3" data-i18n="f2d_subtitle">Solution innovante pour le suivi des patients</div>
                             </div>
                             <i class="fas fa-chevron-down project-toggle-icon" aria-hidden="true"></i>
                         </div>
-                        <p>Développement complet d'un dispositif médical connecté de classe IIb, de la conception à la mise sur le marché : Thermodiag, dispositif de suivi de la température corporelle.</p>
+                        <p data-i18n="f2d_desc">Développement complet d'un dispositif médical connecté de classe IIb, de la conception à la mise sur le marché : Thermodiag, dispositif de suivi de la température corporelle.</p>
                         <div class="collapse" id="project-f2d-details">
                             <ul class="project-details-list">
-                                <li><strong>CTO &amp; cofondateur</strong> : pilotage R&amp;D et industrialisation du dispositif Thermodiag, de la conception à la mise sur le marché.</li>
-                                <li><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes &amp; fournisseurs.</li>
-                                <li><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
-                                <li><strong>Data &amp; algorithmes</strong> : traitement du signal et modèles prédictifs (machine learning) à partir des données capteurs Thermodiag.</li>
+                                <li data-i18n-html="f2d_bullet1"><strong>CTO &amp; cofondateur</strong> : pilotage R&amp;D et industrialisation du dispositif Thermodiag, de la conception à la mise sur le marché.</li>
+                                <li data-i18n-html="f2d_bullet2"><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes &amp; fournisseurs.</li>
+                                <li data-i18n-html="f2d_bullet3"><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
+                                <li data-i18n-html="f2d_bullet4"><strong>Data &amp; algorithmes</strong> : traitement du signal et modèles prédictifs (machine learning) à partir des données capteurs Thermodiag.</li>
                             </ul>
                         </div>
                         <div class="tech-badges">
@@ -109,58 +112,58 @@
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mb-0">Systèmes d'analyse de données cliniques</h3>
-                        <div class="subheading mb-3">Plateforme avancée d'analyse et modélisation statistique</div>
-                        <p>Développement d'une suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale. Mise en place de modèles statistiques avancés pour l'interprétation des résultats cliniques.</p>
+                        <h3 class="mb-0" data-i18n="dataplatform_title">Systèmes d'analyse de données cliniques</h3>
+                        <div class="subheading mb-3" data-i18n="dataplatform_subtitle">Plateforme avancée d'analyse et modélisation statistique</div>
+                        <p data-i18n="dataplatform_desc">Développement d'une suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale. Mise en place de modèles statistiques avancés pour l'interprétation des résultats cliniques.</p>
                         <div class="tech-badges">
                             <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge">Statistiques</span>
+                            <span class="tech-badge" data-i18n="badge_statistiques">Statistiques</span>
                             <span class="tech-badge">Python</span>
                             <span class="tech-badge">PostgreSQL</span>
                             <span class="tech-badge">Data Analysis</span>
-                            <span class="tech-badge">Modélisation</span>
+                            <span class="tech-badge" data-i18n="badge_modelisation">Modélisation</span>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mb-0">Détection Thermique des Hémangiomes</h3>
-                        <div class="subheading mb-3">Dispositif expérimental de diagnostic précoce</div>
-                        <p>Développement d'un prototype innovant basé sur le refroidissement contrôlé et l'analyse de la remontée thermique, avec exploitation de datasets et algorithmes de machine learning pour l'aide au pronostic.</p>
+                        <h3 class="mb-0" data-i18n="hemangiome_title">Détection Thermique des Hémangiomes</h3>
+                        <div class="subheading mb-3" data-i18n="hemangiome_subtitle">Dispositif expérimental de diagnostic précoce</div>
+                        <p data-i18n="hemangiome_desc">Développement d'un prototype innovant basé sur le refroidissement contrôlé et l'analyse de la remontée thermique, avec exploitation de datasets et algorithmes de machine learning pour l'aide au pronostic.</p>
                         <div class="tech-badges">
-                            <span class="tech-badge">Innovation</span>
-                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
+                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
                             <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge">Électronique</span>
-                            <span class="tech-badge">Brevet</span>
-                            <span class="tech-badge">Clinique</span>
+                            <span class="tech-badge" data-i18n="badge_electronique">Électronique</span>
+                            <span class="tech-badge" data-i18n="badge_brevet">Brevet</span>
+                            <span class="tech-badge" data-i18n="badge_clinique">Clinique</span>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mb-0">Capteur de Bien-être Animal</h3>
-                        <div class="subheading mb-3">Analyse sonore innovante pour l'élevage porcin</div>
-                        <p>Développement d'un capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning. Innovation majeure : mise en place d'une échelle de notation A–F traduite en label consommateur.</p>
-                        <p><strong>Impact Business & Sociétal :</strong> Valorisation de la filière porcine, réduction des risques de maltraitance, différenciation produit et amélioration de la transparence pour le consommateur.</p>
+                        <h3 class="mb-0" data-i18n="animalwelfare_title">Capteur de Bien-être Animal</h3>
+                        <div class="subheading mb-3" data-i18n="animalwelfare_subtitle">Analyse sonore innovante pour l'élevage porcin</div>
+                        <p data-i18n="animalwelfare_desc">Développement d'un capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning. Innovation majeure : mise en place d'une échelle de notation A–F traduite en label consommateur.</p>
+                        <p data-i18n-html="animalwelfare_impact"><strong>Impact Business & Sociétal :</strong> Valorisation de la filière porcine, réduction des risques de maltraitance, différenciation produit et amélioration de la transparence pour le consommateur.</p>
                         <div class="tech-badges">
-                            <span class="tech-badge">Innovation</span>
-                            <span class="tech-badge">Prototypage</span>
-                            <span class="tech-badge">Analyse du signal</span>
+                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
+                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
+                            <span class="tech-badge" data-i18n="badge_analysesignal">Analyse du signal</span>
                             <span class="tech-badge">Machine Learning</span>
                             <span class="tech-badge">AgriTech</span>
-                            <span class="tech-badge">Bien-être animal</span>
+                            <span class="tech-badge" data-i18n="badge_bienetreanimal">Bien-être animal</span>
                             <span class="tech-badge">Business Impact</span>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mb-0">Capteur de Qualité du Lait</h3>
-                        <div class="subheading mb-3">Analyse en temps réel pour la détection précoce des mammites</div>
-                        <p>Développement d'un capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation de la solution permettant une détection immédiate des anomalies.</p>
-                        <p><strong>Impact Business :</strong> Réduction des traitements antibiotiques, diminution du risque de contamination du tank à lait et amélioration de la rentabilité des exploitations laitières.</p>
+                        <h3 class="mb-0" data-i18n="milk_title">Capteur de Qualité du Lait</h3>
+                        <div class="subheading mb-3" data-i18n="milk_subtitle">Analyse en temps réel pour la détection précoce des mammites</div>
+                        <p data-i18n="milk_desc">Développement d'un capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation de la solution permettant une détection immédiate des anomalies.</p>
+                        <p data-i18n-html="milk_impact"><strong>Impact Business :</strong> Réduction des traitements antibiotiques, diminution du risque de contamination du tank à lait et amélioration de la rentabilité des exploitations laitières.</p>
                         <div class="tech-badges">
-                            <span class="tech-badge">Innovation</span>
-                            <span class="tech-badge">Capteurs</span>
-                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
+                            <span class="tech-badge" data-i18n="badge_capteurs">Capteurs</span>
+                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
                             <span class="tech-badge">IoT</span>
                             <span class="tech-badge">Data Acquisition</span>
                             <span class="tech-badge">AgriTech</span>
@@ -169,17 +172,17 @@
                     </div>
 
                     <div class="project-card">
-                        <h3 class="mb-0">ED-WIRE – Easy Wire Detection</h3>
-                        <div class="subheading mb-3">Solution innovante pour l'identification des câblages électriques</div>
-                        <p>Conception d'un dispositif permettant d'identifier rapidement et de manière fiable les fils électriques lors de rénovations et mises aux normes. Alternative aux méthodes classiques basée sur l'injection CPL avec codes uniques pour chaque module.</p>
-                        <p><strong>Impact Business :</strong> Marché adressable de plusieurs millions de foyers en France. Réduction significative des coûts et du temps de main-d'œuvre (8–10h économisées par chantier).</p>
+                        <h3 class="mb-0" data-i18n="edwire_title">ED-WIRE – Easy Wire Detection</h3>
+                        <div class="subheading mb-3" data-i18n="edwire_subtitle">Solution innovante pour l'identification des câblages électriques</div>
+                        <p data-i18n="edwire_desc">Conception d'un dispositif permettant d'identifier rapidement et de manière fiable les fils électriques lors de rénovations et mises aux normes. Alternative aux méthodes classiques basée sur l'injection CPL avec codes uniques pour chaque module.</p>
+                        <p data-i18n-html="edwire_impact"><strong>Impact Business :</strong> Marché adressable de plusieurs millions de foyers en France. Réduction significative des coûts et du temps de main-d'œuvre (8–10h économisées par chantier).</p>
                         <div class="tech-badges">
-                            <span class="tech-badge">Innovation</span>
-                            <span class="tech-badge">Électronique</span>
-                            <span class="tech-badge">Prototypage</span>
+                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
+                            <span class="tech-badge" data-i18n="badge_electronique">Électronique</span>
+                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
                             <span class="tech-badge">IoT</span>
                             <span class="tech-badge">Diagnostic</span>
-                            <span class="tech-badge">Industrialisation</span>
+                            <span class="tech-badge" data-i18n="badge_industrialisation">Industrialisation</span>
                             <span class="tech-badge">Business Development</span>
                         </div>
                     </div>
@@ -189,61 +192,61 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Expérience</h2>
+                    <h2 class="mb-5" data-i18n="experience_title">Expérience</h2>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Chief Technology Officer (CTO) — Cofondateur</h3>
+                            <h3 class="mb-0" data-i18n="exp1_title">Chief Technology Officer (CTO) — Cofondateur</h3>
                             <div class="subheading mb-2">F2D Medical</div>
-                            <div class="mb-2"><em>Colombelles, Normandie, France</em></div>
+                            <div class="mb-2"><em data-i18n="exp1_location">Colombelles, Normandie, France</em></div>
                             <ul>
-                                <li>Pilotage R&amp;D et industrialisation de dispositifs médicaux (classe IIb) : conception, essais, validation.</li>
-                                <li>Conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 62304, IEC 60601-1.</li>
-                                <li>Gestion du dossier technique &amp; design dossier</li>
-                                <li>Audits internes et fournisseurs ISO 19011.</li>
-                                <li>Essais cliniques : conception, suivi et analyse des données.</li>
-                                <li>Plan et rapport d’évaluation clinique CEP/CER.</li>
-                                <li>Stratégie &amp; finance : participation aux due diligences d’investisseurs, planification budgétaire, priorisation roadmap.</li>
-                                <li>Data/IoT : capteurs, traitement du signal, Python, PostgreSQL, visualisation et dashboards.</li>
+                                <li data-i18n="exp1_bullet1">Pilotage R&amp;D et industrialisation de dispositifs médicaux (classe IIb) : conception, essais, validation.</li>
+                                <li data-i18n="exp1_bullet2">Conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 62304, IEC 60601-1.</li>
+                                <li data-i18n="exp1_bullet3">Gestion du dossier technique &amp; design dossier</li>
+                                <li data-i18n="exp1_bullet4">Audits internes et fournisseurs ISO 19011.</li>
+                                <li data-i18n="exp1_bullet5">Essais cliniques : conception, suivi et analyse des données.</li>
+                                <li data-i18n="exp1_bullet6">Plan et rapport d’évaluation clinique CEP/CER.</li>
+                                <li data-i18n="exp1_bullet7">Stratégie &amp; finance : participation aux due diligences d’investisseurs, planification budgétaire, priorisation roadmap.</li>
+                                <li data-i18n="exp1_bullet8">Data/IoT : capteurs, traitement du signal, Python, PostgreSQL, visualisation et dashboards.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Déc. 2021 – Présent</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp1_dates">Déc. 2021 – Présent</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Postdoctoral Researcher</h3>
                             <div class="subheading mb-2">UMR-S 1075 — COMETE</div>
-                            <div class="mb-2"><em>Caen, Normandie, France</em></div>
+                            <div class="mb-2"><em data-i18n="exp2_location">Caen, Normandie, France</em></div>
                             <ul>
-                                <li>Recherche en ingénierie biomédicale, dispositifs médicaux et organisation d’essais cliniques.</li>
+                                <li data-i18n="exp2_bullet1">Recherche en ingénierie biomédicale, dispositifs médicaux et organisation d’essais cliniques.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Août 2020 – Déc. 2021</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp2_dates">Août 2020 – Déc. 2021</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Scientific Project Manager</h3>
                             <div class="subheading mb-2">THE USE FACTORY — Capital Innovation</div>
-                            <div class="mb-2"><em>Cairon, Basse-Normandie, France</em></div>
+                            <div class="mb-2"><em data-i18n="exp3_location">Cairon, Basse-Normandie, France</em></div>
                             <ul>
-                                <li>Management de projets R&amp;D en medtech ; coordination réglementaire.</li>
+                                <li data-i18n="exp3_bullet1">Management de projets R&amp;D en medtech ; coordination réglementaire.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Fév. 2017 – Déc. 2021</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp3_dates">Fév. 2017 – Déc. 2021</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Consultant externe (IoT / Santé)</h3>
+                            <h3 class="mb-0" data-i18n="exp4_title">Consultant externe (IoT / Santé)</h3>
                             <div class="subheading mb-2">THE USE FACTORY — Capital Innovation</div>
-                            <div class="mb-2"><em>Cairon, Basse-Normandie, France</em></div>
+                            <div class="mb-2"><em data-i18n="exp3_location">Cairon, Basse-Normandie, France</em></div>
                             <ul>
-                                <li>Définition de protocoles expérimentaux, recueil et analyse de données physiologiques.</li>
+                                <li data-i18n="exp4_bullet1">Définition de protocoles expérimentaux, recueil et analyse de données physiologiques.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Fév. 2016 – Déc. 2016</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp4_dates">Fév. 2016 – Déc. 2016</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -252,22 +255,22 @@
                             <div class="subheading mb-2">ISTCT UMR 6301 — CNRS</div>
                             <div class="mb-2"><em>Caen, France</em></div>
                             <ul>
-                                <li>Impact de l’hypertension artérielle sur le couplage neuro-glio-vasculaire (IRM &amp; microscopie biphoton).</li>
+                                <li data-i18n-html="exp5_bullet1">Impact de l’hypertension artérielle sur le couplage neuro-glio-vasculaire (IRM &amp; microscopie biphoton).</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Juil. 2012 – Déc. 2015</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp5_dates">Juil. 2012 – Déc. 2015</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Ingénieur instrumentation expérimentale &amp; biologique</h3>
+                            <h3 class="mb-0" data-i18n="exp6_title">Ingénieur instrumentation expérimentale &amp; biologique</h3>
                             <div class="subheading mb-2">ISTCT UMR 6301 — CNRS</div>
                             <div class="mb-2"><em>Caen, France</em></div>
                             <ul>
-                                <li>Développement de procédures en microscopie biphoton et IRM.</li>
+                                <li data-i18n="exp6_bullet1">Développement de procédures en microscopie biphoton et IRM.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Juil. 2015 – Oct. 2015</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp6_dates">Juil. 2015 – Oct. 2015</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -276,10 +279,10 @@
                             <div class="subheading mb-2">Université de Caen Normandie</div>
                             <div class="mb-2"><em>Caen, France</em></div>
                             <ul>
-                                <li>Recherche sur l’hypertension chronique et le couplage neuro-glio-vasculaire (2PLSM). Enseignements en psychobiologie.</li>
+                                <li data-i18n-html="exp7_bullet1">Recherche sur l’hypertension chronique et le couplage neuro-glio-vasculaire (2PLSM). Enseignements en psychobiologie.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Déc. 2014 – Oct. 2015</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp7_dates">Déc. 2014 – Oct. 2015</span></div>
                     </div>
 
                     <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -288,10 +291,10 @@
                             <div class="subheading mb-2">Université de Caen Normandie</div>
                             <div class="mb-2"><em>France</em></div>
                             <ul>
-                                <li>Activités d’enseignement et de soutien pédagogique.</li>
+                                <li data-i18n="exp8_bullet1">Activités d’enseignement et de soutien pédagogique.</li>
                             </ul>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Déc. 2013 – Déc. 2014</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp8_dates">Déc. 2013 – Déc. 2014</span></div>
                     </div>
                 </div>
             </section>
@@ -299,7 +302,7 @@
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Formation</h2>
+                    <h2 class="mb-5" data-i18n="education_title">Formation</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Université de Caen Normandie</h3>
@@ -320,56 +323,56 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Compétences</h2>
+                    <h2 class="mb-5" data-i18n="skills_title">Compétences</h2>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Réglementaire &amp; Qualité</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill1_title">Réglementaire &amp; Qualité</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>MDR 2017/745 · ISO 13485 · ISO 14971</strong> : construction et pilotage du système de management qualité d'un dispositif médical de bout en bout</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Application des normes IEC 62366-1 · IEC 62304 · IEC 60601-1 aux dispositifs médicaux connectés</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Rédaction et défense de <strong>dossiers techniques</strong> face aux autorités et organismes notifiés</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Audits internes &amp; fournisseurs</strong> (ISO 19011)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet1"><strong>MDR 2017/745 · ISO 13485 · ISO 14971</strong> : construction et pilotage du système de management qualité d'un dispositif médical de bout en bout</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill1_bullet2">Application des normes IEC 62366-1 · IEC 62304 · IEC 60601-1 aux dispositifs médicaux connectés</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet3">Rédaction et défense de <strong>dossiers techniques</strong> face aux autorités et organismes notifiés</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet4"><strong>Audits internes &amp; fournisseurs</strong> (ISO 19011)</span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>IA &amp; Data Science</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill2_title">IA &amp; Data Science</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Modélisation par <strong>machine learning</strong> (XGBoost) pour l'estimation de la température corporelle centrale à partir de capteurs portés : brique validée cliniquement et publiée (PFIA Health &amp; AI, 2025)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Traitement avancé du signal physiologique : filtrage, extraction de features, séries temporelles bruitées et asynchrones</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Pipelines data de bout en bout : acquisition capteurs → traitement → visualisation (Python, PostgreSQL, dashboards temps réel)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Veille scientifique active en IA appliquée à la santé</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill2_bullet1">Modélisation par <strong>machine learning</strong> (XGBoost) pour l'estimation de la température corporelle centrale à partir de capteurs portés : brique validée cliniquement et publiée (PFIA Health &amp; AI, 2025)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet2">Traitement avancé du signal physiologique : filtrage, extraction de features, séries temporelles bruitées et asynchrones</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet3">Pipelines data de bout en bout : acquisition capteurs → traitement → visualisation (Python, PostgreSQL, dashboards temps réel)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet4">Veille scientifique active en IA appliquée à la santé</span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Clinique &amp; MedTech</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill3_title">Clinique &amp; MedTech</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Conception et suivi d'<strong>essais cliniques multicentriques</strong> en medtech</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Développement et validation de <strong>DM de classe IIb</strong> (R&amp;D → industrialisation)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Expertise en <strong>capteurs connectés &amp; IoT biomédical</strong></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet1">Conception et suivi d'<strong>essais cliniques multicentriques</strong> en medtech</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet2">Développement et validation de <strong>DM de classe IIb</strong> (R&amp;D → industrialisation)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet3">Expertise en <strong>capteurs connectés &amp; IoT biomédical</strong></span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Finance &amp; Stratégie</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill4_title">Finance &amp; Stratégie</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Contribution active aux <strong>due diligences investisseurs</strong> (levées de fonds à plusieurs millions d’euros)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Élaboration et suivi de <strong>budgets stratégiques</strong> et roadmaps produits</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Définition de stratégies <strong>go‑to‑market</strong> et industrialisation fournisseurs</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Pilotage <strong>OKR</strong> et priorisation produit alignée sur objectifs business</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet1">Contribution active aux <strong>due diligences investisseurs</strong> (levées de fonds à plusieurs millions d’euros)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet2">Élaboration et suivi de <strong>budgets stratégiques</strong> et roadmaps produits</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet3">Définition de stratégies <strong>go‑to‑market</strong> et industrialisation fournisseurs</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet4">Pilotage <strong>OKR</strong> et priorisation produit alignée sur objectifs business</span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Leadership &amp; Management</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill5_title">Leadership &amp; Management</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Recrutement, structuration et encadrement des équipes <strong>technique/R&amp;D et QARA</strong></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Coordination transverse entre réglementaire, R&amp;D, clinique et production</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill5_bullet1">Recrutement, structuration et encadrement des équipes <strong>technique/R&amp;D et QARA</strong></span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill5_bullet2">Coordination transverse entre réglementaire, R&amp;D, clinique et production</span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Prototypage &amp; Fabrication</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill6_title">Prototypage &amp; Fabrication</span></div>
                     <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Conception de modèles 3D &amp; prototypage rapide (Fusion 360, impression 3D)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Développement de procédé de fabrication (outillage, industrialisation produit)</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill6_bullet1">Conception de modèles 3D &amp; prototypage rapide (Fusion 360, impression 3D)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill6_bullet2">Développement de procédé de fabrication (outillage, industrialisation produit)</span></li>
                     </ul>
 
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i>Scientifique</div>
+                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill7_title">Scientifique</span></div>
                     <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>10+ ans</strong> de recherche en neurosciences &amp; physiologie expérimentale ; rigueur méthodologique appliquée aux essais cliniques actuels</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Expertise en <strong>IRM fonctionnelle</strong>, microscopie confocale &amp; biphoton (recherche doctorale)</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Publications internationales &amp; communications en congrès</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill7_bullet1"><strong>10+ ans</strong> de recherche en neurosciences &amp; physiologie expérimentale ; rigueur méthodologique appliquée aux essais cliniques actuels</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill7_bullet2">Expertise en <strong>IRM fonctionnelle</strong>, microscopie confocale &amp; biphoton (recherche doctorale)</span></li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill7_bullet3">Publications internationales &amp; communications en congrès</span></li>
                     </ul>
                 </div>
             </section>
@@ -394,49 +397,49 @@
             <!-- Patents-->
             <section class="resume-section" id="patents">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Brevets</h2>
+                    <h2 class="mb-5" data-i18n="patents_title">Brevets</h2>
                     <ul class="fa-ul mb-0">
-                        <li>
+                        <li data-i18n-html="patent1">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>FR 3097115 B1</strong> — Dispositif de mesure de températures et système pour déterminer une température interne profonde d’un être humain (Délivré le 16 juil. 2021) — Statut : Actif
                         </li>
-                        <li>
+                        <li data-i18n-html="patent2">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>WO 2020/249665 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 déc. 2020)
                         </li>
-                        <li>
+                        <li data-i18n-html="patent3">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>EP 3780912 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 fév. 2021) — Statut : Pending
                         </li>
-                        <li>
+                        <li data-i18n-html="patent4">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>US 2022/0160240 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 26 mai 2022) — Statut : Pending
                         </li>
-                        <li>
+                        <li data-i18n-html="patent5">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>FR 3139712 A1</strong> — Multi-layer cover for holding a device on a human body (Publié le 22 mars 2024)
                         </li>
-                        <li>
+                        <li data-i18n-html="patent6">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>WO 2024/061524 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 28 mars 2024)
                         </li>
-                        <li>
+                        <li data-i18n-html="patent7">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>AU 2023345784 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 20 mars 2025) — Statut : Pending
                         </li>
-                        <li>
+                        <li data-i18n-html="patent8">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>CN 119997868 A</strong> — Multi-layered covering to hold the device on the body (Publié le 13 mai 2025) — Statut : Pending
                         </li>
-                        <li>
+                        <li data-i18n-html="patent9">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>IL 319426 A</strong> — Multilayer cover for holding a device on a human body (Publié le 1 mai 2025)
                         </li>
-                        <li>
+                        <li data-i18n-html="patent10">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>MX 2025003114 A</strong> — Multilayer cover for holding a device on a human body (Publié le 2 avr. 2025)
                         </li>
-                        <li>
+                        <li data-i18n-html="patent11">
                             <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
                             <strong>EP 4590176 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 30 juil. 2025) — Statut : Pending
                         </li>
@@ -447,16 +450,16 @@
             <!-- Courses-->
             <section class="resume-section" id="courses">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Formations &amp; Certifications</h2>
+                    <h2 class="mb-5" data-i18n="courses_title">Formations &amp; Certifications</h2>
                     <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>Audit interne &amp; fournisseurs — ISO 19011 / ISO 13485 — MD101</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>Créer &amp; maintenir des dossiers techniques conformes à la MDR 2017/745 — BSI Group</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>ISO 13485 : Conception et mise en application d'un QMS — Abylsen</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>ISO 14971 : Product Risk Management</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>IEC 62366-1 : Application of usability engineering to medical devices — Aguila</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>IEC 62304 : Appliquer les exigences de la norme IEC 62304 : 2006 + Amd1 au cycle de vie des logiciels — MD101</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>Obligations relatives aux DM (UDI) — GS1 France</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>Animal testing applied to biomedical research — Niveau 1 &amp; 2 — CNRS</li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course1">Audit interne &amp; fournisseurs — ISO 19011 / ISO 13485 — MD101</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course2">Créer &amp; maintenir des dossiers techniques conformes à la MDR 2017/745 — BSI Group</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course3">ISO 13485 : Conception et mise en application d'un QMS — Abylsen</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span>ISO 14971: Product Risk Management</li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course5">IEC 62366-1 : Application of usability engineering to medical devices — Aguila</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course6">IEC 62304 : Appliquer les exigences de la norme IEC 62304 : 2006 + Amd1 au cycle de vie des logiciels — MD101</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course7">Obligations relatives aux DM (UDI) — GS1 France</span></li>
+                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course8">Animal testing applied to biomedical research — Niveau 1 &amp; 2 — CNRS</span></li>
                     </ul>
                 </div>
             </section>
@@ -466,5 +469,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Language toggle (FR/EN) -->
+        <script src="js/i18n.js"></script>
     </body>
 </html>
