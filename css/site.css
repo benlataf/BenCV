@@ -1306,7 +1306,7 @@ strong {
 
 @media (min-width: 520px) {
     .filings li {
-        grid-template-columns: 11.5em 1fr;
+        grid-template-columns: 7em 1fr;
         gap: 12px;
         padding: 7px 0;
     }
