@@ -98,9 +98,10 @@
                         <div class="manifest">
                             <p data-i18n="m1">Docteur en neurosciences.</p>
                             <p data-i18n="m2">Plus de dix ans de recherche, du cortex au capteur.</p>
-                            <p data-i18n="m3">Un dispositif médical de classe IIb, de l'idée au marché.</p>
-                            <p data-i18n="m4">Deux familles de brevets, onze titres publiés.</p>
-                            <p data-i18n="m5">Un modèle d'estimation de la température centrale présenté à PFIA 2025.</p>
+                            <p data-i18n="m3">Un dispositif médical de classe IIb, marqué CE et autorisé par la SFDA en Arabie saoudite.</p>
+                            <p data-i18n="m4">Un modèle validé d'estimation de la température centrale.</p>
+                            <p data-i18n="m5">Plus de 35 000 heures d'acquisition sur patients, plus de 140 millions de mesures.</p>
+                            <p data-i18n="m6">Deux familles de brevets, onze titres publiés.</p>
                         </div>
                         <svg class="ecg" viewBox="0 -40 420 56" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 0 8 0 12 -4 16 0 22 0 24 3 27 -34 30 10 33 0 42 0 48 -7 56 0 70 0 70 0 78 0 82 -4 86 0 92 0 94 3 97 -34 100 10 103 0 112 0 118 -7 126 0 140 0 140 0 148 0 152 -4 156 0 162 0 164 3 167 -34 170 10 173 0 182 0 188 -7 196 0 210 0 210 0 218 0 222 -4 226 0 232 0 234 3 237 -34 240 10 243 0 252 0 258 -7 266 0 280 0 280 0 288 0 292 -4 296 0 302 0 304 3 307 -34 310 10 313 0 322 0 328 -7 336 0 350 0 350 0 358 0 362 -4 366 0 372 0 374 3 377 -34 380 10 383 0 392 0 398 -7 406 0 420 0" pathLength="1"/></svg>
                     </div>
@@ -158,35 +159,59 @@
 
                     <article class="feature">
                         <div class="feature-art" aria-hidden="true">
-                            <svg viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <g opacity="0.5">
-                                    <path d="M40 40H460M40 90H460M40 140H460M40 190H460" stroke-dasharray="2 6" />
+                            <svg class="thermo" viewBox="0 0 480 390" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <defs>
+                                    <clipPath id="above-38"><rect x="0" y="0" width="480" height="90" /></clipPath>
+                                </defs>
+                                <g opacity="0.45">
+                                    <path d="M40 40H460M40 140H460M40 190H460" stroke-dasharray="2 6" />
                                 </g>
-                                <g fill="currentColor" stroke="none" font-family="IBM Plex Mono, monospace" font-size="12">
+                                <path class="threshold" d="M40 90H460" stroke-dasharray="6 5" />
+                                <g class="axis" fill="currentColor" stroke="none" font-family="IBM Plex Mono, monospace" font-size="12">
                                     <text x="8" y="44">39</text>
-                                    <text x="8" y="94">38</text>
+                                    <text class="axis-38" x="8" y="94">38</text>
                                     <text x="8" y="144">37</text>
                                     <text x="8" y="194">36</text>
+                                    <text x="8" y="20">°C</text>
                                 </g>
-                                <path d="M40 150C80 150 96 146 120 138S160 96 196 70S250 52 276 64S320 110 352 128S420 146 460 144" stroke="#d9b45a" stroke-width="2.5" />
-                                <path d="M40 158C80 158 96 154 120 147S160 108 196 84S250 66 276 76S320 120 352 136S420 154 460 152" stroke="#d9b45a" stroke-opacity="0.35" />
-                                <circle cx="276" cy="64" r="5" fill="#d9b45a" stroke="none" />
-                                <path d="M276 76V250" stroke-dasharray="3 5" opacity="0.6" />
-                                <rect x="120" y="256" width="320" height="40" rx="20" />
-                                <rect x="236" y="246" width="80" height="60" rx="14" fill="#13261c" />
-                                <circle cx="276" cy="276" r="9" stroke="#d9b45a" />
-                                <path d="M150 276H210M342 276H410" stroke-dasharray="2 6" />
+                                <text class="fever-tag" x="460" y="78" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="13" stroke="none" data-fr="hyperthermie" data-en="hyperthermia">hyperthermie</text>
+                                <path class="curve" d="M40 150C80 150 96 146 120 138S160 96 196 70S250 52 276 64S320 110 352 128S420 146 460 144" stroke-width="2.5" />
+                                <path class="curve-hot" d="M40 150C80 150 96 146 120 138S160 96 196 70S250 52 276 64S320 110 352 128S420 146 460 144" stroke-width="3" clip-path="url(#above-38)" />
+                                <path class="probe-trace" d="M460 152V212H350V222" stroke-dasharray="3 5" />
+                                <g class="probe" transform="translate(460 144)">
+                                    <circle class="probe-ring" r="11" />
+                                    <circle class="probe-dot" r="5" stroke="none" />
+                                    <text class="probe-label" x="0" y="-18" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" stroke="none">36.9 °C</text>
+                                </g>
+                                <g class="armband">
+                                    <rect x="16" y="278" width="448" height="44" rx="22" />
+                                    <rect x="22" y="284" width="436" height="32" rx="16" opacity="0.45" />
+                                    <path d="M30 300H286M414 300H452M262 284V316M436 284V316" opacity="0.35" />
+                                    <g class="holes">
+                                        <ellipse cx="46" cy="300" rx="7" ry="9" /><ellipse cx="66" cy="300" rx="7" ry="9" /><ellipse cx="86" cy="300" rx="7" ry="9" /><ellipse cx="106" cy="300" rx="7" ry="9" /><ellipse cx="126" cy="300" rx="7" ry="9" /><ellipse cx="146" cy="300" rx="7" ry="9" /><ellipse cx="166" cy="300" rx="7" ry="9" />
+                                    </g>
+                                    <rect class="pod" x="300" y="222" width="100" height="156" rx="50" />
+                                    <rect x="308" y="230" width="84" height="140" rx="42" opacity="0.45" />
+                                    <circle class="pod-glow" cx="350" cy="300" r="40" stroke="none" />
+                                    <rect x="342" y="240" width="16" height="32" rx="8" />
+                                    <circle class="led" cx="350" cy="249" r="4.5" />
+                                    <circle class="led" cx="350" cy="263" r="4.5" />
+                                    <path d="M350 274V276M350 326V352" opacity="0.45" />
+                                    <circle class="button-ring" cx="350" cy="300" r="25" />
+                                    <circle cx="350" cy="300" r="19" opacity="0.6" />
+                                    <rect class="button" x="341" y="289" width="18" height="22" rx="3.5" />
+                                </g>
                             </svg>
                         </div>
                         <div>
                             <p class="feature-status" data-i18n="f2d_status">Projet actuel, depuis 2021</p>
                             <h3>Thermodiag</h3>
-                            <p class="feature-sub" data-i18n="f2d_subtitle">Dispositif médical connecté de classe IIb pour le suivi de la température corporelle, développé chez F2D Medical.</p>
+                            <p class="feature-sub" data-i18n="f2d_subtitle">Dispositif médical connecté de classe IIb pour le suivi de la température corporelle, développé chez F2D Medical, marqué CE et autorisé par la SFDA.</p>
                             <ul class="feature-list">
                                 <li data-i18n-html="f2d_b1"><strong>CTO et cofondateur</strong> : pilotage de la R&amp;D et de l'industrialisation, de la conception à la mise sur le marché.</li>
                                 <li data-i18n-html="f2d_b2"><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes et fournisseurs.</li>
                                 <li data-i18n-html="f2d_b3"><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
-                                <li data-i18n-html="f2d_b4"><strong>Data et algorithmes</strong> : traitement du signal et modèles de machine learning à partir des données capteurs, présentés à PFIA Health &amp; AI 2025.</li>
+                                <li data-i18n-html="f2d_b4"><strong>Data et algorithmes</strong> : modèle validé d'estimation de la température centrale, plus de 35 000 heures d'acquisition sur patients, présenté à PFIA Health &amp; AI 2025.</li>
                             </ul>
                             <p class="tags"><span>MDR 2017/745</span><span>ISO 13485</span><span>ISO 14971</span><span>IoT</span><span>Machine learning</span></p>
                         </div>

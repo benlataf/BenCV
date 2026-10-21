@@ -32,6 +32,7 @@
     --gold-bright: #f1d58f;
     --rule: rgba(236, 231, 216, 0.13);
     --rule-strong: rgba(236, 231, 216, 0.24);
+    --alert: #ef6c4d;
 
     --font: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
     --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -800,6 +801,126 @@ strong {
 .feature-art svg {
     width: 100%;
     height: auto;
+}
+
+.thermo .curve {
+    stroke: var(--gold);
+}
+
+.thermo .curve-hot {
+    stroke: var(--alert);
+}
+
+.thermo .threshold {
+    stroke: var(--alert);
+    opacity: 0.35;
+    transition: opacity 0.4s;
+}
+
+.thermo .axis-38 {
+    fill: var(--alert);
+}
+
+.thermo .fever-tag {
+    fill: var(--alert);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.4s, transform 0.5s var(--ease-out);
+}
+
+.thermo .probe-trace {
+    color: var(--ink-3);
+}
+
+.thermo .probe-dot {
+    fill: var(--gold);
+    transition: fill 0.3s;
+}
+
+.thermo .probe-ring {
+    stroke: var(--gold);
+    opacity: 0.5;
+    transition: stroke 0.3s;
+}
+
+.thermo .probe-label {
+    fill: var(--ink);
+    font-variant-numeric: tabular-nums;
+}
+
+.thermo .armband {
+    color: var(--ink-2);
+}
+
+.thermo .pod {
+    fill: var(--bg-raised);
+}
+
+.thermo .pod-glow {
+    fill: var(--alert);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.thermo .led {
+    fill: none;
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+.thermo .button-ring,
+.thermo .button {
+    stroke: var(--gold);
+    transition: stroke 0.3s;
+}
+
+.feature.is-fever .thermo .threshold {
+    opacity: 0.9;
+}
+
+.feature.is-fever .thermo .fever-tag {
+    opacity: 1;
+    transform: none;
+}
+
+.feature.is-fever .thermo .probe-dot {
+    fill: var(--alert);
+}
+
+.feature.is-fever .thermo .probe-ring {
+    stroke: var(--alert);
+    opacity: 1;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: probe-pulse 1s var(--ease-out) infinite;
+}
+
+.feature.is-fever .thermo .pod-glow {
+    opacity: 0.28;
+}
+
+.feature.is-fever .thermo .led {
+    fill: var(--alert);
+    stroke: var(--alert);
+}
+
+.feature.is-fever .thermo .button-ring,
+.feature.is-fever .thermo .button {
+    stroke: var(--alert);
+}
+
+@keyframes probe-pulse {
+    from {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.feature-art {
+    cursor: crosshair;
 }
 
 .feature-status {

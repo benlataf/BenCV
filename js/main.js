@@ -118,6 +118,46 @@
     }
     if (reduceMotion) setHeroRunning(false);
 
+    /* ---------- Courbe Thermodiag : sonde au survol, état hyperthermie au-delà de 38 °C ---------- */
+
+    var feature = document.querySelector(".feature");
+    var thermo = feature && feature.querySelector(".thermo");
+    var thermoSetProgress = null;
+
+    if (thermo) {
+        var curve = thermo.querySelector(".curve");
+        var curveHot = thermo.querySelector(".curve-hot");
+        var probe = thermo.querySelector(".probe");
+        var probeLabel = thermo.querySelector(".probe-label");
+        var probeTrace = thermo.querySelector(".probe-trace");
+        var feverTag = thermo.querySelector(".fever-tag");
+        var curveLen = curve.getTotalLength();
+        [curve, curveHot].forEach(function (c) { c.style.strokeDasharray = curveLen; });
+
+        // Axe : 37 °C à y = 140, 50 unités par degré (décoratif, sans valeur clinique).
+        thermoSetProgress = function (p) {
+            var len = curveLen * p;
+            curve.style.strokeDashoffset = curveLen - len;
+            curveHot.style.strokeDashoffset = curveLen - len;
+            var pt = curve.getPointAtLength(Math.max(len, 0.01));
+            probe.setAttribute("transform", "translate(" + pt.x.toFixed(1) + " " + pt.y.toFixed(1) + ")");
+            probeTrace.setAttribute("d", "M" + pt.x.toFixed(1) + " " + (pt.y + 8).toFixed(1) + "V212H350V222");
+            var t = 37 + (140 - pt.y) / 50;
+            probeLabel.textContent = t.toFixed(1) + " °C";
+            var nearEdge = pt.x > 410;
+            probeLabel.setAttribute("text-anchor", nearEdge ? "end" : "middle");
+            probeLabel.setAttribute("x", nearEdge ? "-16" : "0");
+            probeLabel.setAttribute("y", nearEdge ? "-12" : "-18");
+            feature.classList.toggle("is-fever", t > 38);
+        };
+        thermoSetProgress(1);
+
+        document.addEventListener("langchange", function (e) {
+            feverTag.textContent = feverTag.dataset[e.detail.lang] || feverTag.textContent;
+        });
+        if (document.documentElement.lang === "en") feverTag.textContent = feverTag.dataset.en;
+    }
+
     /* ---------- Animations GSAP ---------- */
 
     function initMotion() {
@@ -214,6 +254,27 @@
                 "--p": 1, ease: "none",
                 scrollTrigger: { trigger: ".timeline", start: "top 70%", end: "bottom 70%", scrub: true }
             });
+        }
+
+        // Courbe Thermodiag : la sonde parcourt la courbe au survol (au défilement sur écran tactile).
+        if (thermoSetProgress) {
+            var probeState = { p: 1 };
+            var probeTween = null;
+            var playProbe = function () {
+                if (probeTween && probeTween.isActive()) return;
+                probeState.p = 0;
+                probeTween = gsap.to(probeState, {
+                    p: 1, duration: 3.4, ease: "sine.inOut",
+                    onUpdate: function () { thermoSetProgress(probeState.p); }
+                });
+            };
+            var art = feature.querySelector(".feature-art");
+            if (window.matchMedia("(pointer: fine)").matches) {
+                art.addEventListener("pointerenter", playProbe);
+            } else {
+                ST.create({ trigger: art, start: "top 70%", once: true, onEnter: playProbe });
+                art.addEventListener("click", playProbe);
+            }
         }
 
         // Feuille du contact : légère dérive.
