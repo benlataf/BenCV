@@ -2,474 +2,602 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Benjamin Menard, PhD — CTO & Cofondateur F2D Medical. Dispositifs médicaux, conformité réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, stratégie & due diligence." data-i18n-attr="meta_description" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0e1c15" />
+        <meta name="description" content="Benjamin Menard, PhD en neurosciences, CTO et cofondateur de F2D Medical. Dispositifs médicaux de classe IIb, conformité réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, machine learning et LLM." data-i18n-attr="content:meta_description" />
         <meta name="author" content="Benjamin Menard" />
-        <title data-i18n="page_title">Benjamin Menard, PhD — CTO | F2D Medical</title>
+        <meta property="og:title" content="Benjamin Menard, PhD : CTO, F2D Medical" />
+        <meta property="og:description" content="Du neurone au dispositif médical : conception, validation et industrialisation de technologies de santé." />
+        <meta property="og:image" content="https://b-menard.fr/assets/img/og.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:type" content="profile" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://b-menard.fr/" />
+        <title data-i18n="page_title">Benjamin Menard, PhD : CTO, F2D Medical</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/custom.css?v=20260820" rel="stylesheet" />
-        <script src="https://cdn.counter.dev/script.js" data-id="23539350-91af-4225-8441-333b56062ee8" data-utcoffset="2"></script>
+        <link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
+        <link rel="preload" as="image" href="assets/img/hero-1400.webp" imagesrcset="assets/img/hero-800.webp 800w, assets/img/hero-1400.webp 1400w" imagesizes="(min-width: 700px) 62vw, 96vw" />
+        <link href="css/site.css?v=20261021" rel="stylesheet" />
+        <script src="https://cdn.counter.dev/script.js" data-id="23539350-91af-4225-8441-333b56062ee8" data-utcoffset="2" defer></script>
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Benjamin Menard, PhD</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <div class="d-flex align-items-center gap-2 nav-controls">
-                <button type="button" id="lang-toggle" class="lang-toggle-btn" aria-label="Switch to English / Passer en anglais">EN</button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <body>
+        <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+            <defs>
+                <linearGradient id="leaf-gradient" x1="0" y1="0" x2="0.3" y2="1">
+                    <stop offset="0" stop-color="#437d5a" />
+                    <stop offset="0.55" stop-color="#2d5a40" />
+                    <stop offset="1" stop-color="#1d3d2b" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <header class="site-nav" id="site-nav">
+            <a class="brand" href="#top">b<span>.</span>menard</a>
+            <nav class="nav-links" aria-label="Navigation principale" data-i18n-attr="aria-label:nav_label">
+                <a href="#apropos" data-i18n="nav_about">À propos</a>
+                <a href="#projets" data-i18n="nav_projects">Projets</a>
+                <a href="#competences" data-i18n="nav_skills">Compétences</a>
+                <a href="#parcours" data-i18n="nav_career">Parcours</a>
+                <a href="#publications" data-i18n="nav_pubs">Publications</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="nav-tools">
+                <button type="button" class="lang-toggle" id="lang-toggle" aria-label="EN, switch to English">EN</button>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n="menu">Menu</button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_about" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_projects" href="#projects">Projets</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_experience" href="#experience">Expérience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_education" href="#education">Formation</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_skills" href="#skills">Compétences</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_patents" href="#patents">Brevets</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-i18n="nav_courses" href="#courses">Formations &amp; Certifications</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Benjamin
-                        <span class="text-primary">Menard, PhD</span>
-                    </h1>
-                    <div class="subheading mb-3" data-i18n-html="about_role">
-                        CTO &amp; Cofondateur — <strong>F2D Medical</strong>
-                    </div>
-                    <div class="subheading mb-4" data-i18n-html="about_contact">
-                        Caen / Colombelles, Normandie · <a href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
-                    </div>
-                    <p class="lead mb-4" data-i18n-html="about_lead">
-                        Entrepreneur, chercheur et CTO/ingénieur en innovation médicale, je combine plus de 10 ans d’expérience en neurosciences, ingénierie biomédicale et développement de dispositifs médicaux. En tant que CTO et cofondateur de F2D Medical, je pilote la conception, la validation et l’industrialisation de solutions innovantes de classe IIb, de l’idée à la mise sur le marché.  <br>
-                        Expertise reconnue en conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 60601-1, évaluation clinique ; j’ai participé aux multiples levées de fonds de F2D Medical et aux due diligences d’investisseurs, tout en définissant les stratégies produit et les roadmaps de développement.  <br>
-                        Passionné par la technologie et la santé, je maîtrise les environnements data et IoT, le traitement du signal, ainsi que la visualisation et l’analyse des données pour améliorer la performance des dispositifs.
-                    </p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/bmenardphd/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://www.f2d-medical.com" aria-label="F2D Medical (site)" title="F2D Medical">
-                            <i class="fas fa-building"></i>
-                        </a>
-                        <a class="social-icon" href="mailto:contact@b-menard.fr" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
-                    <!--
-                    <div class="cv-download mt-4" role="complementary" aria-label="Téléchargement CV">
-                        <p class="mb-2">Vous souhaitez télécharger mon CV en PDF&nbsp;?</p>
-                        <a href="assets/pdf/CV_Benjamin_Menard.pdf" class="btn btn-outline-primary" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
-                        </a>
-                    </div>
-                    -->
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="projects_title">Projets</h2>
+        </header>
 
-                    <div class="project-card current" data-ribbon-text="Projet Actuel" data-i18n-ribbon="project_ribbon">
-                        <div class="project-card-header" data-bs-toggle="collapse" data-bs-target="#project-f2d-details" role="button" aria-expanded="false" aria-controls="project-f2d-details">
-                            <div>
-                                <h3 class="mb-0" data-i18n="f2d_title">F2D Medical - Dispositif Médical de Classe IIb</h3>
-                                <div class="subheading mb-3" data-i18n="f2d_subtitle">Solution innovante pour le suivi des patients</div>
-                            </div>
-                            <i class="fas fa-chevron-down project-toggle-icon" aria-hidden="true"></i>
-                        </div>
-                        <p data-i18n="f2d_desc">Développement complet d'un dispositif médical connecté de classe IIb, de la conception à la mise sur le marché : Thermodiag, dispositif de suivi de la température corporelle.</p>
-                        <div class="collapse" id="project-f2d-details">
-                            <ul class="project-details-list">
-                                <li data-i18n-html="f2d_bullet1"><strong>CTO &amp; cofondateur</strong> : pilotage R&amp;D et industrialisation du dispositif Thermodiag, de la conception à la mise sur le marché.</li>
-                                <li data-i18n-html="f2d_bullet2"><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes &amp; fournisseurs.</li>
-                                <li data-i18n-html="f2d_bullet3"><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
-                                <li data-i18n-html="f2d_bullet4"><strong>Data &amp; algorithmes</strong> : traitement du signal et modèles prédictifs (machine learning) à partir des données capteurs Thermodiag.</li>
-                            </ul>
-                        </div>
-                        <div class="tech-badges">
-                            <span class="tech-badge">MDR 2017/745</span>
-                            <span class="tech-badge">ISO 13485</span>
-                            <span class="tech-badge">ISO 14971</span>
-                            <span class="tech-badge">IoT</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="mb-0" data-i18n="dataplatform_title">Systèmes d'analyse de données cliniques</h3>
-                        <div class="subheading mb-3" data-i18n="dataplatform_subtitle">Plateforme avancée d'analyse et modélisation statistique</div>
-                        <p data-i18n="dataplatform_desc">Développement d'une suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale. Mise en place de modèles statistiques avancés pour l'interprétation des résultats cliniques.</p>
-                        <div class="tech-badges">
-                            <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge" data-i18n="badge_statistiques">Statistiques</span>
-                            <span class="tech-badge">Python</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">Data Analysis</span>
-                            <span class="tech-badge" data-i18n="badge_modelisation">Modélisation</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="mb-0" data-i18n="hemangiome_title">Détection Thermique des Hémangiomes</h3>
-                        <div class="subheading mb-3" data-i18n="hemangiome_subtitle">Dispositif expérimental de diagnostic précoce</div>
-                        <p data-i18n="hemangiome_desc">Développement d'un prototype innovant basé sur le refroidissement contrôlé et l'analyse de la remontée thermique, avec exploitation de datasets et algorithmes de machine learning pour l'aide au pronostic.</p>
-                        <div class="tech-badges">
-                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
-                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
-                            <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge" data-i18n="badge_electronique">Électronique</span>
-                            <span class="tech-badge" data-i18n="badge_brevet">Brevet</span>
-                            <span class="tech-badge" data-i18n="badge_clinique">Clinique</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="mb-0" data-i18n="animalwelfare_title">Capteur de Bien-être Animal</h3>
-                        <div class="subheading mb-3" data-i18n="animalwelfare_subtitle">Analyse sonore innovante pour l'élevage porcin</div>
-                        <p data-i18n="animalwelfare_desc">Développement d'un capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning. Innovation majeure : mise en place d'une échelle de notation A–F traduite en label consommateur.</p>
-                        <p data-i18n-html="animalwelfare_impact"><strong>Impact Business & Sociétal :</strong> Valorisation de la filière porcine, réduction des risques de maltraitance, différenciation produit et amélioration de la transparence pour le consommateur.</p>
-                        <div class="tech-badges">
-                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
-                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
-                            <span class="tech-badge" data-i18n="badge_analysesignal">Analyse du signal</span>
-                            <span class="tech-badge">Machine Learning</span>
-                            <span class="tech-badge">AgriTech</span>
-                            <span class="tech-badge" data-i18n="badge_bienetreanimal">Bien-être animal</span>
-                            <span class="tech-badge">Business Impact</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="mb-0" data-i18n="milk_title">Capteur de Qualité du Lait</h3>
-                        <div class="subheading mb-3" data-i18n="milk_subtitle">Analyse en temps réel pour la détection précoce des mammites</div>
-                        <p data-i18n="milk_desc">Développement d'un capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation de la solution permettant une détection immédiate des anomalies.</p>
-                        <p data-i18n-html="milk_impact"><strong>Impact Business :</strong> Réduction des traitements antibiotiques, diminution du risque de contamination du tank à lait et amélioration de la rentabilité des exploitations laitières.</p>
-                        <div class="tech-badges">
-                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
-                            <span class="tech-badge" data-i18n="badge_capteurs">Capteurs</span>
-                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
-                            <span class="tech-badge">IoT</span>
-                            <span class="tech-badge">Data Acquisition</span>
-                            <span class="tech-badge">AgriTech</span>
-                            <span class="tech-badge">Business Impact</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3 class="mb-0" data-i18n="edwire_title">ED-WIRE – Easy Wire Detection</h3>
-                        <div class="subheading mb-3" data-i18n="edwire_subtitle">Solution innovante pour l'identification des câblages électriques</div>
-                        <p data-i18n="edwire_desc">Conception d'un dispositif permettant d'identifier rapidement et de manière fiable les fils électriques lors de rénovations et mises aux normes. Alternative aux méthodes classiques basée sur l'injection CPL avec codes uniques pour chaque module.</p>
-                        <p data-i18n-html="edwire_impact"><strong>Impact Business :</strong> Marché adressable de plusieurs millions de foyers en France. Réduction significative des coûts et du temps de main-d'œuvre (8–10h économisées par chantier).</p>
-                        <div class="tech-badges">
-                            <span class="tech-badge" data-i18n="badge_innovation">Innovation</span>
-                            <span class="tech-badge" data-i18n="badge_electronique">Électronique</span>
-                            <span class="tech-badge" data-i18n="badge_prototypage">Prototypage</span>
-                            <span class="tech-badge">IoT</span>
-                            <span class="tech-badge">Diagnostic</span>
-                            <span class="tech-badge" data-i18n="badge_industrialisation">Industrialisation</span>
-                            <span class="tech-badge">Business Development</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="experience_title">Expérience</h2>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="exp1_title">Chief Technology Officer (CTO) — Cofondateur</h3>
-                            <div class="subheading mb-2">F2D Medical</div>
-                            <div class="mb-2"><em data-i18n="exp1_location">Colombelles, Normandie, France</em></div>
-                            <ul>
-                                <li data-i18n="exp1_bullet1">Pilotage R&amp;D et industrialisation de dispositifs médicaux (classe IIb) : conception, essais, validation.</li>
-                                <li data-i18n="exp1_bullet2">Conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 62304, IEC 60601-1.</li>
-                                <li data-i18n="exp1_bullet3">Gestion du dossier technique &amp; design dossier</li>
-                                <li data-i18n="exp1_bullet4">Audits internes et fournisseurs ISO 19011.</li>
-                                <li data-i18n="exp1_bullet5">Essais cliniques : conception, suivi et analyse des données.</li>
-                                <li data-i18n="exp1_bullet6">Plan et rapport d’évaluation clinique CEP/CER.</li>
-                                <li data-i18n="exp1_bullet7">Stratégie &amp; finance : participation aux due diligences d’investisseurs, planification budgétaire, priorisation roadmap.</li>
-                                <li data-i18n="exp1_bullet8">Data/IoT : capteurs, traitement du signal, Python, PostgreSQL, visualisation et dashboards.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp1_dates">Déc. 2021 – Présent</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Postdoctoral Researcher</h3>
-                            <div class="subheading mb-2">UMR-S 1075 — COMETE</div>
-                            <div class="mb-2"><em data-i18n="exp2_location">Caen, Normandie, France</em></div>
-                            <ul>
-                                <li data-i18n="exp2_bullet1">Recherche en ingénierie biomédicale, dispositifs médicaux et organisation d’essais cliniques.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp2_dates">Août 2020 – Déc. 2021</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Scientific Project Manager</h3>
-                            <div class="subheading mb-2">THE USE FACTORY — Capital Innovation</div>
-                            <div class="mb-2"><em data-i18n="exp3_location">Cairon, Basse-Normandie, France</em></div>
-                            <ul>
-                                <li data-i18n="exp3_bullet1">Management de projets R&amp;D en medtech ; coordination réglementaire.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp3_dates">Fév. 2017 – Déc. 2021</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="exp4_title">Consultant externe (IoT / Santé)</h3>
-                            <div class="subheading mb-2">THE USE FACTORY — Capital Innovation</div>
-                            <div class="mb-2"><em data-i18n="exp3_location">Cairon, Basse-Normandie, France</em></div>
-                            <ul>
-                                <li data-i18n="exp4_bullet1">Définition de protocoles expérimentaux, recueil et analyse de données physiologiques.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp4_dates">Fév. 2016 – Déc. 2016</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">PhD Student</h3>
-                            <div class="subheading mb-2">ISTCT UMR 6301 — CNRS</div>
-                            <div class="mb-2"><em>Caen, France</em></div>
-                            <ul>
-                                <li data-i18n-html="exp5_bullet1">Impact de l’hypertension artérielle sur le couplage neuro-glio-vasculaire (IRM &amp; microscopie biphoton).</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp5_dates">Juil. 2012 – Déc. 2015</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0" data-i18n="exp6_title">Ingénieur instrumentation expérimentale &amp; biologique</h3>
-                            <div class="subheading mb-2">ISTCT UMR 6301 — CNRS</div>
-                            <div class="mb-2"><em>Caen, France</em></div>
-                            <ul>
-                                <li data-i18n="exp6_bullet1">Développement de procédures en microscopie biphoton et IRM.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp6_dates">Juil. 2015 – Oct. 2015</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Temporary Lecturer &amp; Research Assistant (Neurobiology)</h3>
-                            <div class="subheading mb-2">Université de Caen Normandie</div>
-                            <div class="mb-2"><em>Caen, France</em></div>
-                            <ul>
-                                <li data-i18n-html="exp7_bullet1">Recherche sur l’hypertension chronique et le couplage neuro-glio-vasculaire (2PLSM). Enseignements en psychobiologie.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp7_dates">Déc. 2014 – Oct. 2015</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Teaching Fellow</h3>
-                            <div class="subheading mb-2">Université de Caen Normandie</div>
-                            <div class="mb-2"><em>France</em></div>
-                            <ul>
-                                <li data-i18n="exp8_bullet1">Activités d’enseignement et de soutien pédagogique.</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary" data-i18n="exp8_dates">Déc. 2013 – Déc. 2014</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="education_title">Formation</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Université de Caen Normandie</h3>
-                            <div class="subheading mb-2">PhD — Neurobiology &amp; Neurosciences</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2012 – 2015</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Université de Caen Normandie</h3>
-                            <div class="subheading mb-2">Master — Neurobiology &amp; Neurosciences</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2007 – 2012</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="skills_title">Compétences</h2>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill1_title">Réglementaire &amp; Qualité</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet1"><strong>MDR 2017/745 · ISO 13485 · ISO 14971</strong> : construction et pilotage du système de management qualité d'un dispositif médical de bout en bout</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill1_bullet2">Application des normes IEC 62366-1 · IEC 62304 · IEC 60601-1 aux dispositifs médicaux connectés</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet3">Rédaction et défense de <strong>dossiers techniques</strong> face aux autorités et organismes notifiés</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill1_bullet4"><strong>Audits internes &amp; fournisseurs</strong> (ISO 19011)</span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill2_title">IA &amp; Data Science</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill2_bullet1">Modélisation par <strong>machine learning</strong> (XGBoost) pour l'estimation de la température corporelle centrale à partir de capteurs portés : brique validée cliniquement et publiée (PFIA Health &amp; AI, 2025)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet2">Traitement avancé du signal physiologique : filtrage, extraction de features, séries temporelles bruitées et asynchrones</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet3">Pipelines data de bout en bout : acquisition capteurs → traitement → visualisation (Python, PostgreSQL, dashboards temps réel)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill2_bullet4">Veille scientifique active en IA appliquée à la santé</span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill3_title">Clinique &amp; MedTech</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet1">Conception et suivi d'<strong>essais cliniques multicentriques</strong> en medtech</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet2">Développement et validation de <strong>DM de classe IIb</strong> (R&amp;D → industrialisation)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill3_bullet3">Expertise en <strong>capteurs connectés &amp; IoT biomédical</strong></span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill4_title">Finance &amp; Stratégie</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet1">Contribution active aux <strong>due diligences investisseurs</strong> (levées de fonds à plusieurs millions d’euros)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet2">Élaboration et suivi de <strong>budgets stratégiques</strong> et roadmaps produits</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet3">Définition de stratégies <strong>go‑to‑market</strong> et industrialisation fournisseurs</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill4_bullet4">Pilotage <strong>OKR</strong> et priorisation produit alignée sur objectifs business</span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill5_title">Leadership &amp; Management</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill5_bullet1">Recrutement, structuration et encadrement des équipes <strong>technique/R&amp;D et QARA</strong></span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill5_bullet2">Coordination transverse entre réglementaire, R&amp;D, clinique et production</span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill6_title">Prototypage &amp; Fabrication</span></div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill6_bullet1">Conception de modèles 3D &amp; prototypage rapide (Fusion 360, impression 3D)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill6_bullet2">Développement de procédé de fabrication (outillage, industrialisation produit)</span></li>
-                    </ul>
-
-                    <div class="subheading mb-3"><i class="fas fa-check-circle subheading-icon" aria-hidden="true"></i><span data-i18n="skill7_title">Scientifique</span></div>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill7_bullet1"><strong>10+ ans</strong> de recherche en neurosciences &amp; physiologie expérimentale ; rigueur méthodologique appliquée aux essais cliniques actuels</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n-html="skill7_bullet2">Expertise en <strong>IRM fonctionnelle</strong>, microscopie confocale &amp; biphoton (recherche doctorale)</span></li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span><span data-i18n="skill7_bullet3">Publications internationales &amp; communications en congrès</span></li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publications-->
-            <section class="resume-section" id="publications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Encapsulation of fluorescein into nanozeolites L and Y</strong> — Microporous and Mesoporous Materials, 2017.</li>
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Synthesis of fluorescein by ship in a bottle method in different zeolites</strong> — New Journal of Chemistry, 2017.</li>
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Two-kidney one-clip ... cerebral ischemia</strong> — Journal of Cerebral Blood Flow &amp; Metabolism, 2017.</li>
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span><strong>Synthesis and encapsulation of fluorescein in zeolite Y</strong> — Microporous and Mesoporous Materials, 2016.</li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-book"></i></span>
-                            <strong>Thermodiag: Artificial intelligence for non-invasive internal temperature monitoring</strong> — PFIA Health & AI, 10th edition, June 30, 2025, Dijon, France
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Patents-->
-            <section class="resume-section" id="patents">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="patents_title">Brevets</h2>
-                    <ul class="fa-ul mb-0">
-                        <li data-i18n-html="patent1">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>FR 3097115 B1</strong> — Dispositif de mesure de températures et système pour déterminer une température interne profonde d’un être humain (Délivré le 16 juil. 2021) — Statut : Actif
-                        </li>
-                        <li data-i18n-html="patent2">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>WO 2020/249665 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 déc. 2020)
-                        </li>
-                        <li data-i18n-html="patent3">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>EP 3780912 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 17 fév. 2021) — Statut : Pending
-                        </li>
-                        <li data-i18n-html="patent4">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>US 2022/0160240 A1</strong> — Device for measuring temperatures and system for determining a deep internal temperature of a human being (Publié le 26 mai 2022) — Statut : Pending
-                        </li>
-                        <li data-i18n-html="patent5">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>FR 3139712 A1</strong> — Multi-layer cover for holding a device on a human body (Publié le 22 mars 2024)
-                        </li>
-                        <li data-i18n-html="patent6">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>WO 2024/061524 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 28 mars 2024)
-                        </li>
-                        <li data-i18n-html="patent7">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>AU 2023345784 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 20 mars 2025) — Statut : Pending
-                        </li>
-                        <li data-i18n-html="patent8">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>CN 119997868 A</strong> — Multi-layered covering to hold the device on the body (Publié le 13 mai 2025) — Statut : Pending
-                        </li>
-                        <li data-i18n-html="patent9">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>IL 319426 A</strong> — Multilayer cover for holding a device on a human body (Publié le 1 mai 2025)
-                        </li>
-                        <li data-i18n-html="patent10">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>MX 2025003114 A</strong> — Multilayer cover for holding a device on a human body (Publié le 2 avr. 2025)
-                        </li>
-                        <li data-i18n-html="patent11">
-                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
-                            <strong>EP 4590176 A1</strong> — Multilayer cover for holding a device on a human body (Publié le 30 juil. 2025) — Statut : Pending
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Courses-->
-            <section class="resume-section" id="courses">
-                <div class="resume-section-content">
-                    <h2 class="mb-5" data-i18n="courses_title">Formations &amp; Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course1">Audit interne &amp; fournisseurs — ISO 19011 / ISO 13485 — MD101</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course2">Créer &amp; maintenir des dossiers techniques conformes à la MDR 2017/745 — BSI Group</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course3">ISO 13485 : Conception et mise en application d'un QMS — Abylsen</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span>ISO 14971: Product Risk Management</li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course5">IEC 62366-1 : Application of usability engineering to medical devices — Aguila</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course6">IEC 62304 : Appliquer les exigences de la norme IEC 62304 : 2006 + Amd1 au cycle de vie des logiciels — MD101</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course7">Obligations relatives aux DM (UDI) — GS1 France</span></li>
-                        <li><span class="fa-li"><i class="fas fa-award"></i></span><span data-i18n-html="course8">Animal testing applied to biomedical research — Niveau 1 &amp; 2 — CNRS</span></li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="#apropos" data-i18n="nav_about">À propos</a>
+            <a href="#projets" data-i18n="nav_projects">Projets</a>
+            <a href="#competences" data-i18n="nav_skills">Compétences</a>
+            <a href="#parcours" data-i18n="nav_career">Parcours</a>
+            <a href="#publications" data-i18n="nav_pubs">Publications</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Language toggle (FR/EN) -->
-        <script src="js/i18n.js"></script>
+
+        <main id="main">
+            <!-- Héros -->
+            <section class="hero" id="top" aria-labelledby="hero-name">
+                <div class="hero-art" aria-hidden="true">
+                    <svg class="leaf leaf--hero" viewBox="-575 -1020 1147 1670" aria-hidden="true" focusable="false"><defs><clipPath id="clip-hero"><path d="M0 30 10 32 23 43 70 105 93 126 130 143 182 158 219 164 247 166 272 166 306 161 339 153 363 145 395 130 417 115 451 84 470 60 489 34 522 -24 534 -53 543 -82 548 -111 550 -141 544 -272 552 -397 550 -426 544 -455 538 -474 524 -503 499 -541 421 -646 399 -684 345 -786 328 -811 309 -835 277 -865 242 -894 195 -926 137 -960 97 -977 32 -991 5 -1000 -5 -999 -19 -988 -33 -981 -87 -961 -116 -948 -187 -911 -229 -888 -262 -865 -286 -846 -326 -810 -367 -768 -407 -723 -436 -685 -475 -625 -506 -570 -527 -526 -543 -482 -551 -449 -555 -405 -553 -361 -541 -255 -541 -123 -539 -96 -534 -70 -515 -17 -487 35 -453 81 -434 100 -414 117 -385 138 -361 151 -337 162 -312 170 -270 176 -243 175 -214 170 -185 163 -148 150 -92 124 -69 103 -23 42 -10 32Z"/></clipPath></defs><g clip-path="url(#clip-hero)"><path class="leaf-under" d="M0 30 10 32 23 43 70 105 93 126 130 143 182 158 219 164 247 166 272 166 306 161 339 153 363 145 395 130 417 115 451 84 470 60 489 34 522 -24 534 -53 543 -82 548 -111 550 -141 544 -272 552 -397 550 -426 544 -455 538 -474 524 -503 499 -541 421 -646 399 -684 345 -786 328 -811 309 -835 277 -865 242 -894 195 -926 137 -960 97 -977 32 -991 5 -1000 -5 -999 -19 -988 -33 -981 -87 -961 -116 -948 -187 -911 -229 -888 -262 -865 -286 -846 -326 -810 -367 -768 -407 -723 -436 -685 -475 -625 -506 -570 -527 -526 -543 -482 -551 -449 -555 -405 -553 -361 -541 -255 -541 -123 -539 -96 -534 -70 -515 -17 -487 35 -453 81 -434 100 -414 117 -385 138 -361 151 -337 162 -312 170 -270 176 -243 175 -214 170 -185 163 -148 150 -92 124 -69 103 -23 42 -10 32Z"/><path class="pcb" d="M-360 -225 -495 -225M45 -90 45 -225 140 -320 140 -590M-270 -585 -270 -360 -461 -169 -461 11M45 -675 45 -810 140 -905M-90 -450 180 -450 371 -259 371 11M180 -360 180 -630 275 -725M-90 -540 -90 -405 -249 -246 -249 -111 -376 16M-90 -180 45 -180 236 -371 236 -461 45 -652 45 -742M-90 -540 -90 -405 5 -310 185 -310 345 -150 435 -150M270 -135 270 -315 365 -410 500 -410M90 90 90 -135 -101 -326 -101 -506 -165 -570 -390 -570M-135 -180 -135 -90 -262 37M-450 -585 -450 -360M270 -405 270 -495M180 -585 360 -585M45 -180 -90 -180 -249 -339M450 -405 315 -405 124 -214 -146 -214 -305 -55M135 -45 315 -45M405 -315 405 -450 310 -545M-90 -45 -90 -270 69 -429M270 0 270 135M135 -495 135 -720 -56 -911M-315 -225 -90 -225 -26 -289 -26 -469M-225 -45 -225 -225 -161 -289 -26 -289M180 -135 -90 -135 -281 56M360 -630 180 -630 21 -789 -204 -789 -331 -662M-225 -675 -90 -675 -26 -611 154 -611 313 -770M-90 -270 -270 -270 -429 -429"/><path class="pcb-pulse" d="M-360 -225 -495 -225M45 -90 45 -225 140 -320 140 -590M-270 -585 -270 -360 -461 -169 -461 11M45 -675 45 -810 140 -905M-90 -450 180 -450 371 -259 371 11M180 -360 180 -630 275 -725M-90 -540 -90 -405 -249 -246 -249 -111 -376 16M-90 -180 45 -180 236 -371 236 -461 45 -652 45 -742M-90 -540 -90 -405 5 -310 185 -310 345 -150 435 -150M270 -135 270 -315 365 -410 500 -410M90 90 90 -135 -101 -326 -101 -506 -165 -570 -390 -570M-135 -180 -135 -90 -262 37M-450 -585 -450 -360M270 -405 270 -495M180 -585 360 -585M45 -180 -90 -180 -249 -339M450 -405 315 -405 124 -214 -146 -214 -305 -55M135 -45 315 -45M405 -315 405 -450 310 -545M-90 -45 -90 -270 69 -429M270 0 270 135M135 -495 135 -720 -56 -911M-315 -225 -90 -225 -26 -289 -26 -469M-225 -45 -225 -225 -161 -289 -26 -289M180 -135 -90 -135 -281 56M360 -630 180 -630 21 -789 -204 -789 -331 -662M-225 -675 -90 -675 -26 -611 154 -611 313 -770M-90 -270 -270 -270 -429 -429" pathLength="1"/><g class="pcb-vias"><circle cx="-360" cy="-225" r="9"/><circle cx="-495" cy="-225" r="9"/><circle cx="45" cy="-90" r="9"/><circle cx="140" cy="-590" r="9"/><circle cx="-270" cy="-585" r="9"/><circle cx="-461" cy="11" r="9"/><circle cx="45" cy="-675" r="9"/><circle cx="140" cy="-905" r="9"/><circle cx="-90" cy="-450" r="9"/><circle cx="371" cy="11" r="9"/><circle cx="180" cy="-360" r="9"/><circle cx="275" cy="-725" r="9"/><circle cx="-90" cy="-540" r="9"/><circle cx="-376" cy="16" r="9"/><circle cx="-90" cy="-180" r="9"/><circle cx="45" cy="-742" r="9"/><circle cx="-90" cy="-540" r="9"/><circle cx="435" cy="-150" r="9"/><circle cx="270" cy="-135" r="9"/><circle cx="500" cy="-410" r="9"/><circle cx="90" cy="90" r="9"/><circle cx="-390" cy="-570" r="9"/><circle cx="-135" cy="-180" r="9"/><circle cx="-262" cy="37" r="9"/><circle cx="-450" cy="-585" r="9"/><circle cx="-450" cy="-360" r="9"/><circle cx="270" cy="-405" r="9"/><circle cx="270" cy="-495" r="9"/><circle cx="180" cy="-585" r="9"/><circle cx="360" cy="-585" r="9"/><circle cx="45" cy="-180" r="9"/><circle cx="-249" cy="-339" r="9"/><circle cx="450" cy="-405" r="9"/><circle cx="-305" cy="-55" r="9"/><circle cx="135" cy="-45" r="9"/><circle cx="315" cy="-45" r="9"/><circle cx="405" cy="-315" r="9"/><circle cx="310" cy="-545" r="9"/><circle cx="-90" cy="-45" r="9"/><circle cx="69" cy="-429" r="9"/><circle cx="270" cy="0" r="9"/><circle cx="270" cy="135" r="9"/><circle cx="135" cy="-495" r="9"/><circle cx="-56" cy="-911" r="9"/><circle cx="-315" cy="-225" r="9"/><circle cx="-26" cy="-469" r="9"/><circle cx="-225" cy="-45" r="9"/><circle cx="-26" cy="-289" r="9"/><circle cx="180" cy="-135" r="9"/><circle cx="-281" cy="56" r="9"/><circle cx="360" cy="-630" r="9"/><circle cx="-331" cy="-662" r="9"/><circle cx="-225" cy="-675" r="9"/><circle cx="313" cy="-770" r="9"/><circle cx="-90" cy="-270" r="9"/><circle cx="-429" cy="-429" r="9"/></g><g class="pcb-pads"><rect x="-136" y="51" width="28" height="14" rx="2"/><rect x="-314" y="-127" width="14" height="28" rx="2"/><rect x="-185" y="-707" width="14" height="28" rx="2"/><rect x="188" y="-376" width="14" height="28" rx="2"/><rect x="63" y="-170" width="28" height="14" rx="2"/></g></g><path class="leaf-petiole" d="M0 20 -1 36 -2 57 -3 82 -4 110 -6 140 -7 172 -10 204 -12 237 -16 269 -20 300 -25 332 -32 367 -40 403 -48 440 -56 477 -65 513 -73 546 -80 576 -86 601 -90 620"/><path class="leaf-body" d="M5 31 14 35 23 43 70 105 93 126 138 146 192 160 247 166 289 164 339 153 384 136 100 -17 98 -20 100 -24 103 -24 427 107 451 84 470 60 489 34 511 -2 239 -99 237 -105 241 -107 529 -40 543 -82 548 -111 550 -161 546 -225 174 -266 172 -267 171 -271 175 -274 544 -274 552 -397 547 -441 251 -417 248 -418 247 -422 250 -425 533 -485 505 -532 444 -613 173 -546 169 -547 168 -550 170 -554 411 -662 357 -765 162 -683 158 -683 156 -687 158 -690 326 -814 302 -843 262 -878 102 -775 98 -775 96 -778 97 -781 230 -902 157 -949 54 -863 50 -862 47 -865 48 -868 113 -971 79 -982 32 -991 5 -1000 -5 -999 -19 -988 -33 -981 -98 -956 -57 -877 -60 -871 -63 -872 -152 -930 -204 -902 -40 -739 -39 -736 -40 -733 -44 -733 -253 -872 -286 -846 -324 -812 -148 -688 -147 -685 -148 -682 -152 -681 -357 -780 -407 -723 -453 -660 -94 -525 -92 -522 -93 -519 -97 -518 -477 -622 -500 -581 -522 -537 -540 -493 -550 -456 -264 -413 -261 -411 -261 -408 -264 -405 -555 -415 -555 -405 -553 -361 -543 -275 -226 -270 -222 -266 -225 -262 -540 -220 -541 -123 -539 -96 -534 -72 -194 -134 -189 -131 -192 -126 -522 -35 -506 0 -487 35 -465 66 -437 97 -111 -22 -106 -29 -95 -38 -61 -57 -35 -64 -25 -64 -18 -61 -17 -57 -21 -49 -32 -39 -48 -29 -85 -15 -99 -13 -107 -14 -383 139 -345 158 -303 172 -270 176 -233 174 -204 168 -166 157 -122 139 -92 124 -69 103 -23 42 -10 32ZM-46 -855 -45 -857 -42 -858 -33 -854 -27 -845 -27 -838 -31 -837 -38 -841 -44 -847ZM-40 -730 -39 -734 -35 -735 -20 -728 -7 -715 -4 -709 -4 -705 -11 -704 -23 -711 -34 -721ZM-92 -644 -92 -650 -85 -654 -75 -654 -60 -649 -48 -642 -37 -631 -31 -621 -32 -615 -37 -611 -43 -610 -63 -616 -83 -629ZM-83 -512 -85 -518 -78 -522 -66 -522 -47 -519 -30 -513 -12 -504 -1 -496 1 -490 -4 -487 -11 -486 -38 -489 -66 -500ZM-194 -392 -205 -400 -205 -405 -198 -411 -184 -414 -159 -415 -138 -413 -114 -408 -100 -402 -95 -397 -94 -393 -97 -389 -108 -384 -141 -382 -178 -387ZM-139 -264 -143 -273 -139 -280 -125 -288 -110 -292 -93 -293 -74 -290 -62 -283 -58 -276 -59 -270 -67 -263 -79 -257 -91 -255 -120 -255 -133 -259ZM-153 -131 -158 -138 -155 -148 -145 -156 -127 -164 -106 -168 -90 -168 -78 -165 -71 -157 -73 -149 -78 -143 -90 -136 -102 -131 -131 -126 -145 -128ZM67 -758 71 -756 71 -750 61 -735 43 -724 34 -723 30 -725 31 -734 40 -746 54 -755ZM102 -659 108 -656 106 -649 95 -639 83 -630 51 -614 40 -612 33 -615 33 -620 38 -626 57 -642 82 -655ZM111 -540 126 -537 129 -533 125 -526 115 -517 95 -507 76 -500 54 -496 40 -496 32 -501 33 -506 40 -515 66 -529 98 -539ZM168 -417 174 -412 174 -408 168 -399 153 -391 125 -383 100 -379 72 -379 52 -384 46 -391 48 -398 59 -406 72 -412 95 -419 138 -423 153 -421ZM133 -279 136 -270 131 -263 117 -257 102 -255 82 -257 67 -261 57 -267 53 -276 55 -282 63 -288 76 -292 87 -293 115 -290 127 -284ZM149 -136 152 -131 151 -128 143 -124 123 -124 102 -128 79 -135 55 -145 40 -156 37 -162 43 -167 53 -168 88 -163 125 -151 141 -142ZM88 -38 95 -27 93 -22 85 -19 71 -20 49 -27 30 -36 10 -49 -1 -61 -2 -69 2 -72 13 -73 44 -65 75 -49Z" fill-rule="evenodd"/><path class="leaf-veins" d="M0 -15 13 -10 31 -4 53 3 77 11 101 21 126 30 150 41 172 51 193 63 215 77 237 93 259 108 279 124 297 137 312 149 324 157M0 -121 19 -115 44 -108 74 -100 107 -90 142 -80 177 -69 211 -58 242 -46 272 -33 304 -17 336 -1 368 16 397 32 424 47 447 60 464 69M0 -226 22 -224 52 -222 87 -219 126 -215 167 -211 208 -207 248 -202 285 -196 320 -188 358 -179 397 -169 435 -159 470 -148 502 -139 529 -131 549 -125M0 -332 22 -335 52 -340 87 -346 126 -352 167 -358 209 -364 249 -369 285 -372 321 -374 359 -375 398 -375 436 -375 472 -374 504 -373 531 -373 551 -373M0 -438 20 -443 47 -452 79 -462 114 -472 151 -484 189 -494 225 -504 258 -512 290 -518 324 -524 359 -529 393 -533 425 -537 453 -541 477 -543 495 -546M0 -543 15 -552 36 -564 61 -578 88 -594 117 -611 146 -627 173 -642 198 -655 223 -666 249 -677 275 -687 300 -697 324 -706 345 -714 363 -721 377 -726M0 -649 12 -658 29 -671 49 -686 71 -703 94 -720 118 -737 140 -753 160 -767 179 -779 200 -791 220 -802 240 -813 258 -823 275 -832 289 -839 300 -845M0 -754 8 -763 20 -774 33 -788 48 -803 63 -819 79 -834 93 -849 106 -861 118 -871 131 -882 144 -891 156 -901 167 -909 177 -916 186 -922 192 -927M0 -860 4 -867 10 -875 16 -886 24 -898 31 -910 39 -921 46 -932 51 -941 56 -948 61 -955 66 -961 70 -966 74 -971 78 -975 80 -979 83 -981M0 -15 -13 -10 -31 -3 -52 5 -75 14 -99 24 -124 34 -147 45 -168 57 -189 70 -210 84 -232 101 -253 117 -273 133 -290 147 -305 160 -316 168M0 -121 -19 -116 -45 -110 -76 -104 -111 -96 -147 -87 -183 -78 -218 -68 -250 -58 -282 -47 -315 -33 -348 -18 -381 -3 -412 12 -440 25 -463 36 -481 44M0 -226 -22 -226 -51 -225 -86 -225 -124 -224 -165 -222 -205 -221 -245 -218 -281 -215 -316 -210 -353 -203 -391 -196 -429 -188 -464 -180 -495 -173 -521 -167 -541 -163M0 -332 -22 -334 -52 -336 -87 -340 -126 -343 -167 -347 -208 -349 -248 -351 -285 -352 -321 -351 -359 -350 -397 -347 -435 -344 -471 -340 -503 -337 -530 -334 -550 -332M0 -438 -21 -443 -49 -451 -83 -460 -120 -470 -159 -480 -199 -490 -237 -499 -272 -506 -306 -512 -342 -517 -378 -521 -414 -525 -448 -528 -478 -530 -504 -533 -523 -535M0 -543 -16 -552 -38 -565 -64 -580 -93 -596 -123 -613 -153 -629 -183 -645 -209 -658 -235 -670 -263 -681 -290 -692 -317 -703 -342 -712 -365 -720 -384 -727 -399 -733M0 -649 -12 -658 -28 -671 -46 -687 -67 -704 -89 -722 -111 -739 -132 -755 -151 -769 -169 -782 -188 -794 -207 -806 -226 -817 -243 -827 -258 -836 -272 -844 -281 -850M0 -754 -8 -762 -18 -774 -30 -787 -44 -801 -58 -816 -72 -831 -86 -845 -98 -856 -109 -866 -120 -876 -132 -885 -143 -893 -153 -901 -162 -908 -170 -913 -175 -918M0 -860 -4 -866 -9 -874 -16 -884 -23 -894 -30 -905 -37 -915 -44 -925 -49 -932 -54 -938 -58 -944 -63 -949 -67 -953 -70 -957 -73 -960 -76 -962 -78 -965M0 20 0 -8 1 -43 2 -85 3 -132 3 -182 4 -236 5 -291 5 -345 6 -399 6 -450 6 -502 5 -559 5 -619 4 -679 3 -739 3 -797 2 -851 1 -898 0 -939 0 -970"/></svg>
+                    <figure class="hero-figure">
+                        <img class="portrait" src="assets/img/hero-1400.webp" srcset="assets/img/hero-800.webp 800w, assets/img/hero-1400.webp 1400w" sizes="(min-width: 700px) 62vw, 96vw" width="1400" height="1475" alt="" fetchpriority="high" decoding="async" />
+                        <svg class="orbits" viewBox="-252 -177 1792 1652" focusable="false">
+<g transform="rotate(-18 640 470)"><path id="orbit-a" class="orbit-path" d="M40 470a600 300 0 1 0 1200 0a600 300 0 1 0 -1200 0"/>
+<g><circle r="46" fill="none" stroke="#ece7d8" stroke-width="26"/><text class="orbit-label" x="70" y="-24" transform="rotate(18)" data-live="temp">● 36.9 °C</text><animateMotion dur="52s" repeatCount="indefinite" begin="0s"><mpath href="#orbit-a"/></animateMotion></g></g>
+<g transform="rotate(32 860 700)"><path id="orbit-b" class="orbit-path" d="M430 700a430 280 0 1 0 860 0a430 280 0 1 0 -860 0"/>
+<g><circle r="56" fill="#d9b45a"/><text class="orbit-label" x="78" y="10" transform="rotate(-32)" data-live="hr">● 64 bpm</text><animateMotion dur="38s" repeatCount="indefinite" begin="-12s"><mpath href="#orbit-b"/></animateMotion></g>
+<g><circle r="16" fill="#ece7d8"/><animateMotion dur="38s" repeatCount="indefinite" begin="-31s" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orbit-b"/></animateMotion></g></g>
+</svg>
+                    </figure>
+                    <svg class="leaf leaf--front" viewBox="-594 -1020 1167 1670" aria-hidden="true" focusable="false"><path class="leaf-petiole" d="M0 20 -1 36 -2 57 -3 82 -4 110 -6 140 -7 172 -10 204 -12 237 -16 269 -20 300 -25 332 -32 367 -40 403 -48 440 -56 477 -65 513 -73 546 -80 576 -86 601 -90 620"/><path class="leaf-body" d="M5 31 14 35 27 48 62 100 83 124 103 136 143 154 197 171 225 176 251 177 268 176 292 171 330 155 372 127 137 -7 135 -10 136 -13 141 -14 418 87 446 57 475 19 497 -15 517 -56 140 -160 137 -162 138 -166 142 -168 531 -95 539 -127 547 -169 552 -212 553 -254 550 -301 317 -316 313 -319 314 -322 317 -324 541 -344 486 -523 152 -470 149 -471 148 -475 151 -478 468 -580 441 -650 406 -714 103 -600 99 -601 98 -604 100 -607 380 -754 339 -807 297 -848 76 -727 72 -727 70 -730 71 -733 244 -885 154 -929 54 -855 50 -855 48 -857 48 -860 102 -955 10 -998 -1 -1000 -34 -990 -85 -982 -113 -973 -74 -895 -76 -889 -80 -890 -159 -950 -204 -924 -248 -893 -76 -741 -75 -738 -77 -735 -81 -735 -282 -865 -327 -818 -374 -760 -170 -642 -169 -636 -174 -635 -405 -717 -453 -642 -485 -583 -282 -513 -279 -507 -284 -505 -504 -540 -532 -459 -556 -361 -172 -328 -169 -326 -169 -322 -172 -320 -564 -318 -571 -256 -574 -173 -571 -126 -232 -160 -228 -159 -227 -155 -230 -152 -560 -72 -542 -31 -519 4 -484 45 -438 89 -159 -11 -155 -10 -154 -7 -156 -4 -401 119 -365 143 -330 159 -307 166 -284 169 -239 169 -181 159 -125 142 -102 132 -82 118 -65 100 -23 43 -10 32ZM-55 -862 -54 -866 -50 -865 -38 -857 -29 -843 -27 -836 -28 -833 -34 -834 -44 -842 -52 -853ZM-58 -718 -57 -722 -51 -724 -31 -716 -12 -698 -8 -690 -8 -685 -11 -684 -18 -684 -34 -692 -50 -705ZM-121 -610 -122 -615 -115 -618 -99 -615 -83 -610 -49 -591 -40 -583 -37 -576 -42 -573 -50 -573 -76 -581 -104 -595ZM-169 -474 -171 -481 -163 -487 -150 -488 -128 -486 -109 -482 -88 -473 -78 -465 -74 -456 -79 -451 -87 -449 -117 -450 -149 -460 -162 -468ZM-164 -160 -169 -167 -169 -171 -165 -177 -150 -186 -133 -192 -114 -196 -91 -195 -78 -192 -74 -189 -71 -184 -72 -178 -80 -170 -90 -164 -107 -159 -140 -155 -152 -156ZM-102 -20 -118 -22 -120 -25 -117 -33 -104 -44 -89 -53 -67 -63 -50 -67 -37 -67 -29 -63 -30 -56 -35 -50 -59 -34 -90 -22ZM36 -844 39 -843 39 -840 32 -827 19 -814 10 -811 10 -817 17 -828 27 -839ZM53 -719 56 -717 54 -711 40 -696 17 -682 9 -680 4 -682 4 -686 6 -690 20 -704 37 -715ZM72 -596 77 -593 75 -586 65 -576 52 -569 21 -557 8 -557 4 -560 5 -565 9 -571 28 -584 53 -594ZM137 -476 142 -471 138 -463 126 -456 104 -447 79 -442 61 -440 47 -442 39 -447 41 -452 49 -459 77 -471 112 -478 128 -478ZM230 -327 234 -319 232 -313 227 -309 209 -301 188 -298 161 -298 141 -302 124 -310 120 -318 122 -324 133 -332 150 -337 166 -340 188 -340 204 -338 221 -333ZM114 -28 115 -22 107 -18 90 -20 72 -26 50 -36 36 -46 26 -55 24 -64 30 -68 38 -68 67 -60 97 -45Z" fill-rule="evenodd"/><path class="leaf-veins" d="M0 -15 13 -10 30 -3 50 5 72 13 96 23 119 34 142 44 162 56 182 68 203 83 223 99 244 115 263 131 280 145 294 157 305 166M0 -136 19 -131 44 -126 75 -119 108 -111 144 -103 179 -94 214 -85 245 -75 275 -63 308 -50 341 -35 373 -20 403 -6 430 8 453 19 470 27M0 -256 22 -256 52 -255 87 -254 126 -253 167 -252 208 -250 248 -247 285 -243 321 -238 359 -232 397 -224 435 -216 471 -208 503 -201 529 -195 550 -191M0 -377 21 -382 48 -388 81 -396 117 -404 155 -412 193 -420 230 -427 264 -433 297 -437 332 -440 368 -442 402 -444 435 -446 465 -447 489 -448 508 -449M0 -498 18 -505 42 -516 71 -528 102 -542 136 -556 169 -570 201 -583 231 -593 260 -603 290 -611 321 -619 351 -627 379 -634 404 -640 426 -645 442 -649M0 -619 14 -628 33 -640 55 -655 79 -671 105 -688 131 -705 156 -720 179 -733 201 -745 224 -757 247 -768 269 -778 290 -787 309 -796 325 -803 337 -808M0 -739 9 -748 20 -759 34 -773 49 -788 65 -803 80 -818 95 -832 109 -844 121 -854 134 -864 147 -874 160 -883 172 -891 182 -898 191 -904 198 -909M0 -860 4 -866 9 -874 15 -884 21 -895 28 -906 35 -917 41 -927 46 -935 50 -941 55 -947 58 -952 62 -957 65 -961 68 -964 70 -967 72 -970M0 -15 -13 -10 -29 -3 -50 5 -72 13 -95 23 -119 34 -141 44 -162 56 -181 68 -202 83 -222 99 -242 115 -261 131 -278 146 -292 158 -303 166M0 -136 -21 -132 -49 -127 -82 -122 -118 -115 -157 -108 -196 -101 -233 -92 -268 -84 -301 -74 -337 -61 -373 -48 -408 -34 -441 -21 -471 -9 -496 1 -515 8M0 -256 -23 -257 -54 -257 -90 -258 -131 -259 -174 -260 -217 -260 -258 -259 -297 -257 -334 -253 -374 -249 -414 -243 -453 -237 -491 -231 -524 -225 -552 -221 -573 -217M0 -377 -21 -382 -50 -389 -84 -397 -122 -406 -162 -415 -202 -424 -241 -432 -276 -438 -311 -442 -347 -446 -385 -449 -421 -452 -456 -454 -487 -456 -512 -457 -532 -458M0 -498 -18 -506 -42 -517 -71 -530 -103 -544 -136 -558 -170 -573 -203 -586 -232 -597 -261 -607 -292 -616 -323 -625 -353 -633 -381 -640 -407 -647 -428 -652 -444 -656M0 -619 -14 -628 -32 -640 -54 -656 -78 -672 -104 -689 -129 -706 -154 -722 -176 -735 -198 -747 -220 -759 -243 -770 -265 -781 -286 -791 -305 -799 -320 -806 -332 -812M0 -739 -8 -748 -20 -761 -33 -776 -49 -792 -64 -809 -80 -825 -95 -841 -108 -854 -121 -866 -133 -877 -146 -888 -159 -898 -170 -908 -181 -916 -189 -923 -196 -928M0 -860 -4 -867 -9 -876 -16 -886 -23 -898 -31 -910 -38 -922 -44 -933 -50 -941 -55 -949 -60 -955 -64 -962 -68 -967 -72 -972 -75 -976 -78 -980 -80 -983M0 20 0 -8 1 -43 2 -85 3 -132 3 -182 4 -236 5 -291 5 -345 6 -399 6 -450 6 -502 5 -559 5 -619 4 -679 3 -739 3 -797 2 -851 1 -898 0 -939 0 -970"/></svg>
+                </div>
+                <div class="wrap hero-copy">
+                    <h1 class="hero-name" id="hero-name">
+                        <span class="line"><span>benjamin</span></span>
+                        <span class="line"><span>menard</span></span>
+                    </h1>
+                    <p class="hero-lede" data-i18n="hero_lede">Du neurone au dispositif médical : je conçois, valide et industrialise des technologies de santé.</p>
+                    <p class="hero-role" data-i18n="hero_role">PhD en neurosciences, CTO et cofondateur de F2D Medical</p>
+                    <a class="scroll-cue" href="#essentiel">
+                        <svg viewBox="0 0 14 34" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="32.5" rx="6.25" fill="none" stroke="currentColor" stroke-width="1.5" /><circle class="dot" cx="7" cy="8" r="2.2" fill="currentColor" /></svg>
+                        <span data-i18n="scroll">Défiler</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- L'essentiel -->
+            <section class="section" id="essentiel" aria-labelledby="essentiel-title">
+                <div class="wrap essentials">
+                    <div>
+                        <h2 class="visually-hidden" id="essentiel-title" data-i18n="essentials_title">L'essentiel</h2>
+                        <div class="manifest">
+                            <p data-i18n="m1">Docteur en neurosciences.</p>
+                            <p data-i18n="m2">Plus de dix ans de recherche, du cortex au capteur.</p>
+                            <p data-i18n="m3">Un dispositif médical de classe IIb, de l'idée au marché.</p>
+                            <p data-i18n="m4">Deux familles de brevets, onze titres publiés.</p>
+                            <p data-i18n="m5">Et aujourd'hui, l'IA générative au service des équipes.</p>
+                        </div>
+                        <svg class="ecg" viewBox="0 -40 420 56" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 0 8 0 12 -4 16 0 22 0 24 3 27 -34 30 10 33 0 42 0 48 -7 56 0 70 0 70 0 78 0 82 -4 86 0 92 0 94 3 97 -34 100 10 103 0 112 0 118 -7 126 0 140 0 140 0 148 0 152 -4 156 0 162 0 164 3 167 -34 170 10 173 0 182 0 188 -7 196 0 210 0 210 0 218 0 222 -4 226 0 232 0 234 3 237 -34 240 10 243 0 252 0 258 -7 266 0 280 0 280 0 288 0 292 -4 296 0 302 0 304 3 307 -34 310 10 313 0 322 0 328 -7 336 0 350 0 350 0 358 0 362 -4 366 0 372 0 374 3 377 -34 380 10 383 0 392 0 398 -7 406 0 420 0" pathLength="1"/></svg>
+                    </div>
+                    <div class="neuron-col" aria-hidden="true">
+                        <svg class="neuron" viewBox="-163 -339 444 597" focusable="false"><path class="neurite" d="M0.0 -14.0 1.3 -38.0 5.1 -61.7 12.0 -84.7 23.2 -105.9 36.6 -125.8" stroke-width="3.4" pathLength="1"/><path class="neurite" d="M36.6 -125.8 41.7 -141.4 47.8 -156.6 56.5 -170.5 62.7 -185.7 68.8 -201.0M36.6 -125.8 45.2 -137.9 54.4 -149.6 61.7 -162.5 69.7 -175.1 79.8 -186.0M36.6 -125.8 53.6 -128.0 70.7 -126.6 87.8 -128.9 104.0 -134.5 120.9 -138.0M0.0 10.0 -1.9 21.8 -5.2 33.4 -7.7 45.1 -7.8 57.1 -6.5 69.0M0.0 10.0 -10.6 15.7 -21.7 20.2 -32.8 24.7 -43.7 29.6 -55.4 32.5M0.0 10.0 9.3 17.6 19.1 24.5 30.0 29.6 40.5 35.3 50.1 42.5M0.0 10.0 2.5 21.7 7.6 32.6 10.4 44.3 14.2 55.7 16.2 67.5" stroke-width="2.5" pathLength="1"/><path class="neurite" d="M68.8 -201.0 66.6 -212.3 63.0 -223.3 58.4 -233.9 55.8 -245.1 54.5 -256.6M68.8 -201.0 77.0 -208.2 86.5 -213.6 96.4 -218.5 106.2 -223.4 115.6 -229.0M79.8 -186.0 82.8 -195.1 87.6 -203.3 92.0 -211.7 98.0 -219.1 105.2 -225.3M79.8 -186.0 89.6 -188.8 99.3 -192.1 108.2 -197.2 117.4 -201.5 125.9 -207.2M120.9 -138.0 132.6 -140.7 144.3 -143.4 155.8 -146.8 166.5 -152.1 176.1 -159.4M120.9 -138.0 132.3 -137.1 143.7 -135.1 155.1 -133.7 165.9 -129.8 176.1 -124.5M-6.5 69.0 -1.7 75.8 4.0 82.0 8.2 89.1 12.6 96.2 17.1 103.2M-6.5 69.0 -8.0 77.4 -8.5 85.9 -10.6 94.1 -14.2 101.8 -16.2 110.1M-55.4 32.5 -62.0 38.6 -68.1 45.2 -74.3 51.7 -80.6 58.1 -86.0 65.3M-55.4 32.5 -64.2 32.5 -72.9 31.9 -81.5 30.0 -90.2 29.6 -98.8 28.2M50.1 42.5 58.8 45.8 67.3 49.5 75.4 54.1 83.9 57.8 92.6 61.2M50.1 42.5 53.4 49.0 56.9 55.5 60.4 61.9 62.8 68.8 64.9 75.8M16.2 67.5 19.8 75.8 23.9 83.7 27.3 92.1 30.6 100.5 33.1 109.1M16.2 67.5 14.1 75.5 13.7 83.7 12.3 91.8 9.9 99.7 7.1 107.4" stroke-width="1.8" pathLength="1"/><path class="neurite" d="M54.5 -256.6 51.3 -263.0 47.0 -268.9 41.6 -273.6 37.0 -279.2 31.7 -284.1M54.5 -256.6 57.9 -262.7 60.2 -269.3 62.0 -276.1 64.1 -282.8 67.4 -289.0M115.6 -229.0 122.0 -233.9 128.1 -239.3 134.8 -243.9 142.1 -247.6 149.6 -250.7M115.6 -229.0 123.4 -229.2 131.0 -231.1 138.3 -234.0 145.5 -237.2 152.8 -239.9M105.2 -225.3 109.3 -231.5 113.1 -237.9 116.3 -244.5 120.9 -250.3 125.5 -256.1M105.2 -225.3 111.7 -226.3 118.1 -227.6 124.5 -229.3 131.0 -229.9 137.3 -231.4M125.9 -207.2 130.7 -213.4 135.9 -219.3 140.3 -225.7 145.0 -232.0 148.9 -238.7M125.9 -207.2 133.1 -208.1 140.2 -209.3 146.9 -211.7 153.1 -215.5 158.6 -220.0M176.1 -159.4 176.5 -168.7 175.8 -177.9 173.4 -186.8 170.5 -195.5 166.0 -203.6M176.1 -159.4 181.7 -164.6 187.0 -170.1 191.2 -176.5 195.3 -183.0 198.8 -189.8M176.1 -159.4 183.5 -158.8 190.7 -156.9 198.0 -155.0 205.2 -153.4 212.6 -152.0M176.1 -124.5 184.1 -126.8 192.3 -128.0 200.4 -129.7 208.6 -131.0 216.8 -131.7M176.1 -124.5 184.4 -121.7 192.5 -118.4 200.1 -114.1 208.3 -110.8 216.9 -109.1M176.1 -124.5 180.8 -119.3 185.7 -114.2 190.7 -109.3 195.3 -104.0 199.3 -98.2M17.1 103.2 21.6 107.7 26.1 112.3 31.4 115.9 36.9 119.3 41.9 123.3M17.1 103.2 17.2 108.4 17.5 113.6 16.6 118.7 14.7 123.6 13.5 128.6M-16.2 110.1 -16.3 115.6 -16.1 121.1 -16.6 126.6 -16.2 132.0 -15.9 137.5M-16.2 110.1 -18.7 115.9 -21.2 121.7 -22.4 127.8 -23.4 134.1 -23.9 140.4M-86.0 65.3 -87.9 70.5 -88.9 76.0 -91.0 81.1 -92.6 86.4 -93.6 91.8M-86.0 65.3 -90.7 69.5 -94.4 74.6 -98.8 79.1 -103.2 83.7 -108.3 87.4M-98.8 28.2 -104.1 28.3 -109.4 28.4 -114.5 27.5 -119.7 26.8 -125.0 26.8M-98.8 28.2 -105.1 25.8 -111.6 24.1 -118.0 22.4 -124.5 20.6 -130.5 17.7M92.6 61.2 98.2 62.4 103.8 63.4 109.1 65.3 114.8 66.1 120.4 66.5M92.6 61.2 96.5 65.4 101.1 68.9 105.6 72.5 110.7 75.2 115.1 78.9M64.9 75.8 68.4 79.9 71.8 84.0 74.8 88.5 77.6 93.0 81.1 97.1M64.9 75.8 65.9 80.6 66.4 85.4 67.8 90.1 68.5 94.9 69.7 99.6M33.1 109.1 36.8 113.5 41.2 116.9 45.3 120.9 48.8 125.4 51.6 130.3M33.1 109.1 31.9 115.4 30.6 121.6 29.5 127.8 28.9 134.2 27.7 140.4M7.1 107.4 8.5 113.2 9.6 119.1 11.9 124.7 13.2 130.5 13.2 136.5M7.1 107.4 5.5 112.4 4.1 117.5 2.8 122.6 2.6 127.8 2.5 133.1M7.1 107.4 2.6 110.1 -2.3 112.3 -6.8 115.1 -11.3 117.8 -16.3 119.9" stroke-width="1.3" pathLength="1"/><path class="neurite" d="M31.7 -284.1 26.4 -285.3 21.4 -287.4 16.4 -289.7 11.6 -292.4 6.6 -294.4M31.7 -284.1 29.5 -288.9 26.3 -293.2 23.7 -297.8 20.8 -302.2 18.1 -306.8M67.4 -289.0 67.2 -293.9 66.7 -298.7 65.5 -303.4 63.4 -307.9 60.7 -311.9M67.4 -289.0 70.6 -293.1 74.3 -296.9 78.6 -299.8 83.1 -302.6 87.9 -304.7M149.6 -250.7 153.7 -254.1 157.5 -258.0 161.2 -261.9 165.4 -265.3 169.9 -268.3M149.6 -250.7 154.9 -249.7 159.9 -247.9 164.9 -245.7 169.2 -242.5 172.8 -238.5M152.8 -239.9 156.1 -244.4 159.4 -248.9 162.1 -253.8 163.8 -259.1 164.6 -264.7M152.8 -239.9 158.0 -240.6 163.2 -241.1 168.3 -242.4 173.3 -243.7 178.3 -245.3M125.5 -256.1 127.3 -260.3 128.9 -264.7 130.1 -269.1 131.9 -273.3 134.2 -277.3M125.5 -256.1 129.6 -259.7 133.7 -263.3 137.5 -267.2 140.9 -271.4 144.5 -275.6M137.3 -231.4 140.8 -233.3 144.5 -234.9 148.1 -236.7 151.6 -238.7 155.2 -240.3M137.3 -231.4 142.2 -230.2 147.3 -229.8 152.3 -229.9 157.3 -229.1 162.3 -229.0M148.9 -238.7 149.2 -243.6 149.2 -248.5 149.8 -253.3 149.6 -258.2 149.9 -263.0M148.9 -238.7 153.1 -242.4 156.7 -246.8 161.1 -250.4 165.7 -253.6 170.7 -256.2M158.6 -220.0 161.3 -224.2 163.0 -228.8 164.7 -233.4 167.1 -237.8 169.8 -241.9M158.6 -220.0 163.5 -222.7 168.7 -224.4 174.1 -225.6 179.5 -226.5 185.0 -227.4M166.0 -203.6 160.9 -206.8 155.2 -208.8 150.0 -211.9 144.5 -214.4 138.9 -216.8M166.0 -203.6 166.3 -210.4 166.1 -217.1 165.7 -223.8 166.2 -230.5 165.9 -237.3M198.8 -189.8 199.8 -195.5 201.6 -201.0 203.5 -206.5 205.3 -212.1 207.8 -217.3M198.8 -189.8 201.5 -193.5 203.6 -197.6 205.4 -201.9 207.9 -205.8 211.0 -209.1M212.6 -152.0 217.7 -152.2 222.9 -152.2 228.1 -153.1 233.2 -153.3 238.4 -153.6M212.6 -152.0 217.3 -148.6 221.4 -144.5 225.3 -140.2 229.4 -136.1 234.0 -132.7M216.8 -131.7 221.1 -134.4 225.3 -137.4 229.5 -140.2 234.0 -142.5 238.8 -144.4M216.8 -131.7 221.4 -128.9 225.8 -126.0 230.4 -123.4 235.5 -121.7 240.7 -120.4M216.9 -109.1 223.4 -109.9 230.0 -111.0 236.5 -112.3 243.0 -113.4 249.7 -113.4M216.9 -109.1 221.9 -105.8 226.1 -101.6 230.7 -97.7 234.7 -93.1 238.3 -88.3M199.3 -98.2 203.4 -95.5 207.9 -93.5 212.3 -91.3 216.8 -89.3 221.1 -87.0M199.3 -98.2 200.3 -93.1 201.7 -88.1 203.5 -83.2 204.5 -78.1 205.5 -72.9M41.9 123.3 46.5 125.1 50.9 127.1 55.7 128.2 60.6 128.3 65.4 129.0M41.9 123.3 43.9 127.7 45.2 132.4 46.6 137.0 47.0 141.9 46.9 146.7M13.5 128.6 13.9 132.2 14.2 135.7 15.0 139.2 16.3 142.5 17.6 145.8M13.5 128.6 11.3 131.4 8.7 133.7 6.5 136.3 4.8 139.4 2.7 142.2M-15.9 137.5 -13.0 139.4 -10.3 141.3 -7.4 143.2 -4.5 144.9 -1.5 146.5M-15.9 137.5 -15.2 141.7 -14.5 145.9 -13.5 150.1 -12.5 154.2 -12.0 158.5M-15.9 137.5 -17.9 140.8 -19.1 144.3 -20.7 147.7 -22.2 151.2 -23.8 154.7M-23.9 140.4 -23.3 144.6 -23.5 148.9 -23.4 153.2 -23.4 157.5 -23.8 161.8M-23.9 140.4 -27.2 144.0 -30.1 147.8 -32.5 152.1 -35.6 155.8 -38.0 160.1M-93.6 91.8 -93.4 95.4 -93.3 99.0 -93.1 102.6 -93.1 106.2 -92.7 109.7M-93.6 91.8 -95.4 95.6 -97.9 99.0 -99.8 102.7 -101.1 106.7 -101.6 110.9M-108.3 87.4 -110.7 90.5 -113.3 93.4 -116.0 96.2 -118.4 99.4 -121.3 102.0M-108.3 87.4 -112.0 88.6 -115.4 90.4 -118.4 92.8 -121.4 95.2 -124.5 97.5M-125.0 26.8 -128.7 28.4 -132.0 30.7 -135.2 33.2 -137.9 36.3 -140.4 39.4M-125.0 26.8 -128.7 25.9 -132.4 25.7 -136.2 25.5 -139.9 25.0 -143.7 24.5M-130.5 17.7 -134.9 16.8 -139.2 15.3 -143.6 14.1 -148.1 13.8 -152.6 13.9M-130.5 17.7 -134.5 14.6 -138.4 11.3 -142.0 7.7 -144.9 3.5 -148.4 -0.2M120.4 66.5 124.6 65.6 128.7 64.8 132.6 63.2 136.5 61.5 140.1 59.3M120.4 66.5 124.3 67.3 128.3 67.4 132.3 67.5 136.2 68.4 139.9 70.0M115.1 78.9 118.5 80.3 121.6 82.4 124.8 84.4 128.1 86.0 131.5 87.7M115.1 78.9 116.5 82.4 117.2 86.2 118.3 89.9 118.8 93.7 119.2 97.6M81.1 97.1 84.9 98.3 88.3 100.2 92.0 101.6 95.8 102.5 99.7 102.6M81.1 97.1 82.0 100.9 83.4 104.4 84.4 108.1 86.1 111.5 87.7 115.0M69.7 99.6 71.1 102.6 71.9 105.8 73.1 109.0 74.5 112.0 75.3 115.3M69.7 99.6 69.7 102.9 69.1 106.1 68.9 109.4 68.6 112.6 67.9 115.8M51.6 130.3 54.9 132.3 58.5 133.8 61.7 136.1 64.5 138.8 67.5 141.1M51.6 130.3 52.2 134.3 52.5 138.4 53.4 142.3 54.6 146.2 56.7 149.7M27.7 140.4 28.7 145.0 29.2 149.6 30.6 154.1 32.5 158.4 33.7 162.9M27.7 140.4 26.8 144.2 25.5 147.8 24.8 151.6 24.1 155.4 23.6 159.3M13.2 136.5 14.9 140.2 16.7 143.7 19.2 146.8 22.0 149.6 25.3 151.7M13.2 136.5 11.6 140.1 10.2 143.8 9.4 147.6 7.8 151.2 5.6 154.4M2.5 133.1 3.7 136.9 4.4 140.8 4.4 144.8 3.7 148.7 2.5 152.5M2.5 133.1 1.0 136.6 -1.0 139.7 -3.4 142.7 -5.6 145.7 -7.5 149.0M-16.3 119.9 -19.1 122.3 -21.6 125.2 -23.8 128.2 -25.2 131.7 -26.2 135.3M-16.3 119.9 -19.4 120.8 -22.6 121.7 -25.9 121.9 -29.1 121.6 -32.4 121.5" stroke-width="1.0" pathLength="1"/><path class="neurite" d="M6.6 -294.4 2.4 -293.5 -1.6 -292.2 -5.5 -290.7 -9.2 -288.6 -12.5 -286.0M6.6 -294.4 3.3 -295.9 -0.2 -296.6 -3.6 -297.6 -7.1 -298.4 -10.6 -298.8M6.6 -294.4 5.0 -297.8 3.3 -301.2 2.0 -304.7 -0.0 -307.9 -1.3 -311.4M18.1 -306.8 16.2 -309.6 14.0 -312.1 12.1 -314.9 10.8 -317.9 10.1 -321.2M18.1 -306.8 17.3 -310.2 16.9 -313.7 16.0 -317.1 15.4 -320.5 15.2 -324.1M60.7 -311.9 57.8 -312.9 55.1 -314.5 52.5 -316.1 49.8 -317.6 47.0 -318.8M60.7 -311.9 59.8 -315.5 58.7 -319.0 57.1 -322.2 56.0 -325.7 54.2 -328.9M87.9 -304.7 90.6 -306.6 93.2 -308.6 95.7 -310.8 98.6 -312.3 101.7 -313.4M87.9 -304.7 91.5 -304.6 95.0 -304.2 98.6 -303.8 102.2 -303.7 105.8 -303.7M169.9 -268.3 172.0 -271.6 173.3 -275.2 174.7 -278.9 175.7 -282.6 177.0 -286.3M169.9 -268.3 173.8 -269.1 177.9 -269.4 181.9 -270.0 185.9 -270.3 189.9 -270.2M172.8 -238.5 175.5 -236.5 177.8 -234.0 180.2 -231.5 182.3 -228.9 184.1 -226.0M172.8 -238.5 173.6 -235.2 174.2 -231.9 174.6 -228.5 175.1 -225.1 175.4 -221.7M164.6 -264.7 163.5 -268.0 162.3 -271.4 160.9 -274.6 159.7 -278.0 158.6 -281.4M164.6 -264.7 165.5 -268.8 166.2 -273.0 166.5 -277.3 166.6 -281.6 166.0 -285.8M178.3 -245.3 181.0 -248.1 184.1 -250.5 187.3 -252.7 190.4 -255.1 193.1 -257.9M178.3 -245.3 181.8 -244.4 185.1 -242.8 188.4 -241.0 191.7 -239.5 194.7 -237.4M134.2 -277.3 135.3 -280.1 136.8 -282.7 137.9 -285.4 138.8 -288.3 139.2 -291.3M134.2 -277.3 136.8 -278.8 139.4 -280.4 142.0 -281.8 144.8 -283.0 147.6 -284.0M144.5 -275.6 146.1 -279.2 147.0 -283.1 147.5 -287.1 147.9 -291.1 149.0 -294.9M144.5 -275.6 147.5 -277.9 150.8 -279.8 154.0 -281.9 157.3 -283.8 160.7 -285.4M155.2 -240.3 156.9 -242.5 158.6 -244.7 160.1 -247.0 161.2 -249.5 162.5 -251.9M155.2 -240.3 157.3 -241.6 159.6 -242.5 162.0 -243.1 164.4 -243.6 166.6 -244.6M155.2 -240.3 157.8 -238.6 160.2 -236.6 163.0 -235.2 165.5 -233.4 168.2 -231.9M162.3 -229.0 165.4 -229.8 168.3 -231.2 170.8 -233.1 173.3 -235.1 175.3 -237.5M162.3 -229.0 165.7 -227.7 168.7 -226.0 172.0 -224.7 175.4 -223.5 178.8 -222.6M149.9 -263.0 148.7 -266.3 146.9 -269.4 145.3 -272.5 143.3 -275.4 141.8 -278.5M149.9 -263.0 151.6 -265.8 152.6 -268.9 153.9 -271.8 154.6 -274.9 154.9 -278.1M170.7 -256.2 172.9 -259.3 174.8 -262.5 176.9 -265.6 178.8 -268.8 180.5 -272.2M170.7 -256.2 174.9 -256.8 179.1 -256.9 183.4 -257.0 187.6 -256.6 191.8 -256.1M169.8 -241.9 170.0 -245.0 169.8 -248.0 169.4 -251.0 168.9 -254.0 168.8 -257.1M169.8 -241.9 171.9 -244.3 173.6 -247.0 175.1 -249.8 176.3 -252.8 177.4 -255.7M185.0 -227.4 187.8 -230.1 190.9 -232.6 194.2 -234.8 197.1 -237.5 199.7 -240.5M185.0 -227.4 188.3 -228.6 191.6 -229.9 195.0 -230.6 198.5 -231.5 201.8 -232.6M185.0 -227.4 187.9 -225.3 190.7 -223.0 193.7 -221.1 197.0 -219.6 200.1 -217.8M138.9 -216.8 135.2 -216.7 131.6 -216.0 127.9 -215.4 124.2 -215.4 120.5 -215.6M138.9 -216.8 135.8 -219.0 132.7 -221.3 129.6 -223.6 126.6 -226.0 123.4 -228.2M165.9 -237.3 165.0 -241.3 164.7 -245.5 164.0 -249.6 162.7 -253.5 160.7 -257.1M165.9 -237.3 166.8 -241.3 167.8 -245.4 168.4 -249.5 168.1 -253.6 168.2 -257.8M207.8 -217.3 208.2 -221.5 208.1 -225.8 208.7 -230.0 209.0 -234.2 208.6 -238.5M207.8 -217.3 209.8 -220.3 212.1 -223.2 214.1 -226.3 215.4 -229.7 217.1 -233.0M211.0 -209.1 212.3 -212.0 213.4 -214.9 213.8 -218.0 214.3 -221.1 215.3 -224.1M211.0 -209.1 213.7 -210.2 216.1 -211.7 218.7 -213.0 221.2 -214.3 223.9 -215.1M238.4 -153.6 241.2 -155.1 244.0 -156.6 247.0 -157.6 249.9 -158.7 252.7 -160.2M238.4 -153.6 241.6 -152.8 244.9 -152.2 248.0 -151.2 251.3 -150.6 254.6 -150.3M234.0 -132.7 237.5 -133.3 240.8 -134.6 244.2 -135.5 247.7 -135.9 251.1 -136.7M234.0 -132.7 236.9 -130.2 239.4 -127.3 241.7 -124.2 243.5 -120.9 245.6 -117.7M234.0 -132.7 235.7 -129.0 237.9 -125.7 240.3 -122.4 242.9 -119.4 246.1 -117.0M238.8 -144.4 241.3 -146.6 243.3 -149.2 245.6 -151.6 248.1 -153.8 250.9 -155.4M238.8 -144.4 242.4 -143.7 245.9 -142.6 249.3 -141.3 252.9 -140.4 256.5 -139.6M240.7 -120.4 244.7 -120.1 248.7 -119.6 252.8 -119.4 256.8 -119.8 260.9 -119.9M240.7 -120.4 244.0 -118.3 246.9 -115.7 250.1 -113.5 253.4 -111.6 257.0 -110.0M249.7 -113.4 254.4 -113.9 259.0 -114.9 263.2 -116.9 267.1 -119.5 271.1 -122.1M249.7 -113.4 253.8 -112.5 257.8 -111.4 261.8 -110.0 265.6 -108.3 269.3 -106.2M238.3 -88.3 242.1 -86.2 245.9 -84.1 250.1 -82.7 254.4 -81.9 258.7 -81.7M238.3 -88.3 240.4 -85.2 243.1 -82.5 245.4 -79.5 247.4 -76.3 248.9 -72.9M238.3 -88.3 236.8 -84.2 234.4 -80.5 231.9 -76.9 228.7 -73.9 226.1 -70.4M221.1 -87.0 224.8 -87.6 228.6 -87.7 232.4 -87.5 236.2 -87.5 239.9 -88.3M221.1 -87.0 223.0 -84.4 224.5 -81.5 226.1 -78.7 227.9 -76.0 229.7 -73.3M205.5 -72.9 206.9 -69.9 208.9 -67.2 211.1 -64.7 213.8 -62.6 216.4 -60.5M205.5 -72.9 204.7 -69.4 203.3 -66.0 202.5 -62.5 201.9 -58.9 200.8 -55.4" stroke-width="0.8" pathLength="1"/><path class="neurite" d="M0.0 16.0 -1.4 24.9 -1.8 33.9 -1.5 42.9 -0.2 51.8 2.1 60.5 4.2 69.2 5.7 78.1 7.3 87.0 8.2 95.9 9.3 104.9 9.4 113.9 9.3 122.9 9.1 131.9 9.7 140.8 10.4 149.8 11.2 158.8 11.3 167.8 12.0 176.7 13.1 185.7 13.6 194.7 15.0 203.6 16.3 212.5 18.2 221.3 19.8 230.1 21.1 239.0 23.3 247.7" stroke-width="2" pathLength="1"/><path class="soma" d="M0 -18 L15 12 L-15 12 Z" stroke-linejoin="round" stroke-width="6" stroke="currentColor"/></svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- À propos -->
+            <section class="section" id="apropos" aria-labelledby="apropos-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="apropos-title" data-i18n="about_title">à propos</h2>
+                    </div>
+                    <div class="about">
+                        <div class="about-text">
+                            <p data-i18n="about_p1">Entrepreneur, chercheur et ingénieur en innovation médicale, je combine plus de dix ans d'expérience en neurosciences, ingénierie biomédicale et développement de dispositifs médicaux. Chez F2D Medical, que j'ai cofondée et dont je suis CTO, je pilote la conception, la validation et l'industrialisation de Thermodiag, un dispositif médical connecté de classe IIb.</p>
+                            <p data-i18n="about_p2">Je porte la conformité réglementaire du dispositif, de la gestion des risques à l'évaluation clinique. J'ai participé aux levées de fonds et aux due diligences d'investisseurs, et je définis la stratégie produit et la roadmap de développement.</p>
+                            <p data-i18n="about_p3">Côté technique, je travaille au croisement des capteurs, du traitement du signal, du machine learning et, désormais, des grands modèles de langage.</p>
+                        </div>
+                        <aside class="about-aside">
+                            <div>
+                                <h3 class="meta-title" data-i18n="about_norms">Référentiels pratiqués</h3>
+                                <ul class="chips">
+                                    <li>MDR 2017/745</li>
+                                    <li>ISO 13485</li>
+                                    <li>ISO 14971</li>
+                                    <li>IEC 62366-1</li>
+                                    <li>IEC 62304</li>
+                                    <li>IEC 60601-1</li>
+                                    <li>ISO 19011</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="meta-title" data-i18n="about_where">Basé à</h3>
+                                <div class="contact-lines">
+                                    <span data-i18n="about_city">Caen et Colombelles, Normandie</span>
+                                    <a href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
+                                    <a href="https://www.linkedin.com/in/bmenardphd/" rel="noopener">LinkedIn</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projets -->
+            <section class="section" id="projets" aria-labelledby="projets-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="projets-title" data-i18n="projects_title">projets</h2>
+                        <p class="section-intro" data-i18n="projects_intro">Des capteurs aux algorithmes : chaque projet part d'un signal physique ou biologique et va jusqu'à un usage concret.</p>
+                    </div>
+
+                    <article class="feature">
+                        <div class="feature-art" aria-hidden="true">
+                            <svg viewBox="0 0 480 320" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <g opacity="0.5">
+                                    <path d="M40 40H460M40 90H460M40 140H460M40 190H460" stroke-dasharray="2 6" />
+                                </g>
+                                <g fill="currentColor" stroke="none" font-family="IBM Plex Mono, monospace" font-size="12">
+                                    <text x="8" y="44">39</text>
+                                    <text x="8" y="94">38</text>
+                                    <text x="8" y="144">37</text>
+                                    <text x="8" y="194">36</text>
+                                </g>
+                                <path d="M40 150C80 150 96 146 120 138S160 96 196 70S250 52 276 64S320 110 352 128S420 146 460 144" stroke="#d9b45a" stroke-width="2.5" />
+                                <path d="M40 158C80 158 96 154 120 147S160 108 196 84S250 66 276 76S320 120 352 136S420 154 460 152" stroke="#d9b45a" stroke-opacity="0.35" />
+                                <circle cx="276" cy="64" r="5" fill="#d9b45a" stroke="none" />
+                                <path d="M276 76V250" stroke-dasharray="3 5" opacity="0.6" />
+                                <rect x="120" y="256" width="320" height="40" rx="20" />
+                                <rect x="236" y="246" width="80" height="60" rx="14" fill="#13261c" />
+                                <circle cx="276" cy="276" r="9" stroke="#d9b45a" />
+                                <path d="M150 276H210M342 276H410" stroke-dasharray="2 6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="feature-status" data-i18n="f2d_status">Projet actuel, depuis 2021</p>
+                            <h3>Thermodiag</h3>
+                            <p class="feature-sub" data-i18n="f2d_subtitle">Dispositif médical connecté de classe IIb pour le suivi de la température corporelle, développé chez F2D Medical.</p>
+                            <ul class="feature-list">
+                                <li data-i18n-html="f2d_b1"><strong>CTO et cofondateur</strong> : pilotage de la R&amp;D et de l'industrialisation, de la conception à la mise sur le marché.</li>
+                                <li data-i18n-html="f2d_b2"><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes et fournisseurs.</li>
+                                <li data-i18n-html="f2d_b3"><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
+                                <li data-i18n-html="f2d_b4"><strong>Data et algorithmes</strong> : traitement du signal et modèles de machine learning à partir des données capteurs, présentés à PFIA Health &amp; AI 2025.</li>
+                            </ul>
+                            <p class="tags"><span>MDR 2017/745</span><span>ISO 13485</span><span>ISO 14971</span><span>IoT</span><span>Machine learning</span></p>
+                        </div>
+                    </article>
+
+                    <div class="project-group">
+                        <h3 class="group-title" data-i18n="group_ai">IA et logiciel</h3>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="10" y="10" width="38" height="52" rx="3" />
+                                <path d="M17 22H41M17 30H41M17 38H35M17 46H39" />
+                                <path class="accent" d="M50 34H60" stroke-dasharray="2 3" />
+                                <path d="M66 16H106A4 4 0 0 1 110 20V40A4 4 0 0 1 106 44H82L74 52V44H66A4 4 0 0 1 62 40V20A4 4 0 0 1 66 16Z" />
+                                <g class="accent" fill="currentColor" stroke="none"><circle cx="76" cy="30" r="2.4" /><circle cx="86" cy="30" r="2.4" /><circle cx="96" cy="30" r="2.4" /></g>
+                                <path d="M10 70H110" stroke-dasharray="1 4" />
+                            </svg>
+                            <div>
+                                <h4 data-i18n="aitools_title">Outils IA internes, F2D Medical</h4>
+                                <p class="project-sub" data-i18n="aitools_subtitle">LLM et automatisation au service de l'équipe</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="aitools_desc">Conception et déploiement d'outils internes : un assistant documentaire qui oriente vers les bonnes procédures qualité en citant ses sources (RAG), une chaîne de comptes rendus de réunion (transcription locale avec Whisper, synthèse par LLM) et un portail d'applications à authentification unique. Les traitements sensibles restent sur des serveurs internes.</p>
+                                <p class="tags"><span>LLM</span><span>RAG</span><span>Whisper</span><span>Python</span><span>SSO</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="36" y="22" width="40" height="40" rx="3" />
+                                <rect x="47" y="33" width="18" height="18" rx="1.5" />
+                                <path d="M42 22V14M50 22V14M58 22V14M66 22V14M42 62V70M50 62V70M58 62V70M66 62V70M36 30H28M36 40H28M36 50H28M76 30H84M76 40H84M76 50H84" />
+                                <g class="accent"><path d="M90 18A10 10 0 0 1 100 28" /><path d="M90 9A19 19 0 0 1 109 28" /><circle cx="56" cy="42" r="3" fill="currentColor" stroke="none" /></g>
+                            </svg>
+                            <div>
+                                <h4 data-i18n="embedded_title">Objets IA embarqués</h4>
+                                <p class="project-sub" data-i18n="embedded_subtitle">Projets personnels : perception embarquée et LLM local</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="embedded_desc">Sur Arduino Nano 33 BLE Sense (nRF52840) : un objet qui perçoit son environnement grâce à des modèles de ML embarqués et s'exprime par la lumière et la voix via un LLM local, un détecteur de présence fondé sur les variations du signal radio (RSSI) et un classifieur, en cours de prototypage, et un assistant vocal local avec appel d'outils.</p>
+                                <p class="tags"><span>TinyML</span><span>nRF52840</span><span>BLE</span><span>Ollama</span><span data-i18n="tag_local_llm">LLM local</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M8 40H28M28 18V62M28 18H54M28 62H70M54 9V27M54 9H108M54 27H88M70 52V72M70 52H102M70 72H94" />
+                                <g class="accent" fill="currentColor" stroke="none"><circle cx="108" cy="9" r="3" /><circle cx="88" cy="27" r="3" /><circle cx="102" cy="52" r="3" /><circle cx="94" cy="72" r="3" /></g>
+                            </svg>
+                            <div>
+                                <h4>EVOLVE</h4>
+                                <p class="project-sub" data-i18n="evolve_subtitle">Projet personnel : simulation d'écosystème</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="evolve_desc">Simulation dans laquelle des espèces virtuelles évoluent par sélection naturelle, avec un moteur écrit en C++20 et un laboratoire d'expérimentation pour observer l'évolution des populations. En développement.</p>
+                                <p class="tags"><span>C++20</span><span>Simulation</span><span data-i18n="tag_evolution">Évolution</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M10 6V70H114" />
+                                <g fill="currentColor" stroke="none"><circle cx="22" cy="58" r="2" /><circle cx="30" cy="50" r="2" /><circle cx="37" cy="55" r="2" /><circle cx="45" cy="43" r="2" /><circle cx="53" cy="47" r="2" /><circle cx="59" cy="36" r="2" /><circle cx="67" cy="39" r="2" /><circle cx="75" cy="29" r="2" /><circle cx="83" cy="31" r="2" /><circle cx="91" cy="21" r="2" /><circle cx="99" cy="25" r="2" /><circle cx="106" cy="15" r="2" /></g>
+                                <path class="accent" d="M16 62L110 12" />
+                            </svg>
+                            <div>
+                                <h4 data-i18n="dataplatform_title">Analyse de données cliniques</h4>
+                                <p class="project-sub" data-i18n="dataplatform_subtitle">Modélisation statistique et aide à la décision</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="dataplatform_desc">Suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale, et des modèles statistiques pour l'interprétation des résultats.</p>
+                                <p class="tags"><span>Machine learning</span><span data-i18n="tag_stats">Statistiques</span><span>Python</span><span>PostgreSQL</span></p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="project-group">
+                        <h3 class="group-title" data-i18n="group_sensors">Capteurs et prototypes</h3>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M8 24H112" stroke-dasharray="2 5" />
+                                <path class="accent" d="M8 24H24C29 24 28 64 34 64C56 64 72 30 112 26" />
+                                <path d="M34 10V72" stroke-dasharray="2 4" />
+                                <path d="M14 10L20 16M20 10L14 16M17 8V18M12 13H22" />
+                            </svg>
+                            <div>
+                                <h4 data-i18n="hemangiome_title">Détection thermique des hémangiomes</h4>
+                                <p class="project-sub" data-i18n="hemangiome_subtitle">Dispositif expérimental de diagnostic précoce</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="hemangiome_desc">Prototype fondé sur le refroidissement contrôlé de la peau et l'analyse de la remontée thermique, avec exploitation de jeux de données et d'algorithmes de machine learning pour l'aide au pronostic.</p>
+                                <p class="tags"><span data-i18n="tag_proto">Prototypage</span><span>Machine learning</span><span data-i18n="tag_elec">Électronique</span><span data-i18n="tag_patent">Brevet</span><span data-i18n="tag_clinical">Clinique</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" aria-hidden="true" focusable="false"><rect x="6.0" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.10"/><rect x="6.0" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.50"/><rect x="6.0" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.19"/><rect x="6.0" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.47"/><rect x="6.0" y="56.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.46"/><rect x="13.4" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.43"/><rect x="13.4" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.36"/><rect x="13.4" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.36"/><rect class="accent" x="13.4" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.79"/><rect x="13.4" y="56.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.23"/><rect x="20.8" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.17"/><rect x="20.8" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.49"/><rect x="20.8" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.14"/><rect class="accent" x="20.8" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.74"/><rect x="20.8" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.40"/><rect x="28.2" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.28"/><rect x="28.2" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.40"/><rect x="28.2" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.33"/><rect class="accent" x="28.2" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.87"/><rect x="28.2" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.24"/><rect x="35.6" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.11"/><rect x="35.6" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.55"/><rect x="35.6" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.16"/><rect class="accent" x="35.6" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.76"/><rect x="35.6" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.69"/><rect x="43.0" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.29"/><rect x="43.0" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.43"/><rect x="43.0" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.19"/><rect class="accent" x="43.0" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.70"/><rect x="43.0" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.36"/><rect x="50.4" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.34"/><rect x="50.4" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.46"/><rect x="50.4" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.31"/><rect class="accent" x="50.4" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.97"/><rect x="50.4" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.29"/><rect x="57.8" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.41"/><rect x="57.8" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.43"/><rect x="57.8" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.39"/><rect class="accent" x="57.8" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.82"/><rect x="57.8" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.23"/><rect x="65.2" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.29"/><rect x="65.2" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.30"/><rect x="65.2" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.33"/><rect class="accent" x="65.2" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.99"/><rect x="65.2" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.19"/><rect x="72.6" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.21"/><rect x="72.6" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.51"/><rect x="72.6" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.21"/><rect x="72.6" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.60"/><rect x="72.6" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.38"/><rect x="80.0" y="6.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.14"/><rect x="80.0" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.59"/><rect x="80.0" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.16"/><rect class="accent" x="80.0" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.78"/><rect x="80.0" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.53"/><rect x="87.4" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.34"/><rect x="87.4" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.36"/><rect x="87.4" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.28"/><rect x="87.4" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.61"/><rect x="87.4" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.23"/><rect x="94.8" y="14.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.14"/><rect x="94.8" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.47"/><rect x="94.8" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.13"/><rect class="accent" x="94.8" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.74"/><rect x="94.8" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.54"/><rect x="102.2" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.33"/><rect x="102.2" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.40"/><rect x="102.2" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.27"/><rect class="accent" x="102.2" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.72"/><rect x="102.2" y="56.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.27"/><rect x="109.6" y="22.8" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.10"/><rect x="109.6" y="31.2" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.49"/><rect x="109.6" y="39.6" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.13"/><rect x="109.6" y="48.0" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.64"/><rect x="109.6" y="56.4" width="6.2" height="7.2" rx="1" fill="currentColor" opacity="0.65"/></svg>
+                            <div>
+                                <h4 data-i18n="animal_title">Capteur de bien-être animal</h4>
+                                <p class="project-sub" data-i18n="animal_subtitle">Analyse sonore pour l'élevage porcin</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="animal_desc">Capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning, et une échelle de notation de A à F traduite en label consommateur.</p>
+                                <p class="impact" data-i18n-html="animal_impact"><strong>Impact :</strong> valorisation de la filière, réduction des risques de maltraitance et transparence pour le consommateur.</p>
+                                <p class="tags"><span data-i18n="tag_signal">Analyse du signal</span><span>Machine learning</span><span>AgriTech</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M60 6C60 6 34 38 34 52A26 26 0 0 0 86 52C86 38 60 6 60 6Z" />
+                                <path class="accent" d="M40 54Q45 46 50 54T60 54T70 54T80 54" />
+                                <path d="M6 74H114" stroke-dasharray="1 4" />
+                            </svg>
+                            <div>
+                                <h4 data-i18n="milk_title">Capteur de qualité du lait</h4>
+                                <p class="project-sub" data-i18n="milk_subtitle">Détection précoce des mammites en temps réel</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="milk_desc">Capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation d'une solution de détection immédiate des anomalies.</p>
+                                <p class="impact" data-i18n-html="milk_impact"><strong>Impact :</strong> moins de traitements antibiotiques, moins de risque de contamination du tank et une meilleure rentabilité des exploitations.</p>
+                                <p class="tags"><span data-i18n="tag_sensors">Capteurs</span><span>IoT</span><span>Data acquisition</span><span>AgriTech</span></p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="6" y="28" width="22" height="24" rx="3" />
+                                <path d="M28 34C60 34 70 18 114 18M28 40H114M28 46C60 46 70 62 114 62" />
+                                <path class="accent" d="M28 40H114" stroke-width="2.5" stroke-dasharray="7 3 2 3" />
+                            </svg>
+                            <div>
+                                <h4>ED-WIRE</h4>
+                                <p class="project-sub" data-i18n="edwire_subtitle">Identification rapide des câblages électriques</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="edwire_desc">Dispositif qui identifie de façon rapide et fiable les fils électriques lors des rénovations et mises aux normes, par injection CPL d'un code unique propre à chaque module.</p>
+                                <p class="impact" data-i18n-html="edwire_impact"><strong>Impact :</strong> un marché de plusieurs millions de foyers en France et 8 à 10 heures de main-d'œuvre économisées par chantier.</p>
+                                <p class="tags"><span data-i18n="tag_elec">Électronique</span><span>IoT</span><span data-i18n="tag_industrial">Industrialisation</span></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Compétences -->
+            <section class="section" id="competences" aria-labelledby="competences-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="competences-title" data-i18n="skills_title">compétences</h2>
+                        <p class="section-intro" data-i18n="skills_intro">Un profil rare en medtech : la rigueur réglementaire et scientifique, et la main sur la technique, du capteur au modèle de langage.</p>
+                    </div>
+                    <div class="skills">
+                        <div class="skill">
+                            <h3 data-i18n="s1_title">Réglementaire et qualité</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s1_b1"><strong>MDR 2017/745, ISO 13485, ISO 14971</strong> : construction et pilotage du système de management de la qualité d'un dispositif médical de bout en bout</li>
+                                <li data-i18n="s1_b2">Application des normes IEC 62366-1, IEC 62304 et IEC 60601-1 aux dispositifs médicaux connectés</li>
+                                <li data-i18n-html="s1_b3">Rédaction et défense de <strong>dossiers techniques</strong> face aux autorités et organismes notifiés</li>
+                                <li data-i18n-html="s1_b4"><strong>Audits internes et fournisseurs</strong> (ISO 19011)</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3><span data-i18n="s2_title">LLM et IA générative</span><span class="skill-new" data-i18n="new">nouveau</span></h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s2_b1"><strong>Assistants LLM métier</strong> : RAG sur corpus documentaire, réponses sourcées, garde-fous</li>
+                                <li data-i18n-html="s2_b2"><strong>Speech-to-text et LLM</strong> : transcription locale (Whisper), synthèse et structuration de contenus</li>
+                                <li data-i18n-html="s2_b3"><strong>LLM locaux et agents</strong> : Ollama, tool calling, orchestration d'agents, déploiement sur site pour les données sensibles</li>
+                                <li data-i18n-html="s2_b4"><strong>Développement assisté par IA</strong> : Claude Code et API Claude, prompt engineering, évaluation des sorties</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s3_title">Machine learning et signal</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s3_b1">Modélisation par <strong>machine learning</strong> (XGBoost) pour l'estimation de la température corporelle centrale à partir de capteurs portés, présentée à PFIA Health &amp; AI 2025</li>
+                                <li data-i18n="s3_b2">Traitement avancé du signal physiologique : filtrage, extraction de features, séries temporelles bruitées et asynchrones</li>
+                                <li data-i18n="s3_b3">Pipelines data de bout en bout : acquisition capteurs, traitement, visualisation (Python, PostgreSQL, dashboards temps réel)</li>
+                                <li data-i18n="s3_b4">Veille scientifique active en IA appliquée à la santé</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s4_title">Clinique et medtech</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s4_b1">Conception et suivi d'<strong>essais cliniques multicentriques</strong> en medtech</li>
+                                <li data-i18n-html="s4_b2">Développement et validation de <strong>dispositifs médicaux de classe IIb</strong>, de la R&amp;D à l'industrialisation</li>
+                                <li data-i18n-html="s4_b3">Expertise en <strong>capteurs connectés et IoT biomédical</strong></li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s5_title">Prototypage et embarqué</h3>
+                            <ul class="skill-list">
+                                <li data-i18n="s5_b1">Programmation embarquée et prototypage de capteurs connectés (BLE, nRF52840)</li>
+                                <li data-i18n="s5_b2">Conception 3D et prototypage rapide (Fusion 360, impression 3D)</li>
+                                <li data-i18n="s5_b3">Développement de procédés de fabrication (outillage, industrialisation produit)</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s6_title">Finance et stratégie</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s6_b1">Contribution active aux <strong>due diligences investisseurs</strong> (levées de fonds de plusieurs millions d'euros)</li>
+                                <li data-i18n-html="s6_b2">Élaboration et suivi de <strong>budgets stratégiques</strong> et de roadmaps produit</li>
+                                <li data-i18n-html="s6_b3">Définition de stratégies <strong>go-to-market</strong> et industrialisation fournisseurs</li>
+                                <li data-i18n-html="s6_b4">Pilotage par <strong>OKR</strong> et priorisation produit alignée sur les objectifs business</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s7_title">Leadership et management</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s7_b1">Recrutement, structuration et encadrement des équipes <strong>technique, R&amp;D et QARA</strong></li>
+                                <li data-i18n="s7_b2">Coordination transverse entre réglementaire, R&amp;D, clinique et production</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h3 data-i18n="s8_title">Recherche scientifique</h3>
+                            <ul class="skill-list">
+                                <li data-i18n-html="s8_b1"><strong>Plus de dix ans</strong> de recherche en neurosciences et physiologie expérimentale, une rigueur méthodologique appliquée aux essais cliniques</li>
+                                <li data-i18n-html="s8_b2">Expertise en <strong>IRM fonctionnelle</strong>, microscopie confocale et biphoton (recherche doctorale)</li>
+                                <li data-i18n="s8_b3">Publications internationales et communications en congrès</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parcours -->
+            <section class="section" id="parcours" aria-labelledby="parcours-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="parcours-title" data-i18n="career_title">parcours</h2>
+                        <p class="section-intro" data-i18n="career_intro">De la paillasse de neurosciences à la direction technique d'une medtech.</p>
+                    </div>
+                    <div class="timeline">
+                        <span class="timeline-fill" aria-hidden="true"></span>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j1_dates">Déc. 2021 à aujourd'hui</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j1_title">Chief Technology Officer, cofondateur</h3>
+                                <p class="job-org">F2D Medical <span data-i18n="loc_colombelles">Colombelles, Normandie</span></p>
+                                <ul>
+                                    <li data-i18n="j1_b1">Pilotage R&amp;D et industrialisation de dispositifs médicaux de classe IIb : conception, essais, validation.</li>
+                                    <li data-i18n="j1_b2">Conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 62304, IEC 60601-1.</li>
+                                    <li data-i18n="j1_b3">Gestion du dossier technique et du design dossier, audits internes et fournisseurs ISO 19011.</li>
+                                    <li data-i18n="j1_b4">Essais cliniques : conception, suivi et analyse des données ; plan et rapport d'évaluation clinique (CEP/CER).</li>
+                                    <li data-i18n="j1_b5">Stratégie et finance : due diligences d'investisseurs, planification budgétaire, priorisation de la roadmap.</li>
+                                    <li data-i18n="j1_b6">Data, IoT et IA : capteurs, traitement du signal, machine learning, outils internes à base de LLM.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j2_dates">Août 2020 à déc. 2021</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j2_title">Chercheur postdoctoral</h3>
+                                <p class="job-org">UMR-S 1075 COMETE <span>Caen</span></p>
+                                <ul><li data-i18n="j2_b1">Recherche en ingénierie biomédicale, dispositifs médicaux et organisation d'essais cliniques.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j3_dates">Fév. 2017 à déc. 2021</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j3_title">Chef de projet scientifique</h3>
+                                <p class="job-org">The Use Factory, Capital Innovation <span>Cairon</span></p>
+                                <ul><li data-i18n="j3_b1">Management de projets R&amp;D en medtech et coordination réglementaire.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j4_dates">Fév. 2016 à déc. 2016</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j4_title">Consultant externe IoT et santé</h3>
+                                <p class="job-org">The Use Factory, Capital Innovation <span>Cairon</span></p>
+                                <ul><li data-i18n="j4_b1">Définition de protocoles expérimentaux, recueil et analyse de données physiologiques.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j5_dates">Juil. 2015 à oct. 2015</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j5_title">Ingénieur en instrumentation expérimentale et biologique</h3>
+                                <p class="job-org">ISTCT UMR 6301, CNRS <span>Caen</span></p>
+                                <ul><li data-i18n="j5_b1">Développement de procédures en microscopie biphoton et IRM.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j6_dates">Juil. 2012 à déc. 2015</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j6_title">Doctorant</h3>
+                                <p class="job-org">ISTCT UMR 6301, CNRS <span>Caen</span></p>
+                                <ul><li data-i18n="j6_b1">Impact de l'hypertension artérielle sur le couplage neuro-glio-vasculaire, étudié par IRM et microscopie biphoton.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j7_dates">Déc. 2014 à oct. 2015</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j7_title">ATER et assistant de recherche en neurobiologie</h3>
+                                <p class="job-org">Université de Caen Normandie</p>
+                                <ul><li data-i18n="j7_b1">Recherche sur l'hypertension chronique et le couplage neuro-glio-vasculaire (2PLSM), enseignements en psychobiologie.</li></ul>
+                            </div>
+                        </div>
+                        <div class="job">
+                            <p class="job-dates" data-i18n="j8_dates">Déc. 2013 à déc. 2014</p>
+                            <div class="job-main">
+                                <h3 data-i18n="j8_title">Moniteur d'enseignement</h3>
+                                <p class="job-org">Université de Caen Normandie</p>
+                                <ul><li data-i18n="j8_b1">Activités d'enseignement et de soutien pédagogique.</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education">
+                        <h3 data-i18n="education_title">Formation</h3>
+                        <div class="degree">
+                            <strong data-i18n="edu1">Doctorat en neurobiologie et neurosciences</strong>
+                            <span data-i18n="edu1_meta">Université de Caen Normandie, 2012 à 2015</span>
+                        </div>
+                        <div class="degree">
+                            <strong data-i18n="edu2">Master en neurobiologie et neurosciences</strong>
+                            <span data-i18n="edu2_meta">Université de Caen Normandie, 2007 à 2012</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications & brevets -->
+            <section class="section" id="publications" aria-labelledby="publications-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="publications-title" data-i18n="pubs_title">publications et brevets</h2>
+                    </div>
+                    <div class="pubs">
+                        <div>
+                            <h3 class="col-title" data-i18n="pubs_articles">Articles et communications</h3>
+                            <ul class="pub-list">
+                                <li><span class="pub-title">Thermodiag: Artificial intelligence for non-invasive internal temperature monitoring</span><span class="pub-venue">PFIA Health &amp; AI, 10th edition, Dijon</span><span class="pub-year">2025</span></li>
+                                <li><span class="pub-title">Two-kidney one-clip … cerebral ischemia</span><span class="pub-venue">Journal of Cerebral Blood Flow &amp; Metabolism</span><span class="pub-year">2017</span></li>
+                                <li><span class="pub-title">Encapsulation of fluorescein into nanozeolites L and Y</span><span class="pub-venue">Microporous and Mesoporous Materials</span><span class="pub-year">2017</span></li>
+                                <li><span class="pub-title">Synthesis of fluorescein by ship in a bottle method in different zeolites</span><span class="pub-venue">New Journal of Chemistry</span><span class="pub-year">2017</span></li>
+                                <li><span class="pub-title">Synthesis and encapsulation of fluorescein in zeolite Y</span><span class="pub-venue">Microporous and Mesoporous Materials</span><span class="pub-year">2016</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="col-title" data-i18n="pubs_patents">Brevets</h3>
+                            <div class="family">
+                                <h4 data-i18n="fam1_title">Dispositif de mesure de températures et système pour déterminer une température interne profonde d'un être humain</h4>
+                                <p class="family-meta" data-i18n="fam1_meta">4 publications, dont un brevet délivré en France</p>
+                                <ul class="filings">
+                                    <li><b>FR 3097115 B1</b><span class="granted" data-i18n="p1">Délivré le 16 juil. 2021, actif</span></li>
+                                    <li><b>WO 2020/249665 A1</b><span data-i18n="p2">Publié le 17 déc. 2020</span></li>
+                                    <li><b>EP 3780912 A1</b><span data-i18n="p3">Publié le 17 fév. 2021, en cours d'examen</span></li>
+                                    <li><b>US 2022/0160240 A1</b><span data-i18n="p4">Publié le 26 mai 2022, en cours d'examen</span></li>
+                                </ul>
+                            </div>
+                            <div class="family">
+                                <h4 data-i18n="fam2_title">Housse multicouche de maintien d'un dispositif sur le corps humain</h4>
+                                <p class="family-meta" data-i18n="fam2_meta">7 publications en Europe, Amérique, Asie et Océanie</p>
+                                <ul class="filings">
+                                    <li><b>FR 3139712 A1</b><span data-i18n="p5">Publié le 22 mars 2024</span></li>
+                                    <li><b>WO 2024/061524 A1</b><span data-i18n="p6">Publié le 28 mars 2024</span></li>
+                                    <li><b>AU 2023345784 A1</b><span data-i18n="p7">Publié le 20 mars 2025, en cours d'examen</span></li>
+                                    <li><b>MX 2025003114 A</b><span data-i18n="p8">Publié le 2 avr. 2025</span></li>
+                                    <li><b>IL 319426 A</b><span data-i18n="p9">Publié le 1er mai 2025</span></li>
+                                    <li><b>CN 119997868 A</b><span data-i18n="p10">Publié le 13 mai 2025, en cours d'examen</span></li>
+                                    <li><b>EP 4590176 A1</b><span data-i18n="p11">Publié le 30 juil. 2025, en cours d'examen</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="section" id="certifications" aria-labelledby="certifications-title">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="certifications-title" data-i18n="certs_title">formations certifiantes</h2>
+                    </div>
+                    <ul class="certs">
+                        <li><b data-i18n="c1">Audit interne et fournisseurs, ISO 19011 et ISO 13485</b><span>MD101</span></li>
+                        <li><b data-i18n="c2">Dossiers techniques conformes à la MDR 2017/745</b><span>BSI Group</span></li>
+                        <li><b data-i18n="c3">ISO 13485 : conception et mise en application d'un QMS</b><span>Abylsen</span></li>
+                        <li><b>ISO 14971: Product Risk Management</b><span data-i18n="c4_org">Gestion des risques produit</span></li>
+                        <li><b data-i18n="c5">IEC 62366-1 : ingénierie de l'aptitude à l'utilisation des dispositifs médicaux</b><span>Aguila</span></li>
+                        <li><b data-i18n="c6">IEC 62304 : exigences 2006 + Amd1 appliquées au cycle de vie des logiciels</b><span>MD101</span></li>
+                        <li><b data-i18n="c7">Obligations relatives aux dispositifs médicaux (UDI)</b><span>GS1 France</span></li>
+                        <li><b data-i18n="c8">Expérimentation animale appliquée à la recherche biomédicale, niveaux 1 et 2</b><span>CNRS</span></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact" id="contact" aria-labelledby="contact-title">
+                <svg class="leaf leaf--contact" viewBox="-569 -1021 1150 1671" aria-hidden="true" focusable="false"><defs><clipPath id="clip-contact"><path d="M0 30 10 33 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 430 95 450 69 471 32 511 -73 540 -158 556 -224 561 -277 557 -327 546 -376 515 -473 493 -532 467 -590 438 -647 394 -720 358 -773 324 -814 284 -853 237 -891 179 -931 129 -963 97 -979 70 -988 10 -1001 -18 -998 -89 -967 -191 -910 -247 -875 -291 -842 -320 -813 -354 -774 -384 -730 -431 -650 -464 -588 -488 -533 -507 -474 -519 -422 -529 -356 -546 -181 -549 -126 -547 -75 -538 -39 -523 -8 -497 27 -453 69 -389 118 -341 146 -300 162 -266 167 -231 164 -185 152 -141 134 -102 116 -89 108 -72 92 -29 43 -15 33Z"/></clipPath></defs><g clip-path="url(#clip-contact)"><path class="leaf-under" d="M0 30 10 33 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 430 95 450 69 471 32 511 -73 540 -158 556 -224 561 -277 557 -327 546 -376 515 -473 493 -532 467 -590 438 -647 394 -720 358 -773 324 -814 284 -853 237 -891 179 -931 129 -963 97 -979 70 -988 10 -1001 -18 -998 -89 -967 -191 -910 -247 -875 -291 -842 -320 -813 -354 -774 -384 -730 -431 -650 -464 -588 -488 -533 -507 -474 -519 -422 -529 -356 -546 -181 -549 -126 -547 -75 -538 -39 -523 -8 -497 27 -453 69 -389 118 -341 146 -300 162 -266 167 -231 164 -185 152 -141 134 -102 116 -89 108 -72 92 -29 43 -15 33Z"/><path class="pcb" d="M-90 -360 135 -360 262 -487 397 -487M-90 -180 -180 -180 -307 -53 -397 -53M-135 -450 -135 -585 -230 -680 -230 -770M225 -135 0 -135 -191 56 -326 56M90 -270 -180 -270 -339 -429 -339 -609M360 -270 450 -270 514 -206M-225 -180 -225 -360 -352 -487M315 -630 315 -450 188 -323M-90 -360 -90 -180 -185 -85M180 -900 180 -720 116 -656 116 -386 244 -259 244 -124M225 -360 450 -360M450 -540 450 -270 355 -175 220 -175 156 -238 -24 -238M45 -765 45 -900M-405 -540 -180 -540 -53 -667 217 -667M540 -270 450 -270 386 -334M90 0 90 -180 -37 -307 -37 -577 -133 -673 -313 -673M495 -450 270 -450 143 -323 143 -53M-405 -180 -405 -315 -500 -410M-135 -495 -315 -495 -379 -431M-315 -360 -180 -360 -53 -233 -53 -8M-180 -225 -270 -225 -334 -161 -514 -161M-405 -495 -135 -495 -8 -622 82 -622M-180 -720 -180 -630 -21 -471M315 -270 315 -45"/><g class="pcb-vias"><circle cx="-90" cy="-360" r="9"/><circle cx="397" cy="-487" r="9"/><circle cx="-90" cy="-180" r="9"/><circle cx="-397" cy="-53" r="9"/><circle cx="-135" cy="-450" r="9"/><circle cx="-230" cy="-770" r="9"/><circle cx="225" cy="-135" r="9"/><circle cx="-326" cy="56" r="9"/><circle cx="90" cy="-270" r="9"/><circle cx="-339" cy="-609" r="9"/><circle cx="360" cy="-270" r="9"/><circle cx="514" cy="-206" r="9"/><circle cx="-225" cy="-180" r="9"/><circle cx="-352" cy="-487" r="9"/><circle cx="315" cy="-630" r="9"/><circle cx="188" cy="-323" r="9"/><circle cx="-90" cy="-360" r="9"/><circle cx="-185" cy="-85" r="9"/><circle cx="180" cy="-900" r="9"/><circle cx="244" cy="-124" r="9"/><circle cx="225" cy="-360" r="9"/><circle cx="450" cy="-360" r="9"/><circle cx="450" cy="-540" r="9"/><circle cx="-24" cy="-238" r="9"/><circle cx="45" cy="-765" r="9"/><circle cx="45" cy="-900" r="9"/><circle cx="-405" cy="-540" r="9"/><circle cx="217" cy="-667" r="9"/><circle cx="540" cy="-270" r="9"/><circle cx="386" cy="-334" r="9"/><circle cx="90" cy="0" r="9"/><circle cx="-313" cy="-673" r="9"/><circle cx="495" cy="-450" r="9"/><circle cx="143" cy="-53" r="9"/><circle cx="-405" cy="-180" r="9"/><circle cx="-500" cy="-410" r="9"/><circle cx="-135" cy="-495" r="9"/><circle cx="-379" cy="-431" r="9"/><circle cx="-315" cy="-360" r="9"/><circle cx="-53" cy="-8" r="9"/><circle cx="-180" cy="-225" r="9"/><circle cx="-514" cy="-161" r="9"/><circle cx="-405" cy="-495" r="9"/><circle cx="82" cy="-622" r="9"/><circle cx="-180" cy="-720" r="9"/><circle cx="-21" cy="-471" r="9"/><circle cx="315" cy="-270" r="9"/><circle cx="315" cy="-45" r="9"/></g><g class="pcb-pads"><rect x="-143" y="-244" width="28" height="14" rx="2"/><rect x="-326" y="-714" width="14" height="28" rx="2"/><rect x="-246" y="-62" width="14" height="28" rx="2"/><rect x="-469" y="-404" width="28" height="14" rx="2"/><rect x="-188" y="-517" width="14" height="28" rx="2"/></g></g><path class="leaf-petiole" d="M0 20 -1 36 -2 57 -3 82 -4 110 -6 140 -7 172 -10 204 -12 237 -16 269 -20 300 -25 332 -32 367 -40 403 -48 440 -56 477 -65 513 -73 546 -80 576 -86 601 -90 620"/><path class="leaf-body" d="M5 31 15 37 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 431 94 282 16 280 11 285 8 458 56 481 7 519 -94 540 -158 553 -210 416 -236 413 -241 417 -244 560 -251 561 -277 558 -317 548 -366 528 -434 499 -518 357 -507 353 -509 355 -515 482 -558 458 -609 427 -665 388 -729 358 -773 351 -782 228 -728 224 -728 222 -731 224 -735 329 -808 301 -838 266 -868 228 -898 180 -931 84 -856 80 -855 78 -858 78 -861 147 -952 116 -970 91 -981 65 -989 10 -1001 -11 -1000 -25 -995 -84 -970 -131 -945 -98 -885 -100 -880 -104 -880 -171 -922 -228 -887 -265 -862 -299 -835 -324 -810 -172 -709 -171 -705 -172 -702 -176 -702 -347 -782 -389 -722 -441 -633 -477 -560 -310 -507 -308 -502 -312 -499 -493 -518 -510 -464 -521 -412 -531 -345 -540 -242 -378 -238 -375 -236 -374 -233 -377 -230 -545 -196 -550 -115 -545 -66 -541 -48 -531 -23 -518 -1 -502 20 -479 46 -456 66 -270 8 -266 9 -265 12 -267 15 -420 95 -389 118 -358 137 -325 153 -300 162 -266 167 -231 164 -194 155 -149 138 -102 116 -89 108 -72 92 -33 47 -19 35 -5 30Z" fill-rule="evenodd"/><path class="leaf-veins" d="M0 -15 13 -10 30 -3 50 5 73 14 96 24 120 35 143 46 163 58 183 71 204 86 225 102 245 119 264 135 281 150 296 162 307 171M0 -184 21 -182 48 -179 81 -176 118 -172 156 -168 195 -163 232 -157 266 -151 300 -143 335 -133 371 -123 406 -112 439 -101 469 -91 494 -83 513 -77M0 -353 22 -356 51 -361 86 -366 124 -372 165 -378 206 -384 245 -388 281 -391 316 -393 354 -394 392 -394 429 -393 464 -392 496 -391 522 -390 542 -390M0 -522 17 -530 40 -540 68 -552 98 -566 130 -580 163 -593 194 -606 222 -616 250 -626 279 -634 308 -642 337 -650 364 -656 388 -662 409 -667 424 -671M0 -691 10 -700 24 -713 41 -728 59 -745 78 -762 97 -779 115 -795 132 -808 147 -821 164 -832 180 -844 196 -855 211 -864 224 -873 235 -880 244 -886M0 -860 4 -866 11 -875 18 -886 26 -898 34 -910 42 -921 50 -932 56 -940 62 -948 68 -954 73 -960 78 -966 83 -970 87 -974 90 -978 93 -981M0 -15 -12 -10 -28 -3 -47 4 -69 13 -91 23 -113 33 -134 44 -154 55 -172 67 -192 82 -211 98 -230 114 -248 130 -264 144 -277 156 -288 165M0 -184 -22 -181 -51 -177 -86 -173 -125 -168 -165 -162 -206 -156 -246 -149 -282 -141 -317 -132 -355 -122 -393 -110 -431 -97 -466 -85 -497 -75 -524 -65 -544 -59M0 -353 -21 -356 -50 -360 -83 -364 -121 -369 -160 -374 -200 -379 -238 -382 -273 -385 -308 -385 -344 -385 -381 -384 -417 -383 -451 -381 -482 -379 -507 -377 -527 -376M0 -522 -17 -530 -39 -541 -66 -554 -96 -568 -127 -583 -159 -597 -189 -611 -217 -622 -243 -632 -272 -641 -300 -650 -328 -658 -355 -666 -378 -672 -398 -678 -413 -682M0 -691 -10 -700 -24 -712 -40 -727 -58 -743 -77 -760 -96 -776 -114 -792 -131 -805 -146 -816 -162 -828 -179 -839 -194 -849 -209 -858 -222 -866 -233 -873 -241 -879M0 -860 -4 -866 -9 -875 -16 -885 -23 -896 -30 -907 -37 -918 -43 -928 -49 -936 -54 -943 -58 -949 -62 -955 -66 -959 -70 -964 -73 -967 -76 -970 -78 -973M0 20 0 -8 1 -43 2 -85 3 -132 3 -182 4 -236 5 -291 5 -345 6 -399 6 -450 6 -502 5 -559 5 -619 4 -679 3 -739 3 -797 2 -851 1 -898 0 -939 0 -970"/></svg>
+                <div class="wrap">
+                    <h2 class="section-title" id="contact-title" data-i18n="contact_title">contact</h2>
+                    <p class="contact-lede" style="margin-top:28px" data-i18n="contact_lede">Un projet medtech, une question réglementaire ou une idée autour de l'IA ? Écrivez-moi.</p>
+                    <a class="contact-mail" href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/bmenardphd/" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" /></svg>LinkedIn</a>
+                        <a href="https://www.f2d-medical.com" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3z" /></svg>F2D Medical</a>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <footer class="site-footer">
+                        <span>© 2026 Benjamin Menard</span>
+                        <span data-i18n="footer_note">Feuilles, circuits et neurone générés de façon procédurale.</span>
+                    </footer>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+        <script src="js/i18n.js?v=20261021" defer></script>
+        <script src="js/main.js?v=20261021" defer></script>
     </body>
 </html>
