@@ -81,6 +81,8 @@
         embedded_desc: "An Arduino Nano 33 BLE Sense (nRF52840) acts as the sensory body of a local LLM (Ollama): on-device sensor classification, answers through an RGB LED and speech synthesis. Variants: presence detection from radio RSSI analysis (in progress), a local voice assistant with tool calling.",
         evolve_subtitle: "Ecosystem simulation",
         evolve_desc: "A simulation in which virtual species evolve through natural selection, built on a C++20 engine with an experimentation lab to observe how populations change. In development.",
+        hive_subtitle: "Autonomous ESP32 swarm",
+        hive_desc: "A self-organising mesh network of ESP32 boards (ESP-WIFI-MESH). A new worker announces itself with its identity and a capability profile (sensors, actuators, compute); its neighbours validate it and add it to a shared directory. A coordinating queen is elected among the most reliable nodes through a Raft-inspired vote, and replaced automatically if it fails: it keeps the directory and assigns each task to the best-suited worker, without centralising computation. Security relies on cryptographic identity, encrypted messages, signed updates and least-privilege permissions. In development.",
 
         career_title: "career",
         career_intro: "From the neuroscience bench to leading technology at a medtech company.",
