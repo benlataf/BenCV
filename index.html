@@ -4,10 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0e1c15" />
-        <meta name="description" content="Benjamin Menard, PhD en neurosciences, CTO et cofondateur de F2D Medical. Dispositifs médicaux de classe IIb, conformité réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, machine learning et LLM." data-i18n-attr="content:meta_description" />
+        <meta name="description" content="Benjamin Menard, PhD en neurosciences, CTO et cofondateur de F2D Medical : dispositif médical de classe IIb marqué CE, qualité et réglementaire (MDR, ISO 13485, ISO 14971), essais cliniques, machine learning." data-i18n-attr="content:meta_description" />
         <meta name="author" content="Benjamin Menard" />
         <meta property="og:title" content="Benjamin Menard, PhD : CTO, F2D Medical" />
-        <meta property="og:description" content="Du neurone au dispositif médical : conception, validation et industrialisation de technologies de santé." />
+        <meta property="og:description" content="Du neurone au dispositif médical : PhD en neurosciences, CTO et cofondateur de F2D Medical, qui a conduit Thermodiag jusqu'au marquage CE." />
         <meta property="og:image" content="https://b-menard.fr/assets/img/og.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -18,7 +18,21 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin />
         <link rel="preload" as="image" href="assets/img/hero-1400.webp" imagesrcset="assets/img/hero-800.webp 800w, assets/img/hero-1400.webp 1400w" imagesizes="(min-width: 700px) 62vw, 96vw" />
-        <link href="css/site.css?v=20261021" rel="stylesheet" />
+        <link href="css/site.css?v=20261021b" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Benjamin Menard",
+                "honorificSuffix": "PhD",
+                "jobTitle": "Chief Technology Officer",
+                "worksFor": { "@type": "Organization", "name": "F2D Medical", "url": "https://www.f2d-medical.com" },
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Université de Caen Normandie" },
+                "url": "https://b-menard.fr/",
+                "sameAs": ["https://www.linkedin.com/in/bmenardphd/"],
+                "knowsAbout": ["Dispositifs médicaux", "MDR 2017/745", "ISO 13485", "ISO 14971", "Évaluation clinique", "Machine learning", "Neurosciences"]
+            }
+        </script>
         <script src="https://cdn.counter.dev/script.js" data-id="23539350-91af-4225-8441-333b56062ee8" data-utcoffset="2" defer></script>
     </head>
     <body>
@@ -39,7 +53,6 @@
             <nav class="nav-links" aria-label="Navigation principale" data-i18n-attr="aria-label:nav_label">
                 <a href="#apropos" data-i18n="nav_about">À propos</a>
                 <a href="#projets" data-i18n="nav_projects">Projets</a>
-                <a href="#competences" data-i18n="nav_skills">Compétences</a>
                 <a href="#parcours" data-i18n="nav_career">Parcours</a>
                 <a href="#publications" data-i18n="nav_pubs">Publications</a>
                 <a href="#contact" data-i18n="nav_contact">Contact</a>
@@ -53,7 +66,6 @@
         <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
             <a href="#apropos" data-i18n="nav_about">À propos</a>
             <a href="#projets" data-i18n="nav_projects">Projets</a>
-            <a href="#competences" data-i18n="nav_skills">Compétences</a>
             <a href="#parcours" data-i18n="nav_career">Parcours</a>
             <a href="#publications" data-i18n="nav_pubs">Publications</a>
             <a href="#contact" data-i18n="nav_contact">Contact</a>
@@ -81,7 +93,7 @@
                         <span class="line"><span>benjamin</span></span>
                         <span class="line"><span>menard</span></span>
                     </h1>
-                    <p class="hero-lede" data-i18n="hero_lede">Du neurone au dispositif médical : je conçois, valide et industrialise des technologies de santé.</p>
+                    <p class="hero-lede" data-i18n="hero_lede">Du neurone au dispositif médical : j'ai conduit un brassard qui estime la température centrale jusqu'au marquage CE.</p>
                     <p class="hero-role" data-i18n="hero_role">PhD en neurosciences, CTO et cofondateur de F2D Medical</p>
                     <a class="scroll-cue" href="#essentiel">
                         <svg viewBox="0 0 14 34" aria-hidden="true"><rect x="0.75" y="0.75" width="12.5" height="32.5" rx="6.25" fill="none" stroke="currentColor" stroke-width="1.5" /><circle class="dot" cx="7" cy="8" r="2.2" fill="currentColor" /></svg>
@@ -96,12 +108,11 @@
                     <div>
                         <h2 class="visually-hidden" id="essentiel-title" data-i18n="essentials_title">L'essentiel</h2>
                         <div class="manifest">
-                            <p data-i18n="m1">Docteur en neurosciences.</p>
-                            <p data-i18n="m2">Plus de dix ans de recherche, du cortex au capteur.</p>
-                            <p data-i18n="m3">Un dispositif médical de classe IIb, marqué CE et autorisé par la SFDA en Arabie saoudite.</p>
-                            <p data-i18n="m4">Un modèle validé d'estimation de la température centrale.</p>
-                            <p data-i18n="m5">Plus de 35 000 heures d'acquisition sur patients, plus de 140 millions de mesures.</p>
-                            <p data-i18n="m6">Deux familles de brevets, onze titres publiés.</p>
+                            <p data-i18n-html="m1"><span class="manifest-num">Classe IIb</span> Un dispositif médical marqué CE, autorisé aussi en Arabie saoudite par la SFDA.</p>
+                            <p data-i18n-html="m2"><span class="manifest-num">0,35&nbsp;°C</span> D'erreur absolue moyenne face à une sonde invasive de référence.</p>
+                            <p data-i18n-html="m3"><span class="manifest-num">35&nbsp;000&nbsp;h</span> D'acquisition sur patients, pour plus de 140 millions de mesures.</p>
+                            <p data-i18n-html="m4"><span class="manifest-num">9 brevets</span> Délivrés en Europe, aux États-Unis, en Chine, au Japon, en Israël, au Maroc et en Afrique du Sud, sur deux familles dont je suis co-inventeur.</p>
+                            <p data-i18n-html="m5"><span class="manifest-num">PhD</span> En neurosciences, premier auteur dans le Journal of Cerebral Blood Flow &amp; Metabolism.</p>
                         </div>
                         <svg class="ecg" viewBox="0 -40 420 56" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 0 8 0 12 -4 16 0 22 0 24 3 27 -34 30 10 33 0 42 0 48 -7 56 0 70 0 70 0 78 0 82 -4 86 0 92 0 94 3 97 -34 100 10 103 0 112 0 118 -7 126 0 140 0 140 0 148 0 152 -4 156 0 162 0 164 3 167 -34 170 10 173 0 182 0 188 -7 196 0 210 0 210 0 218 0 222 -4 226 0 232 0 234 3 237 -34 240 10 243 0 252 0 258 -7 266 0 280 0 280 0 288 0 292 -4 296 0 302 0 304 3 307 -34 310 10 313 0 322 0 328 -7 336 0 350 0 350 0 358 0 362 -4 366 0 372 0 374 3 377 -34 380 10 383 0 392 0 398 -7 406 0 420 0" pathLength="1"/></svg>
                     </div>
@@ -119,9 +130,9 @@
                     </div>
                     <div class="about">
                         <div class="about-text">
-                            <p data-i18n="about_p1">Entrepreneur, chercheur et ingénieur en innovation médicale, je combine plus de dix ans d'expérience en neurosciences, ingénierie biomédicale et développement de dispositifs médicaux. Chez F2D Medical, que j'ai cofondée et dont je suis CTO, je pilote la conception, la validation et l'industrialisation de Thermodiag, un dispositif médical connecté de classe IIb.</p>
-                            <p data-i18n="about_p2">Je porte la conformité réglementaire du dispositif, de la gestion des risques à l'évaluation clinique. J'ai participé aux levées de fonds et aux due diligences d'investisseurs, et je définis la stratégie produit et la roadmap de développement.</p>
-                            <p data-i18n="about_p3">Sur le plan technique, je développe des chaînes de traitement de données capteurs, des modèles de machine learning et des outils internes à base de LLM.</p>
+                            <p data-i18n="about_p1">Ma thèse portait sur la façon dont le cerveau ajuste son débit sanguin à son activité, et sur ce que l'hypertension y dérègle. Depuis, je travaille sur le même objet vu de l'extérieur : la chaleur que le sang transporte jusqu'à la peau. C'est elle que j'ai mesurée pour repérer les hémangiomes, et c'est d'elle que Thermodiag déduit la température centrale.</p>
+                            <p data-i18n="about_p2">Chez F2D Medical, que j'ai cofondée en 2021, je tiens les postes qu'une jeune medtech ne peut pas encore séparer : direction technique, qualité et réglementaire, affaires scientifiques. Concrètement, rédiger le dossier technique d'un algorithme que je développe depuis 2017, puis défendre devant l'organisme notifié des choix techniques faits sur le banc.</p>
+                            <p data-i18n="about_p3">En dehors de F2D, je construis pour comprendre : ML embarqué sur microcontrôleur, LLM exécutés en local, simulation d'évolution en C++20.</p>
                         </div>
                         <aside class="about-aside">
                             <div>
@@ -137,9 +148,25 @@
                                 </ul>
                             </div>
                             <div>
+                                <h3 class="meta-title" data-i18n="about_tools">Outils et techniques</h3>
+                                <ul class="chips">
+                                    <li>Python</li>
+                                    <li>XGBoost</li>
+                                    <li>PostgreSQL</li>
+                                    <li>C++20</li>
+                                    <li>nRF52840 · BLE</li>
+                                    <li>Fusion 360</li>
+                                    <li>Whisper</li>
+                                    <li>Ollama</li>
+                                    <li>Claude Code</li>
+                                    <li data-i18n="tool_mri">IRM</li>
+                                    <li data-i18n="tool_2p">Microscopie biphoton</li>
+                                </ul>
+                            </div>
+                            <div>
                                 <h3 class="meta-title" data-i18n="about_where">Basé à</h3>
                                 <div class="contact-lines">
-                                    <span data-i18n="about_city">Caen et Colombelles, Normandie</span>
+                                    <span data-i18n="about_city">Caen, Normandie</span>
                                     <a href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
                                     <a href="https://www.linkedin.com/in/bmenardphd/" rel="noopener">LinkedIn</a>
                                 </div>
@@ -154,7 +181,6 @@
                 <div class="wrap">
                     <div class="section-head">
                         <h2 class="section-title" id="projets-title" data-i18n="projects_title">projets</h2>
-                        <p class="section-intro" data-i18n="projects_intro">Projets professionnels et personnels, du capteur à l'algorithme.</p>
                     </div>
 
                     <article class="feature">
@@ -206,14 +232,14 @@
                         <div>
                             <p class="feature-status" data-i18n="f2d_status">Projet actuel, depuis 2021</p>
                             <h3>Thermodiag</h3>
-                            <p class="feature-sub" data-i18n="f2d_subtitle">Dispositif médical connecté de classe IIb pour le suivi de la température corporelle, développé chez F2D Medical, marqué CE et autorisé par la SFDA.</p>
+                            <p class="feature-sub" data-i18n="f2d_subtitle">Brassard connecté qui estime en continu la température centrale, sans sonde invasive. Dispositif médical de classe IIb marqué CE et autorisé par la SFDA, développé chez F2D Medical.</p>
                             <ul class="feature-list">
-                                <li data-i18n-html="f2d_b1"><strong>CTO et cofondateur</strong> : pilotage de la R&amp;D et de l'industrialisation, de la conception à la mise sur le marché.</li>
-                                <li data-i18n-html="f2d_b2"><strong>Responsable QARA</strong> : système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes et fournisseurs.</li>
-                                <li data-i18n-html="f2d_b3"><strong>Responsable scientifique</strong> : conception et suivi des essais cliniques, plans et rapports d'évaluation clinique (CEP/CER), veille bibliographique.</li>
-                                <li data-i18n-html="f2d_b4"><strong>Data et algorithmes</strong> : modèle validé d'estimation de la température centrale, plus de 35 000 heures d'acquisition sur patients, présenté à PFIA Health &amp; AI 2025.</li>
+                                <li data-i18n-html="f2d_b1"><strong>Capteur</strong> : brassard multi-capteurs, électronique et firmware BLE, industrialisation avec les fournisseurs.</li>
+                                <li data-i18n-html="f2d_b2"><strong>Modèle</strong> : estimation de la température centrale par machine learning (XGBoost), erreur absolue moyenne de 0,35&nbsp;°C face à une sonde invasive de référence ; présenté à PFIA Health &amp; AI 2025.</li>
+                                <li data-i18n-html="f2d_b3"><strong>Clinique</strong> : essais cliniques multicentriques, plan et rapport d'évaluation clinique (CEP/CER) ; plus de 35&nbsp;000 heures d'acquisition sur patients au total.</li>
+                                <li data-i18n-html="f2d_b4"><strong>Réglementaire</strong> : responsable QARA ; système qualité ISO 13485, dossier technique MDR 2017/745, gestion des risques ISO 14971, audits internes et fournisseurs.</li>
+                                <li data-i18n-html="f2d_b5"><strong>Entreprise</strong> : CTO et cofondateur ; recrutement et encadrement des équipes technique, R&amp;D et QARA ; due diligences des levées de fonds.</li>
                             </ul>
-                            <p class="tags"><span>MDR 2017/745</span><span>ISO 13485</span><span>ISO 14971</span><span>IoT</span><span>Machine learning</span></p>
                         </div>
                     </article>
 
@@ -239,55 +265,6 @@
                                     <li data-i18n-html="aitools_b3"><strong>Comptes rendus de réunion</strong> : transcription locale (Whisper), puis rédaction du compte rendu par LLM.</li>
                                     <li data-i18n-html="aitools_b4"><strong>Socle commun</strong> : serveur interne et authentification unique (SSO).</li>
                                 </ul>
-                                <p class="tags"><span>Python</span><span data-i18n="tag_graph">Graphe</span><span>RAG</span><span>Whisper</span><span>LLM</span><span>SSO</span></p>
-                            </div>
-                        </article>
-
-                        <article class="project">
-                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="36" y="22" width="40" height="40" rx="3" />
-                                <rect x="47" y="33" width="18" height="18" rx="1.5" />
-                                <path d="M42 22V14M50 22V14M58 22V14M66 22V14M42 62V70M50 62V70M58 62V70M66 62V70M36 30H28M36 40H28M36 50H28M76 30H84M76 40H84M76 50H84" />
-                                <g class="accent"><path d="M90 18A10 10 0 0 1 100 28" /><path d="M90 9A19 19 0 0 1 109 28" /><circle cx="56" cy="42" r="3" fill="currentColor" stroke="none" /></g>
-                            </svg>
-                            <div>
-                                <h4 data-i18n="embedded_title">Objets IA embarqués</h4>
-                                <p class="project-sub" data-i18n="embedded_subtitle">Projets personnels : ML embarqué et LLM local</p>
-                            </div>
-                            <div class="project-body">
-                                <p data-i18n="embedded_desc">Prototypes sur Arduino Nano 33 BLE Sense (nRF52840) : classification embarquée des données capteurs, reliée à un LLM local (Ollama) qui pilote une LED RGB et une synthèse vocale ; détection de présence par analyse du RSSI radio et classifieur, prototype en cours ; assistant vocal local avec appel d'outils.</p>
-                                <p class="tags"><span>TinyML</span><span>nRF52840</span><span>BLE</span><span>Ollama</span><span data-i18n="tag_local_llm">LLM local</span></p>
-                            </div>
-                        </article>
-
-                        <article class="project">
-                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M8 40H28M28 18V62M28 18H54M28 62H70M54 9V27M54 9H108M54 27H88M70 52V72M70 52H102M70 72H94" />
-                                <g class="accent" fill="currentColor" stroke="none"><circle cx="108" cy="9" r="3" /><circle cx="88" cy="27" r="3" /><circle cx="102" cy="52" r="3" /><circle cx="94" cy="72" r="3" /></g>
-                            </svg>
-                            <div>
-                                <h4>EVOLVE</h4>
-                                <p class="project-sub" data-i18n="evolve_subtitle">Projet personnel : simulation d'écosystème</p>
-                            </div>
-                            <div class="project-body">
-                                <p data-i18n="evolve_desc">Simulation dans laquelle des espèces virtuelles évoluent par sélection naturelle, avec un moteur écrit en C++20 et un laboratoire d'expérimentation pour observer l'évolution des populations. En développement.</p>
-                                <p class="tags"><span>C++20</span><span>Simulation</span><span data-i18n="tag_evolution">Évolution</span></p>
-                            </div>
-                        </article>
-
-                        <article class="project">
-                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M10 6V70H114" />
-                                <g fill="currentColor" stroke="none"><circle cx="22" cy="58" r="2" /><circle cx="30" cy="50" r="2" /><circle cx="37" cy="55" r="2" /><circle cx="45" cy="43" r="2" /><circle cx="53" cy="47" r="2" /><circle cx="59" cy="36" r="2" /><circle cx="67" cy="39" r="2" /><circle cx="75" cy="29" r="2" /><circle cx="83" cy="31" r="2" /><circle cx="91" cy="21" r="2" /><circle cx="99" cy="25" r="2" /><circle cx="106" cy="15" r="2" /></g>
-                                <path class="accent" d="M16 62L110 12" />
-                            </svg>
-                            <div>
-                                <h4 data-i18n="dataplatform_title">Analyse de données cliniques</h4>
-                                <p class="project-sub" data-i18n="dataplatform_subtitle">Modélisation statistique et aide à la décision</p>
-                            </div>
-                            <div class="project-body">
-                                <p data-i18n="dataplatform_desc">Suite d'outils pour l'analyse approfondie des données cliniques, intégrant des algorithmes de machine learning pour la prédiction et l'aide à la décision médicale, et des modèles statistiques pour l'interprétation des résultats.</p>
-                                <p class="tags"><span>Machine learning</span><span data-i18n="tag_stats">Statistiques</span><span>Python</span><span>PostgreSQL</span></p>
                             </div>
                         </article>
                     </div>
@@ -307,8 +284,7 @@
                                 <p class="project-sub" data-i18n="hemangiome_subtitle">Dispositif expérimental de diagnostic précoce</p>
                             </div>
                             <div class="project-body">
-                                <p data-i18n="hemangiome_desc">Prototype fondé sur le refroidissement contrôlé de la peau et l'analyse de la remontée thermique, avec exploitation de jeux de données et d'algorithmes de machine learning pour l'aide au pronostic.</p>
-                                <p class="tags"><span data-i18n="tag_proto">Prototypage</span><span>Machine learning</span><span data-i18n="tag_elec">Électronique</span><span data-i18n="tag_patent">Brevet</span><span data-i18n="tag_clinical">Clinique</span></p>
+                                <p data-i18n="hemangiome_desc">Prototype de recherche : refroidissement contrôlé de la peau, puis analyse de la remontée thermique par machine learning.</p>
                             </div>
                         </article>
 
@@ -320,8 +296,6 @@
                             </div>
                             <div class="project-body">
                                 <p data-i18n="animal_desc">Capteur d'analyse en temps réel des vocalisations porcines (FFT, spectrogrammes, MFCC) avec classification du niveau de bien-être par machine learning, et une échelle de notation de A à F traduite en label consommateur.</p>
-                                <p class="impact" data-i18n-html="animal_impact"><strong>Impact :</strong> valorisation de la filière, réduction des risques de maltraitance et transparence pour le consommateur.</p>
-                                <p class="tags"><span data-i18n="tag_signal">Analyse du signal</span><span>Machine learning</span><span>AgriTech</span></p>
                             </div>
                         </article>
 
@@ -336,9 +310,7 @@
                                 <p class="project-sub" data-i18n="milk_subtitle">Détection précoce des mammites en temps réel</p>
                             </div>
                             <div class="project-body">
-                                <p data-i18n="milk_desc">Capteur intégré aux griffes de traite, mesurant en temps réel la conductivité du lait pour évaluer le taux cellulaire. Prototypage et validation d'une solution de détection immédiate des anomalies.</p>
-                                <p class="impact" data-i18n-html="milk_impact"><strong>Impact :</strong> moins de traitements antibiotiques, moins de risque de contamination du tank et une meilleure rentabilité des exploitations.</p>
-                                <p class="tags"><span data-i18n="tag_sensors">Capteurs</span><span>IoT</span><span>Data acquisition</span><span>AgriTech</span></p>
+                                <p data-i18n="milk_desc">Capteur intégré aux griffes de traite, qui mesure en temps réel la conductivité du lait pour estimer le taux cellulaire et signaler une anomalie dès la traite.</p>
                             </div>
                         </article>
 
@@ -354,87 +326,42 @@
                             </div>
                             <div class="project-body">
                                 <p data-i18n="edwire_desc">Dispositif qui identifie de façon rapide et fiable les fils électriques lors des rénovations et mises aux normes, par injection CPL d'un code unique propre à chaque module.</p>
-                                <p class="impact" data-i18n-html="edwire_impact"><strong>Impact :</strong> un marché de plusieurs millions de foyers en France et 8 à 10 heures de main-d'œuvre économisées par chantier.</p>
-                                <p class="tags"><span data-i18n="tag_elec">Électronique</span><span>IoT</span><span data-i18n="tag_industrial">Industrialisation</span></p>
                             </div>
                         </article>
                     </div>
-                </div>
-            </section>
 
-            <!-- Compétences -->
-            <section class="section" id="competences" aria-labelledby="competences-title">
-                <div class="wrap">
-                    <div class="section-head">
-                        <h2 class="section-title" id="competences-title" data-i18n="skills_title">compétences</h2>
-                    </div>
-                    <div class="skills">
-                        <div class="skill">
-                            <h3 data-i18n="s1_title">Réglementaire et qualité</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s1_b1"><strong>MDR 2017/745, ISO 13485, ISO 14971</strong> : construction et pilotage du système de management de la qualité d'un dispositif médical de bout en bout</li>
-                                <li data-i18n="s1_b2">Application des normes IEC 62366-1, IEC 62304 et IEC 60601-1 aux dispositifs médicaux connectés</li>
-                                <li data-i18n-html="s1_b3">Rédaction et défense de <strong>dossiers techniques</strong> face aux autorités et organismes notifiés</li>
-                                <li data-i18n-html="s1_b4"><strong>Audits internes et fournisseurs</strong> (ISO 19011)</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s2_title">Modèles de langage (LLM)</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s2_b1"><strong>RAG</strong> sur la documentation du système qualité : indexation, recherche et réponses avec renvoi aux documents sources (outil déployé en interne)</li>
-                                <li data-i18n-html="s2_b2"><strong>Transcription locale</strong> (Whisper) et rédaction de comptes rendus de réunion par LLM</li>
-                                <li data-i18n-html="s2_b3"><strong>LLM exécutés en local</strong> (Ollama) avec appel d'outils, pour que les données restent sur site</li>
-                                <li data-i18n-html="s2_b4">Développement logiciel avec <strong>Claude Code</strong> et l'API Claude</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s3_title">Machine learning et signal</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s3_b1">Modélisation par <strong>machine learning</strong> (XGBoost) pour l'estimation de la température corporelle centrale à partir de capteurs portés, présentée à PFIA Health &amp; AI 2025</li>
-                                <li data-i18n="s3_b2">Traitement avancé du signal physiologique : filtrage, extraction de features, séries temporelles bruitées et asynchrones</li>
-                                <li data-i18n="s3_b3">Pipelines data de bout en bout : acquisition capteurs, traitement, visualisation (Python, PostgreSQL, dashboards temps réel)</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s4_title">Clinique et medtech</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s4_b1">Conception et suivi d'<strong>essais cliniques multicentriques</strong> en medtech</li>
-                                <li data-i18n-html="s4_b2">Développement et validation de <strong>dispositifs médicaux de classe IIb</strong>, de la R&amp;D à l'industrialisation</li>
-                                <li data-i18n-html="s4_b3">Expertise en <strong>capteurs connectés et IoT biomédical</strong></li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s5_title">Prototypage et embarqué</h3>
-                            <ul class="skill-list">
-                                <li data-i18n="s5_b1">Programmation embarquée et prototypage de capteurs connectés (BLE, nRF52840)</li>
-                                <li data-i18n="s5_b2">Conception 3D et prototypage rapide (Fusion 360, impression 3D)</li>
-                                <li data-i18n="s5_b3">Développement de procédés de fabrication (outillage, industrialisation produit)</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s6_title">Finance et stratégie</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s6_b1">Contribution active aux <strong>due diligences investisseurs</strong> (levées de fonds de plusieurs millions d'euros)</li>
-                                <li data-i18n-html="s6_b2">Élaboration et suivi de <strong>budgets stratégiques</strong> et de roadmaps produit</li>
-                                <li data-i18n-html="s6_b3">Définition de stratégies <strong>go-to-market</strong> et industrialisation fournisseurs</li>
-                                <li data-i18n-html="s6_b4">Pilotage par <strong>OKR</strong> et priorisation produit alignée sur les objectifs business</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s7_title">Leadership et management</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s7_b1">Recrutement, structuration et encadrement des équipes <strong>technique, R&amp;D et QARA</strong></li>
-                                <li data-i18n="s7_b2">Coordination transverse entre réglementaire, R&amp;D, clinique et production</li>
-                            </ul>
-                        </div>
-                        <div class="skill">
-                            <h3 data-i18n="s8_title">Recherche scientifique</h3>
-                            <ul class="skill-list">
-                                <li data-i18n-html="s8_b1"><strong>Plus de dix ans</strong> de recherche en neurosciences et physiologie expérimentale, une rigueur méthodologique appliquée aux essais cliniques</li>
-                                <li data-i18n-html="s8_b2">Expertise en <strong>IRM fonctionnelle</strong>, microscopie confocale et biphoton (recherche doctorale)</li>
-                                <li data-i18n="s8_b3">Publications internationales et communications en congrès</li>
-                            </ul>
-                        </div>
+                    <div class="project-group">
+                        <h3 class="group-title" data-i18n="group_lab">Labo personnel</h3>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="36" y="22" width="40" height="40" rx="3" />
+                                <rect x="47" y="33" width="18" height="18" rx="1.5" />
+                                <path d="M42 22V14M50 22V14M58 22V14M66 22V14M42 62V70M50 62V70M58 62V70M66 62V70M36 30H28M36 40H28M36 50H28M76 30H84M76 40H84M76 50H84" />
+                                <g class="accent"><path d="M90 18A10 10 0 0 1 100 28" /><path d="M90 9A19 19 0 0 1 109 28" /><circle cx="56" cy="42" r="3" fill="currentColor" stroke="none" /></g>
+                            </svg>
+                            <div>
+                                <h4 data-i18n="embedded_title">Objets IA embarqués</h4>
+                                <p class="project-sub" data-i18n="embedded_subtitle">ML embarqué et LLM local</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="embedded_desc">Une carte Arduino Nano 33 BLE Sense (nRF52840) sert de corps sensoriel à un LLM local (Ollama) : classification embarquée des capteurs, réponse par LED RGB et synthèse vocale. Variantes : détection de présence par analyse du RSSI radio (en cours), assistant vocal local avec appel d'outils.</p>
+                            </div>
+                        </article>
+
+                        <article class="project">
+                            <svg class="project-art" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M8 40H28M28 18V62M28 18H54M28 62H70M54 9V27M54 9H108M54 27H88M70 52V72M70 52H102M70 72H94" />
+                                <g class="accent" fill="currentColor" stroke="none"><circle cx="108" cy="9" r="3" /><circle cx="88" cy="27" r="3" /><circle cx="102" cy="52" r="3" /><circle cx="94" cy="72" r="3" /></g>
+                            </svg>
+                            <div>
+                                <h4>EVOLVE</h4>
+                                <p class="project-sub" data-i18n="evolve_subtitle">Simulation d'écosystème</p>
+                            </div>
+                            <div class="project-body">
+                                <p data-i18n="evolve_desc">Simulation dans laquelle des espèces virtuelles évoluent par sélection naturelle, avec un moteur écrit en C++20 et un laboratoire d'expérimentation pour observer l'évolution des populations. En développement.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -454,12 +381,9 @@
                                 <h3 data-i18n="j1_title">Chief Technology Officer, cofondateur</h3>
                                 <p class="job-org">F2D Medical <span data-i18n="loc_colombelles">Colombelles, Normandie</span></p>
                                 <ul>
-                                    <li data-i18n="j1_b1">Pilotage R&amp;D et industrialisation de dispositifs médicaux de classe IIb : conception, essais, validation.</li>
-                                    <li data-i18n="j1_b2">Conformité réglementaire : MDR 2017/745, ISO 13485, ISO 14971, IEC 62366-1, IEC 62304, IEC 60601-1.</li>
-                                    <li data-i18n="j1_b3">Gestion du dossier technique et du design dossier, audits internes et fournisseurs ISO 19011.</li>
-                                    <li data-i18n="j1_b4">Essais cliniques : conception, suivi et analyse des données ; plan et rapport d'évaluation clinique (CEP/CER).</li>
-                                    <li data-i18n="j1_b5">Stratégie et finance : due diligences d'investisseurs, planification budgétaire, priorisation de la roadmap.</li>
-                                    <li data-i18n="j1_b6">Data, IoT et IA : capteurs, traitement du signal, machine learning, outils internes à base de LLM.</li>
+                                    <li data-i18n="j1_b1">Direction technique : R&amp;D, industrialisation et marquage CE de Thermodiag, dispositif médical de classe IIb.</li>
+                                    <li data-i18n="j1_b2">Responsable QARA et responsable scientifique : système qualité, dossier technique, essais et évaluation clinique.</li>
+                                    <li data-i18n="j1_b3">Recrutement et encadrement des équipes technique, R&amp;D et QARA ; due diligences des levées de fonds.</li>
                                 </ul>
                             </div>
                         </div>
@@ -472,51 +396,22 @@
                             </div>
                         </div>
                         <div class="job">
-                            <p class="job-dates" data-i18n="j3_dates">Fév. 2017 à déc. 2021</p>
+                            <p class="job-dates" data-i18n="j3_dates">Fév. 2016 à déc. 2021</p>
                             <div class="job-main">
                                 <h3 data-i18n="j3_title">Chef de projet scientifique</h3>
                                 <p class="job-org">The Use Factory, Capital Innovation <span>Cairon</span></p>
-                                <ul><li data-i18n="j3_b1">Management de projets R&amp;D en medtech et coordination réglementaire.</li></ul>
-                            </div>
-                        </div>
-                        <div class="job">
-                            <p class="job-dates" data-i18n="j4_dates">Fév. 2016 à déc. 2016</p>
-                            <div class="job-main">
-                                <h3 data-i18n="j4_title">Consultant externe IoT et santé</h3>
-                                <p class="job-org">The Use Factory, Capital Innovation <span>Cairon</span></p>
-                                <ul><li data-i18n="j4_b1">Définition de protocoles expérimentaux, recueil et analyse de données physiologiques.</li></ul>
-                            </div>
-                        </div>
-                        <div class="job">
-                            <p class="job-dates" data-i18n="j5_dates">Juil. 2015 à oct. 2015</p>
-                            <div class="job-main">
-                                <h3 data-i18n="j5_title">Ingénieur en instrumentation expérimentale et biologique</h3>
-                                <p class="job-org">ISTCT UMR 6301, CNRS <span>Caen</span></p>
-                                <ul><li data-i18n="j5_b1">Développement de procédures en microscopie biphoton et IRM.</li></ul>
+                                <ul><li data-i18n="j3_b1">Consultant externe IoT et santé en 2016, puis chef de projet : projets R&amp;D en medtech et capteurs connectés, protocoles expérimentaux, coordination réglementaire.</li></ul>
                             </div>
                         </div>
                         <div class="job">
                             <p class="job-dates" data-i18n="j6_dates">Juil. 2012 à déc. 2015</p>
                             <div class="job-main">
-                                <h3 data-i18n="j6_title">Doctorant</h3>
-                                <p class="job-org">ISTCT UMR 6301, CNRS <span>Caen</span></p>
-                                <ul><li data-i18n="j6_b1">Impact de l'hypertension artérielle sur le couplage neuro-glio-vasculaire, étudié par IRM et microscopie biphoton.</li></ul>
-                            </div>
-                        </div>
-                        <div class="job">
-                            <p class="job-dates" data-i18n="j7_dates">Déc. 2014 à oct. 2015</p>
-                            <div class="job-main">
-                                <h3 data-i18n="j7_title">ATER et assistant de recherche en neurobiologie</h3>
-                                <p class="job-org">Université de Caen Normandie</p>
-                                <ul><li data-i18n="j7_b1">Recherche sur l'hypertension chronique et le couplage neuro-glio-vasculaire (2PLSM), enseignements en psychobiologie.</li></ul>
-                            </div>
-                        </div>
-                        <div class="job">
-                            <p class="job-dates" data-i18n="j8_dates">Déc. 2013 à déc. 2014</p>
-                            <div class="job-main">
-                                <h3 data-i18n="j8_title">Moniteur d'enseignement</h3>
-                                <p class="job-org">Université de Caen Normandie</p>
-                                <ul><li data-i18n="j8_b1">Activités d'enseignement et de soutien pédagogique.</li></ul>
+                                <h3 data-i18n="j6_title">Doctorant, ATER et ingénieur en instrumentation</h3>
+                                <p class="job-org">ISTCT UMR 6301, CNRS, Université de Caen Normandie <span>Caen</span></p>
+                                <ul>
+                                    <li data-i18n="j6_b1">Thèse : impact de l'hypertension artérielle sur le couplage neuro-glio-vasculaire, par IRM et microscopie biphoton.</li>
+                                    <li data-i18n="j6_b2">Développement de procédures d'IRM et de microscopie biphoton (ingénieur, 2015) ; enseignement en psychobiologie (moniteur puis ATER, 2013 à 2015).</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -528,7 +423,7 @@
                         </div>
                         <div class="degree">
                             <strong data-i18n="edu2">Master en neurobiologie et neurosciences</strong>
-                            <span data-i18n="edu2_meta">Université de Caen Normandie, 2007 à 2012</span>
+                            <span data-i18n="edu2_meta">Université de Caen Normandie, 2012</span>
                         </div>
                     </div>
                 </div>
@@ -545,58 +440,37 @@
                             <h3 class="col-title" data-i18n="pubs_articles">Articles et communications</h3>
                             <ul class="pub-list">
                                 <li><span class="pub-title">Thermodiag: Artificial intelligence for non-invasive internal temperature monitoring</span><span class="pub-venue">PFIA Health &amp; AI, 10th edition, Dijon</span><span class="pub-year">2025</span></li>
-                                <li><span class="pub-title">Two-kidney one-clip … cerebral ischemia</span><span class="pub-venue">Journal of Cerebral Blood Flow &amp; Metabolism</span><span class="pub-year">2017</span></li>
-                                <li><span class="pub-title">Encapsulation of fluorescein into nanozeolites L and Y</span><span class="pub-venue">Microporous and Mesoporous Materials</span><span class="pub-year">2017</span></li>
-                                <li><span class="pub-title">Synthesis of fluorescein by ship in a bottle method in different zeolites</span><span class="pub-venue">New Journal of Chemistry</span><span class="pub-year">2017</span></li>
-                                <li><span class="pub-title">Synthesis and encapsulation of fluorescein in zeolite Y</span><span class="pub-venue">Microporous and Mesoporous Materials</span><span class="pub-year">2016</span></li>
+                                <li><a class="pub-title" href="https://doi.org/10.1177/0271678X17715813" rel="noopener">Two-kidney one-clip is a pertinent approach to integrate arterial hypertension in animal models of stroke: serial magnetic resonance imaging studies of brain lesions before and during cerebral ischemia</a><span class="pub-venue">Journal of Cerebral Blood Flow &amp; Metabolism, <span data-i18n="pub_first">premier auteur</span></span><span class="pub-year">2017</span></li>
+                                <li><a class="pub-title" href="https://doi.org/10.1016/j.micromeso.2017.10.040" rel="noopener">Encapsulation of fluorescein into nanozeolites L and Y</a><span class="pub-venue">Microporous and Mesoporous Materials, <span data-i18n="pub_coauthor">co-auteur</span></span><span class="pub-year">2017</span></li>
+                                <li><a class="pub-title" href="https://doi.org/10.1039/c7nj01427a" rel="noopener">Synthesis of fluorescein by a ship-in-a-bottle method in different zeolites</a><span class="pub-venue">New Journal of Chemistry, <span data-i18n="pub_coauthor">co-auteur</span></span><span class="pub-year">2017</span></li>
+                                <li><a class="pub-title" href="https://doi.org/10.1016/j.micromeso.2016.02.043" rel="noopener">Synthesis and encapsulation of fluorescein in zeolite Y</a><span class="pub-venue">Microporous and Mesoporous Materials, <span data-i18n="pub_coauthor">co-auteur</span></span><span class="pub-year">2016</span></li>
                             </ul>
                         </div>
                         <div>
                             <h3 class="col-title" data-i18n="pubs_patents">Brevets</h3>
                             <div class="family">
                                 <h4 data-i18n="fam1_title">Dispositif de mesure de températures et système pour déterminer une température interne profonde d'un être humain</h4>
-                                <p class="family-meta" data-i18n="fam1_meta">4 publications, dont un brevet délivré en France</p>
+                                <p class="family-meta" data-i18n="fam1_meta">Co-inventeur. Délivré par 7 offices ; demandes en cours au Canada, au Brésil et en Corée du Sud.</p>
                                 <ul class="filings">
-                                    <li><b>FR 3097115 B1</b><span class="granted" data-i18n="p1">Délivré le 16 juil. 2021, actif</span></li>
-                                    <li><b>WO 2020/249665 A1</b><span data-i18n="p2">Publié le 17 déc. 2020</span></li>
-                                    <li><b>EP 3780912 A1</b><span data-i18n="p3">Publié le 17 fév. 2021, en cours d'examen</span></li>
-                                    <li><b>US 2022/0160240 A1</b><span data-i18n="p4">Publié le 26 mai 2022, en cours d'examen</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/FR3097115B1" rel="noopener">FR 3097115 B1</a></b><span class="granted" data-i18n="p1">Délivré le 16 juil. 2021</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/EP3982824B1" rel="noopener">EP 3982824 B1</a></b><span class="granted" data-i18n="p2">Délivré le 31 juil. 2024, effet unitaire</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/CN114206208B" rel="noopener">CN 114206208 B</a></b><span class="granted" data-i18n="p3">Délivré le 25 oct. 2024</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/MA56177B1" rel="noopener">MA 56177 B1</a></b><span class="granted" data-i18n="p4">Délivré le 31 oct. 2024</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/JP7671428B2" rel="noopener">JP 7671428 B2</a></b><span class="granted" data-i18n="p5">Délivré le 2 mai 2025</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/IL288833B2" rel="noopener">IL 288833 B2</a></b><span class="granted" data-i18n="p6">Délivré le 1er févr. 2026</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/US12557991B2" rel="noopener">US 12557991 B2</a></b><span class="granted" data-i18n="p7">Délivré le 24 févr. 2026</span></li>
                                 </ul>
                             </div>
                             <div class="family">
                                 <h4 data-i18n="fam2_title">Housse multicouche de maintien d'un dispositif sur le corps humain</h4>
-                                <p class="family-meta" data-i18n="fam2_meta">7 publications en Europe, Amérique, Asie et Océanie</p>
+                                <p class="family-meta" data-i18n="fam2_meta">Co-inventeur. Délivré en Afrique du Sud et en France ; demandes en cours en Europe, en Chine, en Australie, au Mexique et en Israël.</p>
                                 <ul class="filings">
-                                    <li><b>FR 3139712 A1</b><span data-i18n="p5">Publié le 22 mars 2024</span></li>
-                                    <li><b>WO 2024/061524 A1</b><span data-i18n="p6">Publié le 28 mars 2024</span></li>
-                                    <li><b>AU 2023345784 A1</b><span data-i18n="p7">Publié le 20 mars 2025, en cours d'examen</span></li>
-                                    <li><b>MX 2025003114 A</b><span data-i18n="p8">Publié le 2 avr. 2025</span></li>
-                                    <li><b>IL 319426 A</b><span data-i18n="p9">Publié le 1er mai 2025</span></li>
-                                    <li><b>CN 119997868 A</b><span data-i18n="p10">Publié le 13 mai 2025, en cours d'examen</span></li>
-                                    <li><b>EP 4590176 A1</b><span data-i18n="p11">Publié le 30 juil. 2025, en cours d'examen</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/ZA202502211B" rel="noopener">ZA 2025/02211 B</a></b><span class="granted" data-i18n="p8">Délivré le 17 déc. 2025</span></li>
+                                    <li><b><a href="https://patents.google.com/patent/FR3139712B1" rel="noopener">FR 3139712 B1</a></b><span class="granted" data-i18n="p9">Délivré le 12 juin 2026</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Certifications -->
-            <section class="section" id="certifications" aria-labelledby="certifications-title">
-                <div class="wrap">
-                    <div class="section-head">
-                        <h2 class="section-title" id="certifications-title" data-i18n="certs_title">formations certifiantes</h2>
-                    </div>
-                    <ul class="certs">
-                        <li><b data-i18n="c1">Audit interne et fournisseurs, ISO 19011 et ISO 13485</b><span>MD101</span></li>
-                        <li><b data-i18n="c2">Dossiers techniques conformes à la MDR 2017/745</b><span>BSI Group</span></li>
-                        <li><b data-i18n="c3">ISO 13485 : conception et mise en application d'un QMS</b><span>Abylsen</span></li>
-                        <li><b>ISO 14971: Product Risk Management</b><span data-i18n="c4_org">Gestion des risques produit</span></li>
-                        <li><b data-i18n="c5">IEC 62366-1 : ingénierie de l'aptitude à l'utilisation des dispositifs médicaux</b><span>Aguila</span></li>
-                        <li><b data-i18n="c6">IEC 62304 : exigences 2006 + Amd1 appliquées au cycle de vie des logiciels</b><span>MD101</span></li>
-                        <li><b data-i18n="c7">Obligations relatives aux dispositifs médicaux (UDI)</b><span>GS1 France</span></li>
-                        <li><b data-i18n="c8">Expérimentation animale appliquée à la recherche biomédicale, niveaux 1 et 2</b><span>CNRS</span></li>
-                    </ul>
                 </div>
             </section>
 
@@ -605,7 +479,7 @@
                 <svg class="leaf leaf--contact" viewBox="-569 -1021 1150 1671" aria-hidden="true" focusable="false"><defs><clipPath id="clip-contact"><path d="M0 30 10 33 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 430 95 450 69 471 32 511 -73 540 -158 556 -224 561 -277 557 -327 546 -376 515 -473 493 -532 467 -590 438 -647 394 -720 358 -773 324 -814 284 -853 237 -891 179 -931 129 -963 97 -979 70 -988 10 -1001 -18 -998 -89 -967 -191 -910 -247 -875 -291 -842 -320 -813 -354 -774 -384 -730 -431 -650 -464 -588 -488 -533 -507 -474 -519 -422 -529 -356 -546 -181 -549 -126 -547 -75 -538 -39 -523 -8 -497 27 -453 69 -389 118 -341 146 -300 162 -266 167 -231 164 -185 152 -141 134 -102 116 -89 108 -72 92 -29 43 -15 33Z"/></clipPath></defs><g clip-path="url(#clip-contact)"><path class="leaf-under" d="M0 30 10 33 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 430 95 450 69 471 32 511 -73 540 -158 556 -224 561 -277 557 -327 546 -376 515 -473 493 -532 467 -590 438 -647 394 -720 358 -773 324 -814 284 -853 237 -891 179 -931 129 -963 97 -979 70 -988 10 -1001 -18 -998 -89 -967 -191 -910 -247 -875 -291 -842 -320 -813 -354 -774 -384 -730 -431 -650 -464 -588 -488 -533 -507 -474 -519 -422 -529 -356 -546 -181 -549 -126 -547 -75 -538 -39 -523 -8 -497 27 -453 69 -389 118 -341 146 -300 162 -266 167 -231 164 -185 152 -141 134 -102 116 -89 108 -72 92 -29 43 -15 33Z"/><path class="pcb" d="M-90 -360 135 -360 262 -487 397 -487M-90 -180 -180 -180 -307 -53 -397 -53M-135 -450 -135 -585 -230 -680 -230 -770M225 -135 0 -135 -191 56 -326 56M90 -270 -180 -270 -339 -429 -339 -609M360 -270 450 -270 514 -206M-225 -180 -225 -360 -352 -487M315 -630 315 -450 188 -323M-90 -360 -90 -180 -185 -85M180 -900 180 -720 116 -656 116 -386 244 -259 244 -124M225 -360 450 -360M450 -540 450 -270 355 -175 220 -175 156 -238 -24 -238M45 -765 45 -900M-405 -540 -180 -540 -53 -667 217 -667M540 -270 450 -270 386 -334M90 0 90 -180 -37 -307 -37 -577 -133 -673 -313 -673M495 -450 270 -450 143 -323 143 -53M-405 -180 -405 -315 -500 -410M-135 -495 -315 -495 -379 -431M-315 -360 -180 -360 -53 -233 -53 -8M-180 -225 -270 -225 -334 -161 -514 -161M-405 -495 -135 -495 -8 -622 82 -622M-180 -720 -180 -630 -21 -471M315 -270 315 -45"/><g class="pcb-vias"><circle cx="-90" cy="-360" r="9"/><circle cx="397" cy="-487" r="9"/><circle cx="-90" cy="-180" r="9"/><circle cx="-397" cy="-53" r="9"/><circle cx="-135" cy="-450" r="9"/><circle cx="-230" cy="-770" r="9"/><circle cx="225" cy="-135" r="9"/><circle cx="-326" cy="56" r="9"/><circle cx="90" cy="-270" r="9"/><circle cx="-339" cy="-609" r="9"/><circle cx="360" cy="-270" r="9"/><circle cx="514" cy="-206" r="9"/><circle cx="-225" cy="-180" r="9"/><circle cx="-352" cy="-487" r="9"/><circle cx="315" cy="-630" r="9"/><circle cx="188" cy="-323" r="9"/><circle cx="-90" cy="-360" r="9"/><circle cx="-185" cy="-85" r="9"/><circle cx="180" cy="-900" r="9"/><circle cx="244" cy="-124" r="9"/><circle cx="225" cy="-360" r="9"/><circle cx="450" cy="-360" r="9"/><circle cx="450" cy="-540" r="9"/><circle cx="-24" cy="-238" r="9"/><circle cx="45" cy="-765" r="9"/><circle cx="45" cy="-900" r="9"/><circle cx="-405" cy="-540" r="9"/><circle cx="217" cy="-667" r="9"/><circle cx="540" cy="-270" r="9"/><circle cx="386" cy="-334" r="9"/><circle cx="90" cy="0" r="9"/><circle cx="-313" cy="-673" r="9"/><circle cx="495" cy="-450" r="9"/><circle cx="143" cy="-53" r="9"/><circle cx="-405" cy="-180" r="9"/><circle cx="-500" cy="-410" r="9"/><circle cx="-135" cy="-495" r="9"/><circle cx="-379" cy="-431" r="9"/><circle cx="-315" cy="-360" r="9"/><circle cx="-53" cy="-8" r="9"/><circle cx="-180" cy="-225" r="9"/><circle cx="-514" cy="-161" r="9"/><circle cx="-405" cy="-495" r="9"/><circle cx="82" cy="-622" r="9"/><circle cx="-180" cy="-720" r="9"/><circle cx="-21" cy="-471" r="9"/><circle cx="315" cy="-270" r="9"/><circle cx="315" cy="-45" r="9"/></g><g class="pcb-pads"><rect x="-143" y="-244" width="28" height="14" rx="2"/><rect x="-326" y="-714" width="14" height="28" rx="2"/><rect x="-246" y="-62" width="14" height="28" rx="2"/><rect x="-469" y="-404" width="28" height="14" rx="2"/><rect x="-188" y="-517" width="14" height="28" rx="2"/></g></g><path class="leaf-petiole" d="M0 20 -1 36 -2 57 -3 82 -4 110 -6 140 -7 172 -10 204 -12 237 -16 269 -20 300 -25 332 -32 367 -40 403 -48 440 -56 477 -65 513 -73 546 -80 576 -86 601 -90 620"/><path class="leaf-body" d="M5 31 15 37 24 45 68 106 90 131 118 147 158 164 210 177 237 180 262 180 287 176 312 169 336 160 361 148 399 123 431 94 282 16 280 11 285 8 458 56 481 7 519 -94 540 -158 553 -210 416 -236 413 -241 417 -244 560 -251 561 -277 558 -317 548 -366 528 -434 499 -518 357 -507 353 -509 355 -515 482 -558 458 -609 427 -665 388 -729 358 -773 351 -782 228 -728 224 -728 222 -731 224 -735 329 -808 301 -838 266 -868 228 -898 180 -931 84 -856 80 -855 78 -858 78 -861 147 -952 116 -970 91 -981 65 -989 10 -1001 -11 -1000 -25 -995 -84 -970 -131 -945 -98 -885 -100 -880 -104 -880 -171 -922 -228 -887 -265 -862 -299 -835 -324 -810 -172 -709 -171 -705 -172 -702 -176 -702 -347 -782 -389 -722 -441 -633 -477 -560 -310 -507 -308 -502 -312 -499 -493 -518 -510 -464 -521 -412 -531 -345 -540 -242 -378 -238 -375 -236 -374 -233 -377 -230 -545 -196 -550 -115 -545 -66 -541 -48 -531 -23 -518 -1 -502 20 -479 46 -456 66 -270 8 -266 9 -265 12 -267 15 -420 95 -389 118 -358 137 -325 153 -300 162 -266 167 -231 164 -194 155 -149 138 -102 116 -89 108 -72 92 -33 47 -19 35 -5 30Z" fill-rule="evenodd"/><path class="leaf-veins" d="M0 -15 13 -10 30 -3 50 5 73 14 96 24 120 35 143 46 163 58 183 71 204 86 225 102 245 119 264 135 281 150 296 162 307 171M0 -184 21 -182 48 -179 81 -176 118 -172 156 -168 195 -163 232 -157 266 -151 300 -143 335 -133 371 -123 406 -112 439 -101 469 -91 494 -83 513 -77M0 -353 22 -356 51 -361 86 -366 124 -372 165 -378 206 -384 245 -388 281 -391 316 -393 354 -394 392 -394 429 -393 464 -392 496 -391 522 -390 542 -390M0 -522 17 -530 40 -540 68 -552 98 -566 130 -580 163 -593 194 -606 222 -616 250 -626 279 -634 308 -642 337 -650 364 -656 388 -662 409 -667 424 -671M0 -691 10 -700 24 -713 41 -728 59 -745 78 -762 97 -779 115 -795 132 -808 147 -821 164 -832 180 -844 196 -855 211 -864 224 -873 235 -880 244 -886M0 -860 4 -866 11 -875 18 -886 26 -898 34 -910 42 -921 50 -932 56 -940 62 -948 68 -954 73 -960 78 -966 83 -970 87 -974 90 -978 93 -981M0 -15 -12 -10 -28 -3 -47 4 -69 13 -91 23 -113 33 -134 44 -154 55 -172 67 -192 82 -211 98 -230 114 -248 130 -264 144 -277 156 -288 165M0 -184 -22 -181 -51 -177 -86 -173 -125 -168 -165 -162 -206 -156 -246 -149 -282 -141 -317 -132 -355 -122 -393 -110 -431 -97 -466 -85 -497 -75 -524 -65 -544 -59M0 -353 -21 -356 -50 -360 -83 -364 -121 -369 -160 -374 -200 -379 -238 -382 -273 -385 -308 -385 -344 -385 -381 -384 -417 -383 -451 -381 -482 -379 -507 -377 -527 -376M0 -522 -17 -530 -39 -541 -66 -554 -96 -568 -127 -583 -159 -597 -189 -611 -217 -622 -243 -632 -272 -641 -300 -650 -328 -658 -355 -666 -378 -672 -398 -678 -413 -682M0 -691 -10 -700 -24 -712 -40 -727 -58 -743 -77 -760 -96 -776 -114 -792 -131 -805 -146 -816 -162 -828 -179 -839 -194 -849 -209 -858 -222 -866 -233 -873 -241 -879M0 -860 -4 -866 -9 -875 -16 -885 -23 -896 -30 -907 -37 -918 -43 -928 -49 -936 -54 -943 -58 -949 -62 -955 -66 -959 -70 -964 -73 -967 -76 -970 -78 -973M0 20 0 -8 1 -43 2 -85 3 -132 3 -182 4 -236 5 -291 5 -345 6 -399 6 -450 6 -502 5 -559 5 -619 4 -679 3 -739 3 -797 2 -851 1 -898 0 -939 0 -970"/></svg>
                 <div class="wrap">
                     <h2 class="section-title" id="contact-title" data-i18n="contact_title">contact</h2>
-                    <p class="contact-lede" style="margin-top:28px" data-i18n="contact_lede">Un projet medtech, une question réglementaire ou technique ? Écrivez-moi.</p>
+                    <p class="contact-lede" style="margin-top:28px" data-i18n="contact_lede">Une conversation sur la medtech, le réglementaire ou l'IA en santé ? Écrivez-moi.</p>
                     <a class="contact-mail" href="mailto:contact@b-menard.fr">contact@b-menard.fr</a>
                     <div class="contact-links">
                         <a href="https://www.linkedin.com/in/bmenardphd/" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" /></svg>LinkedIn</a>
@@ -624,7 +498,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-        <script src="js/i18n.js?v=20261021" defer></script>
+        <script src="js/i18n.js?v=20261021b" defer></script>
         <script src="js/main.js?v=20261021" defer></script>
     </body>
 </html>

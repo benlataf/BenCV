@@ -659,15 +659,27 @@ strong {
 
 .manifest {
     display: grid;
-    gap: clamp(18px, 2.4vw, 30px);
+    gap: clamp(28px, 3.4vw, 48px);
 }
 
+/* Le chiffre se lit d'abord, la phrase le qualifie. */
 .manifest p {
-    font-size: var(--step-3);
-    font-weight: 600;
-    line-height: 1.04;
-    letter-spacing: -0.035em;
-    max-width: 19ch;
+    display: grid;
+    gap: 8px;
+    max-width: 34ch;
+    color: var(--ink-2);
+    font-size: var(--step-1);
+    line-height: 1.4;
+}
+
+.manifest-num {
+    color: var(--gold-bright);
+    font-size: var(--step-4);
+    font-weight: 650;
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
 }
 
 .neuron {
@@ -982,15 +994,6 @@ strong {
     border-radius: 50%;
 }
 
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 14px;
-    margin-top: 22px;
-    color: var(--ink-3);
-    font-size: var(--step--1);
-}
-
 @media (min-width: 960px) {
     .feature {
         grid-template-columns: 0.9fr 1.1fr;
@@ -1057,14 +1060,6 @@ strong {
     max-width: 68ch;
 }
 
-.project-body .tags {
-    margin-top: 6px;
-}
-
-.impact strong {
-    font-weight: 600;
-}
-
 @media (min-width: 960px) {
     .project {
         grid-template-columns: 120px minmax(240px, 0.9fr) 1.4fr;
@@ -1084,40 +1079,12 @@ strong {
     }
 }
 
-/* ---------- Compétences ---------- */
-
-.skills {
-    display: grid;
-    gap: 0;
-    border-top: 1px solid var(--rule-strong);
-}
-
-.skill {
-    display: grid;
-    gap: 16px;
-    padding: 32px 0;
-    border-bottom: 1px solid var(--rule);
-}
-
-.skill h3 {
-    font-size: var(--step-2);
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-}
+/* Listes à puces des projets */
 
 .skill-list {
     display: grid;
     gap: 10px;
     color: var(--ink-2);
-}
-
-@media (min-width: 960px) {
-    .skill {
-        grid-template-columns: 1fr 2fr;
-        gap: clamp(32px, 5vw, 88px);
-        padding: 40px 0;
-    }
 }
 
 /* ---------- Parcours ---------- */
@@ -1359,37 +1326,6 @@ strong {
     .pubs {
         grid-template-columns: 1fr 1fr;
         gap: clamp(48px, 6vw, 112px);
-    }
-}
-
-/* ---------- Certifications ---------- */
-
-.certs {
-    display: grid;
-    gap: 0;
-    border-top: 1px solid var(--rule-strong);
-}
-
-.certs li {
-    display: grid;
-    gap: 2px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--rule);
-}
-
-.certs b {
-    font-weight: 600;
-}
-
-.certs span {
-    color: var(--ink-3);
-    font-size: var(--step--1);
-}
-
-@media (min-width: 760px) {
-    .certs {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 48px;
     }
 }
 
