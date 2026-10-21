@@ -1224,6 +1224,41 @@ strong {
     }
 }
 
+.education + .education {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top-color: var(--rule);
+}
+
+/* Formations certifiantes : liste serrée, l'organisme sous l'intitulé */
+.training-list {
+    display: grid;
+    gap: 14px 48px;
+}
+
+.training-list li {
+    display: grid;
+    align-content: start;
+    gap: 2px;
+}
+
+.training-list b {
+    font-weight: 500;
+    line-height: 1.35;
+}
+
+.training-list span {
+    color: var(--ink-3);
+    font-size: var(--step--1);
+}
+
+@media (min-width: 960px) {
+    .training-list {
+        grid-column: 2 / -1;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 /* ---------- Publications & brevets ---------- */
 
 .pubs {
