@@ -217,7 +217,7 @@
 
         // Manifeste : chaque phrase s'allume en passant au centre de l'écran.
         gsap.utils.toArray(".manifest p").forEach(function (p) {
-            gsap.fromTo(p, { opacity: 0.45 }, {
+            gsap.fromTo(p, { opacity: 0.72 }, {
                 opacity: 1,
                 ease: "none",
                 scrollTrigger: { trigger: p, start: "top 90%", end: "top 58%", scrub: true }
